@@ -17,7 +17,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-<!--                    <App></App>-->
+                    <CourseMain></CourseMain>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -39,13 +39,15 @@
     import Menu from './Menu';
     import Header from './Header';
     import App from  './App';
+    import CourseMain from "./Course/CourseMain";
 
     export default {
         name: "Layout",
         components: {
             Menu: Menu,
             Header: Header,
-            App: App
+            App: App,
+            CourseMain
         }
     }
 </script>

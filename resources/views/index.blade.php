@@ -20,8 +20,9 @@
 <!-- Custom styles for this template-->
     <link href="assets/admin/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="assets/admin/css/toastr.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 </head>
-<body>
+<body id="page-top">
 <div id="app">
     <Layout></Layout>
 </div>
@@ -63,10 +64,11 @@
 <script src="assets/admin/js/sb-admin-2.min.js"></script>
 <script src="assets/admin/js/ajax.js"></script>
 <script src="assets/admin/js/toastr.min.js"></script>
-<script src="assets/admin/js/sb-admin-2.js"></script>
+{{--<script src="assets/admin/js/sb-admin-2.js"></script>--}}
 
 
 <script src="/js/app.js"></script>
+<script src="/js/index.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,9 @@
 
-require('./bootstrap');
+//require('./bootstrap');
 //window.Vue = require('vue');
 import Vue from 'vue';
+//import Bootrap from  './bootstrap';
+
 import Layout from  '../component/Layout';
 
 Vue.config.devtools = true;
