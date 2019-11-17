@@ -1,0 +1,3864 @@
+{
+  "3K": [
+    {
+      "id": 1,
+      "kanji": "圧",
+      "HanViet": "ÁP",
+      "meaning": "Áp chế",
+      "On": [
+        "アツ",
+        "エン",
+        "オウ"
+      ],
+      "Kun": [
+        "お.す",
+        "へ.す",
+        "おさ.える",
+        "お.さえる"
+      ],
+      "draw": [],
+      "Mind": "Đất ở Sườn Núi phải chịu Áp lực lớn",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "1",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "厂",
+          "Name": "HÁN",
+          "Meaning": "Sườn núi"
+        },
+        {
+          "Bo": "土",
+          "Name": "THỔ",
+          "Meaning": "Đất"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "圧し",
+          "hiragara": "おし",
+          "HanViet": "ÁP",
+          "meaning": "Làm nặng thêm, nén xuống"
+        },
+        {
+          "id": 2,
+          "word": "圧力",
+          "hiragara": "あつりょく",
+          "HanViet": "ÁP LỰC",
+          "meaning": "Áp lực; sức ép"
+        },
+        {
+          "id": 3,
+          "word": "圧制",
+          "hiragara": "あっせい",
+          "HanViet": "ÁP CHẾ",
+          "meaning": "đàn áp, áp bức"
+        },
+        {
+          "id": 4,
+          "word": "圧倒",
+          "hiragara": "あっとう",
+          "HanViet": "ÁP ĐẢO",
+          "meaning": "Áp đảo; sự vượt trội"
+        },
+        {
+          "id": 5,
+          "word": "内圧",
+          "hiragara": "ないあつ",
+          "HanViet": "NỘI ÁP",
+          "meaning": "Áp lực bên trong"
+        },
+        {
+          "id": 6,
+          "word": "気圧",
+          "hiragara": "きあつ",
+          "HanViet": "KHÍ ÁP",
+          "meaning": "Áp suất"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kanji": "移",
+      "HanViet": "DI",
+      "meaning": "Di chuyển",
+      "On": [
+        "イ"
+      ],
+      "Kun": [
+        "うつ.る",
+        "うつ.す"
+      ],
+      "draw": [],
+      "Mind": "Di chuyển rất Nhiều Lúa",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "2",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "禾",
+          "Name": "HÒA ",
+          "Meaning": "Cây lúa"
+        },
+        {
+          "Bo": "多",
+          "Name": "ĐA",
+          "Meaning": "Nhiều"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "移す",
+          "hiragara": "うつす",
+          "HanViet": "DI",
+          "meaning": "Dọn đi"
+        },
+        {
+          "id": 2,
+          "word": "移転",
+          "hiragara": "いてん",
+          "HanViet": "DI CHUYỂN",
+          "meaning": "Di chuyển"
+        },
+        {
+          "id": 3,
+          "word": "移動",
+          "hiragara": "いどう",
+          "HanViet": "DI ĐỘNG",
+          "meaning": "Chuyển động"
+        },
+        {
+          "id": 4,
+          "word": "移民",
+          "hiragara": "いみん",
+          "HanViet": "DI DÂN",
+          "meaning": " Di cư; di dân"
+        },
+        {
+          "id": 5,
+          "word": "移住",
+          "hiragara": "いじゅう",
+          "HanViet": "DI TRÚ",
+          "meaning": "Di trú; di cư"
+        },
+        {
+          "id": 6,
+          "word": "変移",
+          "hiragara": "へんい",
+          "HanViet": "BIẾN DI",
+          "meaning": "Biến đổi"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "kanji": "異",
+      "HanViet": "DỊ",
+      "meaning": "Khác thường",
+      "On": [
+        "イ"
+      ],
+      "Kun": [
+        "こと",
+        "こと.なる"
+      ],
+      "draw": [],
+      "Mind": "Được CUNG cấp cho thửa RUỘNG thật là DỊ thường (khác thường)",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "3",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "田",
+          "Name": "ĐIỀN",
+          "Meaning": "Ruộng"
+        },
+        {
+          "Bo": "共",
+          "Name": "CỘNG, CUNG",
+          "Meaning": "Tim"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "異に",
+          "hiragara": "ことに",
+          "HanViet": "DỊ",
+          "meaning": "Sự khác nhau"
+        },
+        {
+          "id": 2,
+          "word": "変異",
+          "hiragara": "へんい",
+          "HanViet": "BIẾN DỊ",
+          "meaning": "biến đổi; biến dị"
+        },
+        {
+          "id": 3,
+          "word": "異人",
+          "hiragara": "いじん",
+          "HanViet": "DỊ NHÂN",
+          "meaning": "Dị nhân"
+        },
+        {
+          "id": 4,
+          "word": "異同",
+          "hiragara": "いどう",
+          "HanViet": "DỊ ĐỒNG",
+          "meaning": "Sự khác nhau"
+        },
+        {
+          "id": 5,
+          "word": "異国",
+          "hiragara": "いこく",
+          "HanViet": "DỊ QUỐC",
+          "meaning": "Nước ngoài; xứ lạ"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "kanji": "遺",
+      "HanViet": "DI",
+      "meaning": "Di truyền, di chúc",
+      "On": [
+        "イ"
+      ],
+      "Kun": [
+        "のこ.す"
+      ],
+      "draw": [],
+      "Mind": "Những cái Quý giá Nhất viết Di chúc lại cho con cháu",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "4",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "貴",
+          "Name": "QUÝ",
+          "Meaning": ""
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "遺す",
+          "hiragara": "のこす",
+          "HanViet": "DI",
+          "meaning": "để lại"
+        },
+        {
+          "id": 2,
+          "word": "遺伝",
+          "hiragara": "いでん",
+          "HanViet": "DI TRUYỀN",
+          "meaning": "Di truyền"
+        },
+        {
+          "id": 3,
+          "word": "遺告",
+          "hiragara": "のこつげ",
+          "HanViet": "DI CÁO",
+          "meaning": "Di chúc"
+        },
+        {
+          "id": 4,
+          "word": "遺命",
+          "hiragara": "いめい",
+          "HanViet": "DI MỆNH",
+          "meaning": "Di chúc; di mệnh"
+        },
+        {
+          "id": 5,
+          "word": "遺物",
+          "hiragara": "いぶつ",
+          "HanViet": "DI VẬT",
+          "meaning": "Di vật"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "kanji": "域",
+      "HanViet": "VỰC",
+      "meaning": "khu vực",
+      "On": [
+        "イキ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Dùng Đất đánh dấu Khu Vực vẫn còn Nghi Hoặc",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "5",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "土",
+          "Name": "THỔ",
+          "Meaning": "Đất"
+        },
+        {
+          "Bo": "或",
+          "Name": "HOẶC",
+          "Meaning": "Nghi hoặc"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "地域",
+          "hiragara": "ちいき",
+          "HanViet": "ĐỊA VỰC",
+          "meaning": "Khu vực, vùng"
+        },
+        {
+          "id": 2,
+          "word": "区域",
+          "hiragara": "くいき",
+          "HanViet": "KHU VỰC",
+          "meaning": "Khu vực; phạm vi"
+        },
+        {
+          "id": 3,
+          "word": "極域",
+          "hiragara": "きょく ち",
+          "HanViet": "CỰC VỰC",
+          "meaning": "Vùng cực"
+        },
+        {
+          "id": 4,
+          "word": "戦域",
+          "hiragara": "せんいき",
+          "HanViet": "CHIẾN VỰC",
+          "meaning": "Chiến trường"
+        },
+        {
+          "id": 5,
+          "word": "境域",
+          "hiragara": "きょういき",
+          "HanViet": "CẢNH VỰC",
+          "meaning": " Ranh giới; biên giới"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "kanji": "宇",
+      "HanViet": "VŨ",
+      "meaning": "Vũ trụ",
+      "On": [
+        "ウ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Ở dưới Mái Nhà nhìn lên là Vũ trụ bao la",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "6",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "宀",
+          "Name": "MIÊN",
+          "Meaning": "Mái nhà"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "宇宙",
+          "hiragara": "うちゅう",
+          "HanViet": "VŨ TRỤ",
+          "meaning": "Vũ trụ"
+        },
+        {
+          "id": 2,
+          "word": "宇内",
+          "hiragara": "うだい",
+          "HanViet": "VŨ NỘI",
+          "meaning": "Cả thế giới"
+        },
+        {
+          "id": 3,
+          "word": "殿宇",
+          "hiragara": "でんう",
+          "HanViet": "ĐIỆN VŨ",
+          "meaning": "Tòa điện thờ"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "kanji": "永",
+      "HanViet": "VĨNH",
+      "meaning": "Vĩnh viễn",
+      "On": [
+        "エイ"
+      ],
+      "Kun": [
+        "なが.い"
+      ],
+      "draw": [],
+      "Mind": "Nước là Vĩnh cửu",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "7",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "水",
+          "Name": "THỦY",
+          "Meaning": "Nước"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "永い",
+          "hiragara": "ながい",
+          "HanViet": "VĨNH",
+          "meaning": "Dài; dài lâu"
+        },
+        {
+          "id": 2,
+          "word": "永久",
+          "hiragara": "えいきゅう",
+          "HanViet": "VĨNH CỬU",
+          "meaning": "vĩnh cửu; mãi mãi"
+        },
+        {
+          "id": 3,
+          "word": "永住",
+          "hiragara": "えいじゅう",
+          "HanViet": "VĨNH TRÚ",
+          "meaning": "Cư trú vĩnh viễn"
+        },
+        {
+          "id": 4,
+          "word": "永遠",
+          "hiragara": "えいえん",
+          "HanViet": "VĨNH VIỄN",
+          "meaning": "vĩnh viễn"
+        },
+        {
+          "id": 5,
+          "word": "永別",
+          "hiragara": "えいべつ",
+          "HanViet": "VĨNH BIỆT",
+          "meaning": "Vĩnh biệt"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "kanji": "衛",
+      "HanViet": "VỆ",
+      "meaning": "Vệ tinh",
+      "On": [
+        "エイ",
+        "エ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Khi đi Vi Hành cần có thị VỆ",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "8",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "行",
+          "Name": "HÀNH",
+          "Meaning": "Đi"
+        },
+        {
+          "Bo": "韋",
+          "Name": "Vi",
+          "Meaning": ""
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "衛星",
+          "hiragara": "えいせい",
+          "HanViet": "VỆ TINH",
+          "meaning": "Vệ tinh"
+        },
+        {
+          "id": 2,
+          "word": "衛生",
+          "hiragara": "えいせい",
+          "HanViet": "VỆ SINH",
+          "meaning": "Vệ sinh"
+        },
+        {
+          "id": 3,
+          "word": "衛兵",
+          "hiragara": "えいへい",
+          "HanViet": "VỆ BINH",
+          "meaning": "Vệ binh"
+        },
+        {
+          "id": 4,
+          "word": "自衛",
+          "hiragara": "じえい",
+          "HanViet": "TỰ VỆ",
+          "meaning": "Tự vệ"
+        },
+        {
+          "id": 5,
+          "word": "防衛",
+          "hiragara": "ぼうえい",
+          "HanViet": "PHÒNG VỆ",
+          "meaning": "bảo vệ; phòng vệ"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "kanji": "営",
+      "HanViet": "DOANH, DINH",
+      "meaning": "Kinh doanh",
+      "On": [
+        "エイ"
+      ],
+      "Kun": [
+        "いとな.む",
+        "いとな.み"
+      ],
+      "draw": [],
+      "Mind": "Kinh Doanh phải biết ăn Nói và có ý tưởng lóe sáng trong đầu",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "9",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "ロ",
+          "Name": "KHẨU",
+          "Meaning": "Miệng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "営み",
+          "hiragara": "いとなみ",
+          "HanViet": "DOANH",
+          "meaning": "Công việc, việc làm"
+        },
+        {
+          "id": 2,
+          "word": "経営",
+          "hiragara": "けいえい",
+          "HanViet": "KINH DOANH",
+          "meaning": "Kinh doanh"
+        },
+        {
+          "id": 3,
+          "word": "営業",
+          "hiragara": "えいぎょう",
+          "HanViet": "DOANH NGHIỆP",
+          "meaning": "Doanh nghiệp, kinh doanh"
+        },
+        {
+          "id": 4,
+          "word": "営団",
+          "hiragara": "えいだん",
+          "HanViet": "DOANH ĐOÀN",
+          "meaning": "Công ty; tập đoàn"
+        },
+        {
+          "id": 5,
+          "word": "国営",
+          "hiragara": "こくえい",
+          "HanViet": "QUỐC DOANH",
+          "meaning": "Quốc doanh; nhà nước"
+        },
+        {
+          "id": 6,
+          "word": "営利",
+          "hiragara": "えいり",
+          "HanViet": "DOANH LỢI",
+          "meaning": "Kiếm lợ"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "kanji": "映",
+      "HanViet": "ÁNH",
+      "meaning": "Chiếu, Phản ánh",
+      "On": [
+        "エイ"
+      ],
+      "Kun": [
+        "うつ.る",
+        "うつ.す",
+        "は.える",
+        "-ば.え"
+      ],
+      "draw": [],
+      "Mind": "Hình Ảnh trung Ương sáng rực như Mặt Trời",
+      "level": 4,
+      "levelK": "3k",
+      "NumK": "10",
+      "lookLearnNum": 187,
+      "Content": [
+        {
+          "Bo": "日",
+          "Name": "NHẬT",
+          "Meaning": "Mặt trời"
+        },
+        {
+          "Bo": "央",
+          "Name": "ƯƠNG",
+          "Meaning": "Trung ương"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "映す",
+          "hiragara": "うつす",
+          "HanViet": "ÁNH",
+          "meaning": "chiếu (phim)"
+        },
+        {
+          "id": 2,
+          "word": "映画",
+          "hiragara": "えいが",
+          "HanViet": "ÁNH HỌA",
+          "meaning": "Phim"
+        },
+        {
+          "id": 3,
+          "word": "反映",
+          "hiragara": "はんえい",
+          "HanViet": "PHẢN ÁNH",
+          "meaning": "Bóng, phản ánh"
+        },
+        {
+          "id": 4,
+          "word": "映える",
+          "hiragara": "はえる",
+          "HanViet": "ÁNH",
+          "meaning": "Chiếu sáng lên"
+        },
+        {
+          "id": 5,
+          "word": "放映",
+          "hiragara": "ほうえい",
+          "HanViet": "PHÓNG ÁNH",
+          "meaning": "phát hình, phát sóng"
+        },
+        {
+          "id": 6,
+          "word": "上映",
+          "hiragara": "じょうえい",
+          "HanViet": "THƯỢNG ÁNH",
+          "meaning": "Chiếu phim"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "kanji": "益",
+      "HanViet": "ÍCH",
+      "meaning": "Lợi ích",
+      "On": [
+        "エキ",
+        "ヤク"
+      ],
+      "Kun": [
+        "ま.す"
+      ],
+      "draw": [],
+      "Mind": "Lợi ích của cái Đĩa là đựng đồ ăn",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "11",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "皿",
+          "Name": "MÃNH",
+          "Meaning": "Đĩa"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "益々",
+          "hiragara": "ますます",
+          "HanViet": "ÍCH",
+          "meaning": "Ngày càng"
+        },
+        {
+          "id": 2,
+          "word": "利益",
+          "hiragara": "りえき",
+          "HanViet": "LỢI ÍCH",
+          "meaning": "Lợi ích; lợi nhuận; lãi"
+        },
+        {
+          "id": 3,
+          "word": "便益",
+          "hiragara": "べんえき",
+          "HanViet": "TIỆN ÍCH",
+          "meaning": "Tiện nghi; lợi ích"
+        },
+        {
+          "id": 4,
+          "word": "公益",
+          "hiragara": "こうえき",
+          "HanViet": "CÔNG ÍCH",
+          "meaning": "Công ích; lợi ích chung"
+        },
+        {
+          "id": 5,
+          "word": "有益",
+          "hiragara": "ゆうえき",
+          "HanViet": "HỮU ÍCH",
+          "meaning": "Hữu ích"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "kanji": "易",
+      "HanViet": "DỊCH",
+      "meaning": "Mậu dịch",
+      "On": [
+        "エキ",
+        "イ"
+      ],
+      "Kun": [
+        "やさ.しい",
+        "やす.い"
+      ],
+      "draw": [],
+      "Mind": "Động VẬT lúc có MẶT TRỜI thì DỊCH chuyển dễ dàng",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "12",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "日",
+          "Name": "NHẬT ",
+          "Meaning": "Mặt trời"
+        },
+        {
+          "Bo": "勿",
+          "Name": "VẬT ",
+          "Meaning": "Vật"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "易い",
+          "hiragara": "やすい",
+          "HanViet": "DỊCH",
+          "meaning": "Dễ; dễ dàng"
+        },
+        {
+          "id": 2,
+          "word": "安易",
+          "hiragara": "あんい",
+          "HanViet": "AN DỊCH",
+          "meaning": "Dễ dàng; đơn giản"
+        },
+        {
+          "id": 3,
+          "word": "貿易",
+          "hiragara": "ぼうえき",
+          "HanViet": "MẬU DỊCH",
+          "meaning": "Mậu dịch, Thương mại"
+        },
+        {
+          "id": 4,
+          "word": "交易",
+          "hiragara": "こうえき",
+          "HanViet": "GIAO DỊCH",
+          "meaning": "Thương mại; buôn bán"
+        },
+        {
+          "id": 5,
+          "word": "簡易",
+          "hiragara": "かんい",
+          "HanViet": "GIẢN DỊCH",
+          "meaning": "Giản dị; đơn giản"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "kanji": "液",
+      "HanViet": "DỊCH",
+      "meaning": "chất lỏng, dung dịch",
+      "On": [
+        "エキ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Để dung DỊCH này qua Đêm biến thành Nước",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "13",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "氵",
+          "Name": "THỦY",
+          "Meaning": "Nước"
+        },
+        {
+          "Bo": "夜",
+          "Name": "DẠ ",
+          "Meaning": "Đêm"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "血液",
+          "hiragara": "けつえき",
+          "HanViet": "HUYẾT DỊCH",
+          "meaning": "Máu"
+        },
+        {
+          "id": 2,
+          "word": "液",
+          "hiragara": "えき",
+          "HanViet": "DỊCH",
+          "meaning": "dung dịch; dịch"
+        },
+        {
+          "id": 3,
+          "word": "液体",
+          "hiragara": "えきたい",
+          "HanViet": "DỊCH THỂ",
+          "meaning": "Chất lỏng"
+        },
+        {
+          "id": 4,
+          "word": "溶液",
+          "hiragara": "ようえき",
+          "HanViet": "DUNG DỊCH",
+          "meaning": "Dung dịch"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "kanji": "演",
+      "HanViet": "DIỄN",
+      "meaning": "biểu diễn",
+      "On": [
+        "エン"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Con Hổ biểu DIỄN dưới Nước",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "14",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "氵",
+          "Name": "THỦY ",
+          "Meaning": "Nước"
+        },
+        {
+          "Bo": "寅",
+          "Name": "DẦN ",
+          "Meaning": "Con hổ"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "演奏",
+          "hiragara": "えんそう",
+          "HanViet": "DIỄN TẤU",
+          "meaning": "Biểu diễn"
+        },
+        {
+          "id": 2,
+          "word": "演出",
+          "hiragara": "えんしゅつ",
+          "HanViet": "DIỄN XUẤT",
+          "meaning": "Đạo diễn; diễn xuất"
+        },
+        {
+          "id": 3,
+          "word": "演壇",
+          "hiragara": "えんだん",
+          "HanViet": "DIỄN ĐÀN",
+          "meaning": "Diễn đàn"
+        },
+        {
+          "id": 4,
+          "word": "演劇",
+          "hiragara": "えんげき",
+          "HanViet": "DIỄN KỊCH",
+          "meaning": "Diễn kịch"
+        },
+        {
+          "id": 5,
+          "word": "主演",
+          "hiragara": "しゅえん",
+          "HanViet": "CHỦ DIỄN",
+          "meaning": "Vai diễn"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "kanji": "沿",
+      "HanViet": "DUYÊN",
+      "meaning": "Dọc theo",
+      "On": [
+        "エン"
+      ],
+      "Kun": [
+        "そ.う",
+        "-ぞ.い"
+      ],
+      "draw": [],
+      "Mind": "Có cái Nhà ở Ven sống bên bờ sông",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "15",
+      "lookLearnNum": 0,
+      "Content": [],
+      "Example": [
+        {
+          "id": 1,
+          "word": "山沿い",
+          "hiragara": "やまぞい",
+          "HanViet": "SAN DUYÊN",
+          "meaning": "Dọc theo sườn núi"
+        },
+        {
+          "id": 2,
+          "word": "沿岸",
+          "hiragara": "えんがん",
+          "HanViet": "DUYÊN NGẠN",
+          "meaning": "Bờ biển"
+        },
+        {
+          "id": 3,
+          "word": "沿海",
+          "hiragara": "えんかい",
+          "HanViet": "DUYÊN HẢI",
+          "meaning": "Bờ biển"
+        },
+        {
+          "id": 4,
+          "word": "沿道",
+          "hiragara": "えんどう",
+          "HanViet": "DUYÊN ĐẠO",
+          "meaning": "Tuyến đường, con đường"
+        },
+        {
+          "id": 5,
+          "word": "沿線",
+          "hiragara": "えんせん",
+          "HanViet": "DUYÊN TUYẾN",
+          "meaning": "Dọc tuyến đường"
+        },
+        {
+          "id": 6,
+          "word": "に沿って",
+          "hiragara": "にそって",
+          "HanViet": "DUYÊN",
+          "meaning": "men theo/ dọc theo/ dựa theo"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "kanji": "延",
+      "HanViet": "DUYÊN",
+      "meaning": "Kéo dài",
+      "On": [
+        "エン"
+      ],
+      "Kun": [
+        "の.びる",
+        "の.べる",
+        "の.べ",
+        "の.ばす"
+      ],
+      "draw": [],
+      "Mind": "Chính nghĩa được Dẫn dắt kéo dài",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "16",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "正",
+          "Name": "CHÍNH",
+          "Meaning": "Chính, đúng"
+        },
+        {
+          "Bo": "廴",
+          "Name": "DẪN",
+          "Meaning": "Dẫn"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "延ばす",
+          "hiragara": "のばす",
+          "HanViet": "DUYÊN",
+          "meaning": "Làm giãn ra; mở rộng ra"
+        },
+        {
+          "id": 2,
+          "word": "延長",
+          "hiragara": "えんちょう",
+          "HanViet": "DUYÊN TRƯỜNG",
+          "meaning": "Kéo dài"
+        },
+        {
+          "id": 3,
+          "word": "延伸",
+          "hiragara": "えんしん",
+          "HanViet": "DUYÊN THÂN",
+          "meaning": "mở rộng"
+        },
+        {
+          "id": 4,
+          "word": "延引",
+          "hiragara": "えんいん",
+          "HanViet": "DUYÊN DẪN",
+          "meaning": "chậm trễ; trì hoãn"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "kanji": "桜",
+      "HanViet": "ANH",
+      "meaning": "Anh đào",
+      "On": [
+        "オウ",
+        "ヨウ"
+      ],
+      "Kun": [
+        "さくら"
+      ],
+      "draw": [],
+      "Mind": "Người phụ Nữ đứng dưới gốc Cây hoa ANH đào",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "17",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "木",
+          "Name": "MỘC ",
+          "Meaning": "Cây"
+        },
+        {
+          "Bo": "女",
+          "Name": "NỮ ",
+          "Meaning": "Phụ nữ"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "桜",
+          "hiragara": "さくら",
+          "HanViet": "ANH",
+          "meaning": "Anh đào"
+        },
+        {
+          "id": 2,
+          "word": "桜桃",
+          "hiragara": "さくらんぼ",
+          "HanViet": "ANH ĐÀO",
+          "meaning": "Quả anh đào"
+        },
+        {
+          "id": 3,
+          "word": "桜桃",
+          "hiragara": "おうとう",
+          "HanViet": "ANH ĐÀO",
+          "meaning": "Quả anh đào"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "kanji": "応",
+      "HanViet": "ỨNG",
+      "meaning": "Phản ứng, đối ứng",
+      "On": [
+        "オウ",
+        "ヨウ",
+        "-ノウ"
+      ],
+      "Kun": [
+        "あた.る",
+        "まさに",
+        "こた.える"
+      ],
+      "draw": [],
+      "Mind": "Con Tim trong Nhà lo lắng về sự đối ỨNG với bên ngoài",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "18",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "广",
+          "Name": "NGHIỄM",
+          "Meaning": "Mái nhà"
+        },
+        {
+          "Bo": "心",
+          "Name": "TÂM",
+          "Meaning": "Tim"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "対応",
+          "hiragara": "たいおう",
+          "HanViet": "ĐỐI ỨNG",
+          "meaning": "Đáp ứng, xử lí"
+        },
+        {
+          "id": 2,
+          "word": "応募",
+          "hiragara": "おうぼ",
+          "HanViet": "ỨNG MỘ",
+          "meaning": "Đăng ký; ứng tuyển"
+        },
+        {
+          "id": 3,
+          "word": "反応",
+          "hiragara": "はんのう",
+          "HanViet": "PHẢN ỨNG",
+          "meaning": "Phản ứng"
+        },
+        {
+          "id": 4,
+          "word": "呼応",
+          "hiragara": "こおう",
+          "HanViet": "HÔ ỨNG",
+          "meaning": "đáp ứng; hưởng ứng"
+        },
+        {
+          "id": 5,
+          "word": "応変",
+          "hiragara": "おうへん",
+          "HanViet": "ỨNG BIẾN",
+          "meaning": "Ứng biến"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "kanji": "往",
+      "HanViet": "VÃNG",
+      "meaning": "dĩ vãng",
+      "On": [
+        "オウ"
+      ],
+      "Kun": [
+        "い.く",
+        "いにしえ",
+        "さき.に",
+        "ゆ.く"
+      ],
+      "draw": [],
+      "Mind": "Ông Chủ đã Đi vào dĩ VÃNG",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "19",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "彳",
+          "Name": "XÍCH",
+          "Meaning": "Bước đi"
+        },
+        {
+          "Bo": "主",
+          "Name": "CHỦ, CHÚA",
+          "Meaning": "Chủ nhân"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "往復",
+          "hiragara": "おうふく",
+          "HanViet": "VÃNG PHỤC",
+          "meaning": "khứ hồi; việc cả đi cả về"
+        },
+        {
+          "id": 2,
+          "word": "往年",
+          "hiragara": "おうねん",
+          "HanViet": "VÃNG NIÊN",
+          "meaning": "Năm xưa"
+        },
+        {
+          "id": 3,
+          "word": "以往",
+          "hiragara": "いおう",
+          "HanViet": "DĨ VÃNG",
+          "meaning": "Trước đây; thời xưa; dĩ vãng"
+        },
+        {
+          "id": 4,
+          "word": "往々",
+          "hiragara": "おうおう",
+          "HanViet": "VÃNG",
+          "meaning": "Đôi khi, đôi lúc"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "kanji": "恩",
+      "HanViet": "ÂN",
+      "meaning": "Ân nhân",
+      "On": [
+        "オン"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Người có Tâm luôn là ÂN Nhân của người khác",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "20",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "因",
+          "Name": "NHÂN",
+          "Meaning": "nguyên nhân"
+        },
+        {
+          "Bo": "心",
+          "Name": "TÂM",
+          "Meaning": "Tim"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "恩人",
+          "hiragara": "おんじん",
+          "HanViet": "ÂN NHÂN",
+          "meaning": "Ân nhân"
+        },
+        {
+          "id": 2,
+          "word": "報恩",
+          "hiragara": "ほうおん",
+          "HanViet": "BÁO ÂN",
+          "meaning": "Báo ân"
+        },
+        {
+          "id": 3,
+          "word": "恩典",
+          "hiragara": "おんてん",
+          "HanViet": "ÂN ĐIỂN",
+          "meaning": "Đặc ân; ưu đãi"
+        },
+        {
+          "id": 4,
+          "word": "天恩",
+          "hiragara": "てんおん",
+          "HanViet": "THIÊN ÂN",
+          "meaning": "Thiên ân"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "kanji": "価",
+      "HanViet": "GIÁ",
+      "meaning": "Giá trị",
+      "On": [
+        "カ",
+        "ケ"
+      ],
+      "Kun": [
+        "あたい"
+      ],
+      "draw": [],
+      "Mind": "Người có Giá trị thường ở phía Tây",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "21",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "亻",
+          "Name": "NHÂN",
+          "Meaning": "Người"
+        },
+        {
+          "Bo": "西",
+          "Name": "TÂY",
+          "Meaning": "Tây"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "価値",
+          "hiragara": "かち",
+          "HanViet": "GIÁ TRỊ",
+          "meaning": "Giá trị"
+        },
+        {
+          "id": 2,
+          "word": "単価",
+          "hiragara": "たんか",
+          "HanViet": "ĐƠN GIÁ",
+          "meaning": "Đơn giá"
+        },
+        {
+          "id": 3,
+          "word": "低価",
+          "hiragara": "ていか",
+          "HanViet": "ĐÊ GIÁ",
+          "meaning": "Giá thấp"
+        },
+        {
+          "id": 4,
+          "word": "元価",
+          "hiragara": "げんか",
+          "HanViet": "NGUYÊN GIÁ",
+          "meaning": "Giá vốn"
+        },
+        {
+          "id": 5,
+          "word": "同価",
+          "hiragara": "どうか",
+          "HanViet": "ĐỒNG GIÁ",
+          "meaning": "Đồng giá"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "kanji": "過",
+      "HanViet": "QUÁ, QUA",
+      "meaning": "quá khứ, vượt qua",
+      "On": [
+        "カ"
+      ],
+      "Kun": [
+        "す.ぎる",
+        "す.ごす",
+        "あやま.つ",
+        "よ.ぎる"
+      ],
+      "draw": [],
+      "Mind": "Đi QUA con Đường sang tường thành bên kia",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "22",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "辶",
+          "Name": "SƯỚC",
+          "Meaning": "con đường"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "過ぎ",
+          "hiragara": "すぎ",
+          "HanViet": "QUÁ",
+          "meaning": "Quá"
+        },
+        {
+          "id": 2,
+          "word": "過つ",
+          "hiragara": "あやまつ",
+          "HanViet": "QUÁ",
+          "meaning": "Mắc lỗi; phạm lỗi"
+        },
+        {
+          "id": 3,
+          "word": "過去",
+          "hiragara": "かこ",
+          "HanViet": "QUÁ KHỨ",
+          "meaning": "Quá khứ"
+        },
+        {
+          "id": 4,
+          "word": "過度",
+          "hiragara": "かど",
+          "HanViet": "QUÁ ĐỘ",
+          "meaning": "Quá độ; quá mức"
+        },
+        {
+          "id": 5,
+          "word": "過勤",
+          "hiragara": "かつとむ",
+          "HanViet": "QUÁ CẦN",
+          "meaning": " Làm việc quá sức"
+        },
+        {
+          "id": 6,
+          "word": "過剰",
+          "hiragara": "かじょう",
+          "HanViet": "QUÁ THẶNG",
+          "meaning": "vượt quá; dư thừa"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "kanji": "可",
+      "HanViet": "KHẢ",
+      "meaning": "Khả năng",
+      "On": [
+        "カ",
+        "コク"
+      ],
+      "Kun": [
+        "-べ.き",
+        "-べ.し"
+      ],
+      "draw": [],
+      "Mind": "Nói trong KHẢ năng cho phép",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "23",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "口",
+          "Name": "KHẨU",
+          "Meaning": "Miệng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "可能",
+          "hiragara": "かのう",
+          "HanViet": "KHẢ NĂNG",
+          "meaning": "Có thể; khả năng"
+        },
+        {
+          "id": 2,
+          "word": "可愛い",
+          "hiragara": "かわいい",
+          "HanViet": "KHẢ ÁI",
+          "meaning": "Duyên dáng; đáng yêu; xinh xắn"
+        },
+        {
+          "id": 3,
+          "word": "不可",
+          "hiragara": "ふか",
+          "HanViet": "BẤT KHẢ",
+          "meaning": "Không kịp; không đỗ, không có khả năng"
+        },
+        {
+          "id": 4,
+          "word": "可也",
+          "hiragara": "かなり",
+          "HanViet": "KHẢ DÃ",
+          "meaning": "Kha khá; đáng chú ý; khá"
+        },
+        {
+          "id": 5,
+          "word": "可変",
+          "hiragara": "かへん",
+          "HanViet": "KHẢ BIẾN",
+          "meaning": "Khả biến; thay đổi được"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "kanji": "河",
+      "HanViet": "HÀ",
+      "meaning": "sông",
+      "On": [
+        "カ"
+      ],
+      "Kun": [
+        "かわ"
+      ],
+      "draw": [],
+      "Mind": "Sông là nơi nước có khả năng chảy qua",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "24",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "氵",
+          "Name": "THỦY ",
+          "Meaning": "Nước"
+        },
+        {
+          "Bo": "可",
+          "Name": "KHẢ",
+          "Meaning": "Khả năng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "河",
+          "hiragara": "かわ",
+          "HanViet": "HÀ",
+          "meaning": "Sông; dòng sông"
+        },
+        {
+          "id": 2,
+          "word": "天河",
+          "hiragara": "てんが",
+          "HanViet": "THIÊN HÀ",
+          "meaning": "Dải Ngân hà;"
+        },
+        {
+          "id": 3,
+          "word": "山河",
+          "hiragara": "さんか",
+          "HanViet": "SƠN HÀ",
+          "meaning": "Sông núi"
+        },
+        {
+          "id": 4,
+          "word": "河口",
+          "hiragara": "かこう",
+          "HanViet": "HÀ KHẨU",
+          "meaning": "Cửa sông"
+        },
+        {
+          "id": 5,
+          "word": "河原",
+          "hiragara": "かわら",
+          "HanViet": "HÀ NGUYÊN",
+          "meaning": "Bãi sông"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "kanji": "仮",
+      "HanViet": "GIẢ",
+      "meaning": "giả thuyết",
+      "On": [
+        "カ ",
+        "ケ"
+      ],
+      "Kun": [
+        "かり",
+        "かり-"
+      ],
+      "draw": [],
+      "Mind": "Con Người luôn đưa ra những GIẢ thuyết để Phản biện",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "25",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "亻",
+          "Name": "NHÂN",
+          "Meaning": "Người"
+        },
+        {
+          "Bo": "反",
+          "Name": "PHẢN",
+          "Meaning": "Trái ngược"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "仮",
+          "hiragara": "かり",
+          "HanViet": "GIẢ",
+          "meaning": "Giả định; giả sử"
+        },
+        {
+          "id": 2,
+          "word": "仮字",
+          "hiragara": "かりじ",
+          "HanViet": "GIẢ TỰ",
+          "meaning": "Chữ Kana"
+        },
+        {
+          "id": 3,
+          "word": "仮定",
+          "hiragara": "かてい",
+          "HanViet": "GIẢ ĐỊNH",
+          "meaning": "giả định"
+        },
+        {
+          "id": 4,
+          "word": "仮説",
+          "hiragara": "かせつ",
+          "HanViet": "GIẢ THUYẾT",
+          "meaning": "phỏng đoán; giả thuyết"
+        },
+        {
+          "id": 5,
+          "word": "仮令",
+          "hiragara": "たとえ",
+          "HanViet": "GIẢ LỆNH",
+          "meaning": "Ví dụ; nếu như"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "kanji": "薢",
+      "HanViet": "GIẢI",
+      "meaning": "giải quyết",
+      "On": [
+        "カイ",
+        "ゲ"
+      ],
+      "Kun": [
+        "と.く",
+        "と.かす",
+        "と.ける",
+        "ほど.く",
+        "ほど.ける",
+        "わか.る",
+        "さと.る"
+      ],
+      "draw": [],
+      "Mind": "Dùng đao phân giải sừng bò ra xem có gì",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "26",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "角",
+          "Name": "GIÁC",
+          "Meaning": "Góc, sừng"
+        },
+        {
+          "Bo": "刀",
+          "Name": "ĐAO",
+          "Meaning": "Đao"
+        },
+        {
+          "Bo": "牛",
+          "Name": "NGƯU",
+          "Meaning": "Bò"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "解ける",
+          "hiragara": "とける",
+          "HanViet": "GIẢI",
+          "meaning": "cởi ra; giải quyết"
+        },
+        {
+          "id": 2,
+          "word": "了解",
+          "hiragara": "りょうかい",
+          "HanViet": "LIỄU GIẢI",
+          "meaning": "hiểu biết; nắm rõ"
+        },
+        {
+          "id": 3,
+          "word": "理解",
+          "hiragara": "りかい",
+          "HanViet": "LÍ GIẢI",
+          "meaning": "Hiểu; lĩnh hội"
+        },
+        {
+          "id": 4,
+          "word": "解説",
+          "hiragara": "かいせつ",
+          "HanViet": "GIẢI THUYẾT",
+          "meaning": "Giải thích"
+        },
+        {
+          "id": 5,
+          "word": "解決",
+          "hiragara": "かいけつ",
+          "HanViet": "GIẢI QUYẾT",
+          "meaning": "Giải quyết"
+        },
+        {
+          "id": 6,
+          "word": "解散",
+          "hiragara": "かいさん",
+          "HanViet": "GIẢI TÁN",
+          "meaning": "Giải tán"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "kanji": "快",
+      "HanViet": "KHOÁI",
+      "meaning": "Khoái tốc, sảng khoái",
+      "On": [
+        "カイ"
+      ],
+      "Kun": [
+        "こころよ.い"
+      ],
+      "draw": [],
+      "Mind": "Nếu em KHOÁI ai thì cứ Quyết(決) bỏ nước(水) theo trái Tim (心) mình!",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "27",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "忄",
+          "Name": "TÂM",
+          "Meaning": "Tim"
+        },
+        {
+          "Bo": "夬",
+          "Name": "QUÁI",
+          "Meaning": "quyết"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "快い",
+          "hiragara": "こころよい",
+          "HanViet": "KHOÁI",
+          "meaning": "Dễ chịu;"
+        },
+        {
+          "id": 2,
+          "word": "快速",
+          "hiragara": "かいそく",
+          "HanViet": "KHOÁI TỐC",
+          "meaning": "Nhanh chóng; siêu tốc"
+        },
+        {
+          "id": 3,
+          "word": "不快",
+          "hiragara": "ふかい",
+          "HanViet": "BẤT KHOÁI",
+          "meaning": "không hài lòng; khó chịu"
+        },
+        {
+          "id": 4,
+          "word": "快弁",
+          "hiragara": "かいべん",
+          "HanViet": "KHOÁI BIỆN",
+          "meaning": "Tài hùng biện"
+        },
+        {
+          "id": 5,
+          "word": "快復",
+          "hiragara": "かいふく",
+          "HanViet": "KHOÁI PHỤC",
+          "meaning": "hồi phục, khỏi bệnh"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "kanji": "灰",
+      "HanViet": "HÔI",
+      "meaning": "tàn tro",
+      "On": [
+        "カイ"
+      ],
+      "Kun": [
+        "はい"
+      ],
+      "draw": [],
+      "Mind": "Đốt Lửa(火) dưới Sườn (厂) núi cháy thành TRO",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "28",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "厂",
+          "Name": "HÁN",
+          "Meaning": "Sườn núi"
+        },
+        {
+          "Bo": "火",
+          "Name": "HỎA",
+          "Meaning": "Lửa"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "灰",
+          "hiragara": "はい",
+          "HanViet": "HÔI",
+          "meaning": "tro tàn"
+        },
+        {
+          "id": 2,
+          "word": "石灰",
+          "hiragara": "せっかい",
+          "HanViet": "THẠCH HÔI",
+          "meaning": "Đá vôi"
+        },
+        {
+          "id": 3,
+          "word": "灰皿",
+          "hiragara": "はいざら",
+          "HanViet": "HÔI MÃNH",
+          "meaning": "Gạt tàn"
+        },
+        {
+          "id": 4,
+          "word": "灰白",
+          "hiragara": "はいしろ",
+          "HanViet": "HÔI BẠCH",
+          "meaning": "Màu xám; màu tro"
+        },
+        {
+          "id": 5,
+          "word": "灰汁",
+          "hiragara": "あく",
+          "HanViet": "HÔI TRẤP",
+          "meaning": "Thuốc giặt quần áo"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "kanji": "届",
+      "HanViet": "GIỚI",
+      "meaning": "Gửi đến",
+      "On": [
+        "カイ"
+      ],
+      "Kun": [
+        "とど.ける",
+        "-とど.け",
+        "とど.く"
+      ],
+      "draw": [],
+      "Mind": "Đến Chết (尸) vẫn muốn viết đơn Gửi đến (届) xin tự Do (由)",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "29",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "尸",
+          "Name": "THI ",
+          "Meaning": "Chết"
+        },
+        {
+          "Bo": "由",
+          "Name": "DO",
+          "Meaning": "Tự do"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "届ける",
+          "hiragara": "とどける",
+          "HanViet": "GIỚI",
+          "meaning": "Đưa đến; chuyển đến"
+        },
+        {
+          "id": 2,
+          "word": "届",
+          "hiragara": "とどけ",
+          "HanViet": "GIỚI",
+          "meaning": "Giấy; đơn"
+        },
+        {
+          "id": 3,
+          "word": "届出",
+          "hiragara": "とどけで",
+          "HanViet": "GIỚI XUẤT",
+          "meaning": "Báo cáo; thông báo"
+        },
+        {
+          "id": 4,
+          "word": "届け先",
+          "hiragara": "とどけさき",
+          "HanViet": "GIỚI TIÊN",
+          "meaning": "Địa điểm gửi đến"
+        },
+        {
+          "id": 5,
+          "word": "届書",
+          "hiragara": "とどけしょ",
+          "HanViet": "GIỚI THƯ",
+          "meaning": " Báo cáo"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "kanji": "賀",
+      "HanViet": "HẠ",
+      "meaning": "Chúc mừng",
+      "On": [
+        "ガ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Khi đến tham Gia (加) chúc Mừng thì mang thêm Tiền (貝)",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "30",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "加",
+          "Name": "GIA ",
+          "Meaning": "Tham gia"
+        },
+        {
+          "Bo": "貝",
+          "Name": "BỐI",
+          "Meaning": "Tiền"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "がする",
+          "hiragara": "がする",
+          "HanViet": "HẠ",
+          "meaning": "Chúc mừng"
+        },
+        {
+          "id": 2,
+          "word": "年賀",
+          "hiragara": "ねんが",
+          "HanViet": "NIÊN HẠ",
+          "meaning": "mừng năm mới; lễ tết"
+        },
+        {
+          "id": 3,
+          "word": "賀正",
+          "hiragara": "がしょう",
+          "HanViet": "HẠ CHÁNH",
+          "meaning": "Chúc mừng năm mới"
+        },
+        {
+          "id": 4,
+          "word": "賀意",
+          "hiragara": "がい",
+          "HanViet": "HẠ Ý",
+          "meaning": "chúc mừng"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "kanji": "我",
+      "HanViet": "NGÃ",
+      "meaning": "bản ngã",
+      "On": [
+        "ガ"
+      ],
+      "Kun": [
+        "わ.が-",
+        "わが-",
+        "われ",
+        "わ"
+      ],
+      "draw": [],
+      "Mind": "",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "31",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "戈",
+          "Name": "QUA",
+          "Meaning": ""
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "我侭",
+          "hiragara": "わがまま",
+          "HanViet": "NGÃ TẬN",
+          "meaning": "Tính ích kỷ"
+        },
+        {
+          "id": 2,
+          "word": "我慢",
+          "hiragara": "がまん",
+          "HanViet": "NGÃ MẠN",
+          "meaning": "Nhẫn nại; chịu đựng"
+        },
+        {
+          "id": 3,
+          "word": "主我",
+          "hiragara": "しゅが",
+          "HanViet": "CHỦ NGÃ",
+          "meaning": "ích kỷ"
+        },
+        {
+          "id": 4,
+          "word": "我利",
+          "hiragara": "がり",
+          "HanViet": "NGÃ LỢI",
+          "meaning": "Tư lợi; lợi ích cá nhân"
+        },
+        {
+          "id": 5,
+          "word": "我",
+          "hiragara": "われ",
+          "HanViet": "NGÃ",
+          "meaning": "Chúng tôi"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "kanji": "閣",
+      "HanViet": "CÁC",
+      "meaning": "Nội các",
+      "On": [
+        "カク"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Trời tối mời Các (各) vị đi qua Cổng (門) vào nội CÁC (閣) ",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "32",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "門",
+          "Name": "MÔN ",
+          "Meaning": "Cổng"
+        },
+        {
+          "Bo": "各",
+          "Name": "CÁC ",
+          "Meaning": "Mọi"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "閣下",
+          "hiragara": "かっか",
+          "HanViet": "CÁC HẠ",
+          "meaning": "Ngài; quý ngài"
+        },
+        {
+          "id": 2,
+          "word": "内閣",
+          "hiragara": "ないかく",
+          "HanViet": "NỘI CÁC",
+          "meaning": "Nội các"
+        },
+        {
+          "id": 3,
+          "word": "倒閣",
+          "hiragara": "とうかく",
+          "HanViet": "ĐẢO CÁC",
+          "meaning": "đảo chính"
+        },
+        {
+          "id": 4,
+          "word": "殿閣",
+          "hiragara": "でんかく",
+          "HanViet": "ĐIỆN CÁC",
+          "meaning": "Lâu đài; cung điện ."
+        },
+        {
+          "id": 5,
+          "word": "閣議",
+          "hiragara": "かくぎ",
+          "HanViet": "CÁC NGHỊ",
+          "meaning": "Hội đồng chính phủ"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "kanji": "革",
+      "HanViet": "CÁCH",
+      "meaning": "da, cải cách",
+      "On": [
+        "カク"
+      ],
+      "Kun": [
+        "かわ"
+      ],
+      "draw": [],
+      "Mind": "",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "33",
+      "lookLearnNum": 0,
+      "Content": [],
+      "Example": [
+        {
+          "id": 1,
+          "word": "革",
+          "hiragara": "かわ",
+          "HanViet": "CÁCH",
+          "meaning": "Da (động vật)"
+        },
+        {
+          "id": 2,
+          "word": "改革",
+          "hiragara": "かいかく",
+          "HanViet": "CẢI CÁCH",
+          "meaning": "Cải cách"
+        },
+        {
+          "id": 3,
+          "word": "革新",
+          "hiragara": "かくしん",
+          "HanViet": "CÁCH TÂN",
+          "meaning": "Đổi mới; cách tân"
+        },
+        {
+          "id": 4,
+          "word": "革命",
+          "hiragara": "かくめい",
+          "HanViet": "CÁCH MỆNH",
+          "meaning": "Cách mạng"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "kanji": "拡",
+      "HanViet": "KHUẾCH",
+      "meaning": "khuếch đại",
+      "On": [
+        "カク"
+      ],
+      "Kun": [
+        "ひろ.がる",
+        "ひろ.げる",
+        "ひろ.める"
+      ],
+      "draw": [],
+      "Mind": "Dùng Tay (扌) làm cho Rộng (広) ra là KHUẾCH (拡) tán",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "34",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "扌",
+          "Name": "THỦ ",
+          "Meaning": "Tay"
+        },
+        {
+          "Bo": "広",
+          "Name": "QUẢNG ",
+          "Meaning": "Rộng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "拡大",
+          "hiragara": "かくだい",
+          "HanViet": "KHUẾCH ĐẠI",
+          "meaning": "mở rộng; lan rộng"
+        },
+        {
+          "id": 2,
+          "word": "拡散",
+          "hiragara": "かくさん",
+          "HanViet": "KHUẾCH TÁN",
+          "meaning": "khuyếch tán; lan rộng"
+        },
+        {
+          "id": 3,
+          "word": "拡がる",
+          "hiragara": "ひろがる",
+          "HanViet": "KHUẾCH",
+          "meaning": "duỗi (tay)"
+        },
+        {
+          "id": 4,
+          "word": "拡張",
+          "hiragara": "かくちょう",
+          "HanViet": "KHUẾCH TRƯƠNG",
+          "meaning": "Mở rộng; khuyếch trương"
+        },
+        {
+          "id": 5,
+          "word": "拡声機",
+          "hiragara": "かくせいき",
+          "HanViet": "KHUẾCH THANH CƠ",
+          "meaning": "Cái loa"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "kanji": "額",
+      "HanViet": "NGẠCH",
+      "meaning": "trán, kim ngạch",
+      "On": [
+        "ガク"
+      ],
+      "Kun": [
+        "ひたい"
+      ],
+      "draw": [],
+      "Mind": "Kiểm tra từng Trang (頁) giấy để tính Kim NGẠCH (額) của Khách (客) hàng ",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "35",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "客",
+          "Name": "KHÁCH",
+          "Meaning": "Khách"
+        },
+        {
+          "Bo": "頁",
+          "Name": "HIỆT ",
+          "Meaning": "Trang giấy"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "額",
+          "hiragara": "ひたい",
+          "HanViet": "NGẠCH",
+          "meaning": "cái trán"
+        },
+        {
+          "id": 2,
+          "word": "金額",
+          "hiragara": "きんがく",
+          "HanViet": "KIM NGẠCH",
+          "meaning": "Kim ngạch; số tiền"
+        },
+        {
+          "id": 3,
+          "word": "全額",
+          "hiragara": "ぜんがく",
+          "HanViet": "TOÀN NGẠCH",
+          "meaning": "tổng, toàn bộ"
+        },
+        {
+          "id": 4,
+          "word": "半額",
+          "hiragara": "はんがく",
+          "HanViet": "BÁN NGẠCH",
+          "meaning": "nửa giá"
+        },
+        {
+          "id": 5,
+          "word": "定額",
+          "hiragara": "ていがく",
+          "HanViet": "ĐỊNH NGẠCH",
+          "meaning": "Định giá"
+        },
+        {
+          "id": 6,
+          "word": "価額",
+          "hiragara": "かがく",
+          "HanViet": "GIÁ NGẠCH",
+          "meaning": "Giá trị; số tiền"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "kanji": "割",
+      "HanViet": "CÁT",
+      "meaning": "Vỡ, chia",
+      "On": [
+        "カツ"
+      ],
+      "Kun": [
+        "わ.る",
+        "わり",
+        "わ.り",
+        "わ.れる"
+      ],
+      "draw": [],
+      "Mind": "Dùng Đao (刂) để cắt bỏ những cái có Hại (害)",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "36",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "害 ",
+          "Name": "HẠI",
+          "Meaning": "Có hại"
+        },
+        {
+          "Bo": "刂",
+          "Name": "ĐAO",
+          "Meaning": "Đao"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "割",
+          "hiragara": "わり",
+          "HanViet": "CÁT",
+          "meaning": "Tỉ lệ"
+        },
+        {
+          "id": 2,
+          "word": "割れる",
+          "hiragara": "われる",
+          "HanViet": "CÁT",
+          "meaning": "Vỡ; rạn vỡ"
+        },
+        {
+          "id": 3,
+          "word": "割引き",
+          "hiragara": "わりびき",
+          "HanViet": "CÁT DẪN",
+          "meaning": "giảm giá ."
+        },
+        {
+          "id": 4,
+          "word": "分割",
+          "hiragara": "ぶんかつ",
+          "HanViet": "PHÂN CÁT",
+          "meaning": "phân cắt"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "kanji": "簡",
+      "HanViet": "GIẢN",
+      "meaning": "Đơn giản",
+      "On": [
+        "カン",
+        "ケン"
+      ],
+      "Kun": [
+        "えら.ぶ",
+        "ふだ"
+      ],
+      "draw": [],
+      "Mind": "Không Gian (間) mà toàn làm bằng tre Trúc (竹) thì thật là đơn GIẢN",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "37",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "竹",
+          "Name": "TRÚC ",
+          "Meaning": "Cây trúc"
+        },
+        {
+          "Bo": "間",
+          "Name": "GIAN ",
+          "Meaning": "giữa"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "簡単",
+          "hiragara": "かんたん",
+          "HanViet": "GIẢN ĐƠN",
+          "meaning": "Đơn giản; dễ dàng"
+        },
+        {
+          "id": 2,
+          "word": "簡易",
+          "hiragara": "かんい",
+          "HanViet": "GIẢN DỊ",
+          "meaning": "Giản dị; đơn giản"
+        },
+        {
+          "id": 3,
+          "word": "簡略",
+          "hiragara": "かんりゃく",
+          "HanViet": "GIẢN LƯỢC",
+          "meaning": "Đơn giản; giản lược"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "kanji": "干",
+      "HanViet": "CAN, CÀN",
+      "meaning": "Khô",
+      "On": [
+        "カン"
+      ],
+      "Kun": [
+        "ほ.す",
+        "ほ.し"
+      ],
+      "draw": [],
+      "Mind": "Có 10 Can trong Can Chi",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "38",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "十",
+          "Name": "THẬP",
+          "Meaning": "10"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "干す",
+          "hiragara": "ほす",
+          "HanViet": "CAN, KIỀN",
+          "meaning": "Phơi; làm khô"
+        },
+        {
+          "id": 2,
+          "word": "干支",
+          "hiragara": "えと",
+          "HanViet": "CAN CHI",
+          "meaning": "12 con giáp; can chi"
+        },
+        {
+          "id": 3,
+          "word": "干天",
+          "hiragara": "かんてん",
+          "HanViet": "KIỀN THIÊN",
+          "meaning": "Trời hạn"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "kanji": "看",
+      "HanViet": "KHÁN",
+      "meaning": "Xem, trông coi",
+      "On": [
+        "カン"
+      ],
+      "Kun": [
+        "み.る"
+      ],
+      "draw": [],
+      "Mind": "Khi đi xem bóng KHÁN (看) giả dùng Tay (手) che cho đỡ chói Mắt (目)",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "19",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "手",
+          "Name": "THỦ",
+          "Meaning": "Tay"
+        },
+        {
+          "Bo": "目",
+          "Name": "MỤC",
+          "Meaning": "Mắt"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "看",
+          "hiragara": "みる",
+          "HanViet": "KHÁN",
+          "meaning": "Xem; kiểm tra, trông coi"
+        },
+        {
+          "id": 2,
+          "word": "看守",
+          "hiragara": "かんしゅ",
+          "HanViet": "KHÁN THỦ",
+          "meaning": "giam giữ; cai ngục"
+        },
+        {
+          "id": 3,
+          "word": "看護",
+          "hiragara": "かんご",
+          "HanViet": "KHÁN HỘ",
+          "meaning": "Hộ lí; hộ lí; chăm sóc bệnh nhân"
+        },
+        {
+          "id": 4,
+          "word": "看破",
+          "hiragara": "かんぱ",
+          "HanViet": "KHÁN PHÁ",
+          "meaning": "Sự nhìn thấu suốt"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "kanji": "慣",
+      "HanViet": "QUÁN",
+      "meaning": "Tập quán, quen",
+      "On": [
+        "カン"
+      ],
+      "Kun": [
+        "な.れる",
+        "な.らす"
+      ],
+      "draw": [],
+      "Mind": "Tập QUÁN (慣) là để trong Tâm (忄) mọi người có sự nhất Quán (貫) với nhau",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "40",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "忄",
+          "Name": "TÂM",
+          "Meaning": "Tim"
+        },
+        {
+          "Bo": "貫",
+          "Name": "QUÁN",
+          "Meaning": "Nhất quán"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "慣れる",
+          "hiragara": "なれる",
+          "HanViet": "QUÁN",
+          "meaning": "Quen"
+        },
+        {
+          "id": 2,
+          "word": "習慣",
+          "hiragara": "しゅうかん",
+          "HanViet": "TẬP QUÁN",
+          "meaning": "Thói quen; tập quán"
+        },
+        {
+          "id": 3,
+          "word": "慣性",
+          "hiragara": "かんせい",
+          "HanViet": "QUÁN TÍNH",
+          "meaning": "Quán tính, tính trì trệ, tính chậm chạp"
+        },
+        {
+          "id": 4,
+          "word": "慣行",
+          "hiragara": "かんこう",
+          "HanViet": "QUÁN HÀNH",
+          "meaning": "thói quen"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "kanji": "幹",
+      "HanViet": "CÁN",
+      "meaning": "cán bộ",
+      "On": [
+        "カン"
+      ],
+      "Kun": [
+        "みき"
+      ],
+      "draw": [],
+      "Mind": "",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "41",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "亻",
+          "Name": "NHÂN",
+          "Meaning": "Người"
+        },
+        {
+          "Bo": "西",
+          "Name": "TÂY",
+          "Meaning": "Tây"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "価値",
+          "hiragara": "かち",
+          "HanViet": "GIÁ TRỊ",
+          "meaning": "Giá trị"
+        },
+        {
+          "id": 2,
+          "word": "単価",
+          "hiragara": "たんか",
+          "HanViet": "ĐƠN GIÁ",
+          "meaning": "Đơn giá"
+        },
+        {
+          "id": 3,
+          "word": "低価",
+          "hiragara": "ていか",
+          "HanViet": "ĐÊ GIÁ",
+          "meaning": "Giá thấp"
+        },
+        {
+          "id": 4,
+          "word": "元価",
+          "hiragara": "げんか",
+          "HanViet": "NGUYÊN GIÁ",
+          "meaning": "Giá vốn"
+        },
+        {
+          "id": 5,
+          "word": "同価",
+          "hiragara": "どうか",
+          "HanViet": "ĐỒNG GIÁ",
+          "meaning": "Đồng giá"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "kanji": "刊",
+      "HanViet": "SAN, KHAN",
+      "meaning": "tập san",
+      "On": [
+        "カン"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Dùng đao cắt bỏ những thứ khô khan",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "42",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "亻",
+          "Name": "NHÂN",
+          "Meaning": "Người"
+        },
+        {
+          "Bo": "西",
+          "Name": "TÂY",
+          "Meaning": "Tây"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "価値",
+          "hiragara": "かち",
+          "HanViet": "GIÁ TRỊ",
+          "meaning": "Giá trị"
+        },
+        {
+          "id": 2,
+          "word": "単価",
+          "hiragara": "たんか",
+          "HanViet": "ĐƠN GIÁ",
+          "meaning": "Đơn giá"
+        },
+        {
+          "id": 3,
+          "word": "低価",
+          "hiragara": "ていか",
+          "HanViet": "ĐÊ GIÁ",
+          "meaning": "Giá thấp"
+        },
+        {
+          "id": 4,
+          "word": "元価",
+          "hiragara": "げんか",
+          "HanViet": "NGUYÊN GIÁ",
+          "meaning": "Giá vốn"
+        },
+        {
+          "id": 5,
+          "word": "同価",
+          "hiragara": "どうか",
+          "HanViet": "ĐỒNG GIÁ",
+          "meaning": "Đồng giá"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "kanji": "巻",
+      "HanViet": "QUYỂN",
+      "meaning": "quyển sách",
+      "On": [
+        "カン",
+        "ケン"
+      ],
+      "Kun": [
+        "まき"
+      ],
+      "draw": [],
+      "Mind": "2 người kỉ (己) niệm nhau quyển sách (巻) ",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "42",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "辶",
+          "Name": "SƯỚC",
+          "Meaning": "con đường"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "過ぎ",
+          "hiragara": "すぎ",
+          "HanViet": "QUÁ",
+          "meaning": "Quá"
+        },
+        {
+          "id": 2,
+          "word": "過つ",
+          "hiragara": "あやまつ",
+          "HanViet": "QUÁ",
+          "meaning": "Mắc lỗi; phạm lỗi"
+        },
+        {
+          "id": 3,
+          "word": "過去",
+          "hiragara": "かこ",
+          "HanViet": "QUÁ KHỨ",
+          "meaning": "Quá khứ"
+        },
+        {
+          "id": 4,
+          "word": "過度",
+          "hiragara": "かど",
+          "HanViet": "QUÁ ĐỘ",
+          "meaning": "Quá độ; quá mức"
+        },
+        {
+          "id": 5,
+          "word": "過勤",
+          "hiragara": "かつとむ",
+          "HanViet": "QUÁ CẦN",
+          "meaning": " Làm việc quá sức"
+        },
+        {
+          "id": 6,
+          "word": "過剰",
+          "hiragara": "かじょう",
+          "HanViet": "QUÁ THẶNG",
+          "meaning": "vượt quá; dư thừa"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "kanji": "眼",
+      "HanViet": "NHÃN",
+      "meaning": "Con mắt",
+      "On": [
+        "ガン",
+        "ゲン"
+      ],
+      "Kun": [
+        "まなこ",
+        "め"
+      ],
+      "draw": [],
+      "Mind": "MẮT (目) TỐT (艮) là có NHÃN quan tốt",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "44",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "目",
+          "Name": "MỤC",
+          "Meaning": "Mắt"
+        },
+        {
+          "Bo": "艮",
+          "Name": "CẤN",
+          "Meaning": "Tốt"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "可能",
+          "hiragara": "かのう",
+          "HanViet": "KHẢ NĂNG",
+          "meaning": "Có thể; khả năng"
+        },
+        {
+          "id": 2,
+          "word": "可愛い",
+          "hiragara": "かわいい",
+          "HanViet": "KHẢ ÁI",
+          "meaning": "Duyên dáng; đáng yêu; xinh xắn"
+        },
+        {
+          "id": 3,
+          "word": "不可",
+          "hiragara": "ふか",
+          "HanViet": "BẤT KHẢ",
+          "meaning": "Không kịp; không đỗ, không có khả năng"
+        },
+        {
+          "id": 4,
+          "word": "可也",
+          "hiragara": "かなり",
+          "HanViet": "KHẢ DÃ",
+          "meaning": "Kha khá; đáng chú ý; khá"
+        },
+        {
+          "id": 5,
+          "word": "可変",
+          "hiragara": "かへん",
+          "HanViet": "KHẢ BIẾN",
+          "meaning": "Khả biến; thay đổi được"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "kanji": "危",
+      "HanViet": "NGUY",
+      "meaning": "nguy hiểm",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "あぶ.ない"
+      ],
+      "draw": [],
+      "Mind": "Đứng trên VÁCH NÚI thì rất NGUY HIỂM",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "45",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "氵",
+          "Name": "THỦY ",
+          "Meaning": "Nước"
+        },
+        {
+          "Bo": "可",
+          "Name": "KHẢ",
+          "Meaning": "Khả năng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "河",
+          "hiragara": "かわ",
+          "HanViet": "HÀ",
+          "meaning": "Sông; dòng sông"
+        },
+        {
+          "id": 2,
+          "word": "天河",
+          "hiragara": "てんが",
+          "HanViet": "THIÊN HÀ",
+          "meaning": "Dải Ngân hà;"
+        },
+        {
+          "id": 3,
+          "word": "山河",
+          "hiragara": "さんか",
+          "HanViet": "SƠN HÀ",
+          "meaning": "Sông núi"
+        },
+        {
+          "id": 4,
+          "word": "河口",
+          "hiragara": "かこう",
+          "HanViet": "HÀ KHẨU",
+          "meaning": "Cửa sông"
+        },
+        {
+          "id": 5,
+          "word": "河原",
+          "hiragara": "かわら",
+          "HanViet": "HÀ NGUYÊN",
+          "meaning": "Bãi sông"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "kanji": "揮",
+      "HanViet": "HUY",
+      "meaning": "chỉ huy",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "ふる.う"
+      ],
+      "draw": [],
+      "Mind": "Dùng Tay (扌) chỉ Huy Quân (軍) đội",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "46",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "扌",
+          "Name": "THỦ ",
+          "Meaning": "Tay"
+        },
+        {
+          "Bo": "軍",
+          "Name": "QUÂN",
+          "Meaning": "quân đội"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "仮",
+          "hiragara": "かり",
+          "HanViet": "GIẢ",
+          "meaning": "Giả định; giả sử"
+        },
+        {
+          "id": 2,
+          "word": "仮字",
+          "hiragara": "かりじ",
+          "HanViet": "GIẢ TỰ",
+          "meaning": "Chữ Kana"
+        },
+        {
+          "id": 3,
+          "word": "仮定",
+          "hiragara": "かてい",
+          "HanViet": "GIẢ ĐỊNH",
+          "meaning": "giả định"
+        },
+        {
+          "id": 4,
+          "word": "仮説",
+          "hiragara": "かせつ",
+          "HanViet": "GIẢ THUYẾT",
+          "meaning": "phỏng đoán; giả thuyết"
+        },
+        {
+          "id": 5,
+          "word": "仮令",
+          "hiragara": "たとえ",
+          "HanViet": "GIẢ LỆNH",
+          "meaning": "Ví dụ; nếu như"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "kanji": "机",
+      "HanViet": "Kỷ, Cơ",
+      "meaning": "Cái bàn",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "つくえ"
+      ],
+      "draw": [],
+      "Mind": "Bàn 2 (几) chân làm từ cây gỗ (木)",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "47",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "木",
+          "Name": "MỘC",
+          "Meaning": "Cây"
+        },
+        {
+          "Bo": "几",
+          "Name": "Kỉ",
+          "Meaning": "bảng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "快い",
+          "hiragara": "こころよい",
+          "HanViet": "KHOÁI",
+          "meaning": "Dễ chịu;"
+        },
+        {
+          "id": 2,
+          "word": "快速",
+          "hiragara": "かいそく",
+          "HanViet": "KHOÁI TỐC",
+          "meaning": "Nhanh chóng; siêu tốc"
+        },
+        {
+          "id": 3,
+          "word": "不快",
+          "hiragara": "ふかい",
+          "HanViet": "BẤT KHOÁI",
+          "meaning": "không hài lòng; khó chịu"
+        },
+        {
+          "id": 4,
+          "word": "快弁",
+          "hiragara": "かいべん",
+          "HanViet": "KHOÁI BIỆN",
+          "meaning": "Tài hùng biện"
+        },
+        {
+          "id": 5,
+          "word": "快復",
+          "hiragara": "かいふく",
+          "HanViet": "KHOÁI PHỤC",
+          "meaning": "hồi phục, khỏi bệnh"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "kanji": "貴",
+      "HanViet": "QUÝ",
+      "meaning": "quý tộc",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "とうと.い",
+        "たっと.ぶ"
+      ],
+      "draw": [],
+      "Mind": "Con sâu (虫) rất Quý trọng con Sò (貝)",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "48",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "貝 ",
+          "Name": "Bối",
+          "Meaning": "Sò"
+        },
+        {
+          "Bo": "虫",
+          "Name": "TRÙNG",
+          "Meaning": "Sâu"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "灰",
+          "hiragara": "はい",
+          "HanViet": "HÔI",
+          "meaning": "tro tàn"
+        },
+        {
+          "id": 2,
+          "word": "石灰",
+          "hiragara": "せっかい",
+          "HanViet": "THẠCH HÔI",
+          "meaning": "Đá vôi"
+        },
+        {
+          "id": 3,
+          "word": "灰皿",
+          "hiragara": "はいざら",
+          "HanViet": "HÔI MÃNH",
+          "meaning": "Gạt tàn"
+        },
+        {
+          "id": 4,
+          "word": "灰白",
+          "hiragara": "はいしろ",
+          "HanViet": "HÔI BẠCH",
+          "meaning": "Màu xám; màu tro"
+        },
+        {
+          "id": 5,
+          "word": "灰汁",
+          "hiragara": "あく",
+          "HanViet": "HÔI TRẤP",
+          "meaning": "Thuốc giặt quần áo"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "kanji": "規",
+      "HanViet": "QUY",
+      "meaning": "quy tắc",
+      "On": [
+        "キ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "Ngày nào cũng phải Xem (見) những Quy tắc Chồng (夫) đặt ra.",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "49",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "夫",
+          "Name": "PHU ",
+          "Meaning": "Chồng"
+        },
+        {
+          "Bo": "見",
+          "Name": "KIẾN",
+          "Meaning": "Nhìn"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "届ける",
+          "hiragara": "とどける",
+          "HanViet": "GIỚI",
+          "meaning": "Đưa đến; chuyển đến"
+        },
+        {
+          "id": 2,
+          "word": "届",
+          "hiragara": "とどけ",
+          "HanViet": "GIỚI",
+          "meaning": "Giấy; đơn"
+        },
+        {
+          "id": 3,
+          "word": "届出",
+          "hiragara": "とどけで",
+          "HanViet": "GIỚI XUẤT",
+          "meaning": "Báo cáo; thông báo"
+        },
+        {
+          "id": 4,
+          "word": "届け先",
+          "hiragara": "とどけさき",
+          "HanViet": "GIỚI TIÊN",
+          "meaning": "Địa điểm gửi đến"
+        },
+        {
+          "id": 5,
+          "word": "届書",
+          "hiragara": "とどけしょ",
+          "HanViet": "GIỚI THƯ",
+          "meaning": " Báo cáo"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "kanji": "基",
+      "HanViet": "CƠ",
+      "meaning": "Cơ bản",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "もと",
+        "もとい"
+      ],
+      "draw": [],
+      "Mind": "Đất (土) là nền móng Cơ (基) sở để xây dựng",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "50",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "其",
+          "Name": "Kì ",
+          "Meaning": "Cái đó"
+        },
+        {
+          "Bo": "土",
+          "Name": "THỔ",
+          "Meaning": "Đất"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "がする",
+          "hiragara": "がする",
+          "HanViet": "HẠ",
+          "meaning": "Chúc mừng"
+        },
+        {
+          "id": 2,
+          "word": "年賀",
+          "hiragara": "ねんが",
+          "HanViet": "NIÊN HẠ",
+          "meaning": "mừng năm mới; lễ tết"
+        },
+        {
+          "id": 3,
+          "word": "賀正",
+          "hiragara": "がしょう",
+          "HanViet": "HẠ CHÁNH",
+          "meaning": "Chúc mừng năm mới"
+        },
+        {
+          "id": 4,
+          "word": "賀意",
+          "hiragara": "がい",
+          "HanViet": "HẠ Ý",
+          "meaning": "chúc mừng"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "kanji": "寄",
+      "HanViet": "KÍ",
+      "meaning": "kí gửi, kí túc",
+      "On": [
+        "キ"
+      ],
+      "Kun": [
+        "よ.る",
+        "-よ.り",
+        "よ.せる"
+      ],
+      "draw": [],
+      "Mind": "Mái nhà (宀) to lớn (大) vậy rất có khả năng (可) là KÍ túc xá",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "51",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "宀",
+          "Name": "MIÊN ",
+          "Meaning": "mái nhà"
+        },
+        {
+          "Bo": "大",
+          "Name": "Đại ",
+          "Meaning": "to, lớn"
+        },
+        {
+          "Bo": "可",
+          "Name": "Khả ",
+          "Meaning": "khả năng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "我侭",
+          "hiragara": "わがまま",
+          "HanViet": "NGÃ TẬN",
+          "meaning": "Tính ích kỷ"
+        },
+        {
+          "id": 2,
+          "word": "我慢",
+          "hiragara": "がまん",
+          "HanViet": "NGÃ MẠN",
+          "meaning": "Nhẫn nại; chịu đựng"
+        },
+        {
+          "id": 3,
+          "word": "主我",
+          "hiragara": "しゅが",
+          "HanViet": "CHỦ NGÃ",
+          "meaning": "ích kỷ"
+        },
+        {
+          "id": 4,
+          "word": "我利",
+          "hiragara": "がり",
+          "HanViet": "NGÃ LỢI",
+          "meaning": "Tư lợi; lợi ích cá nhân"
+        },
+        {
+          "id": 5,
+          "word": "我",
+          "hiragara": "われ",
+          "HanViet": "NGÃ",
+          "meaning": "Chúng tôi"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "kanji": "技",
+      "HanViet": "KĨ",
+      "meaning": "kĩ thuật",
+      "On": [
+        "ギ"
+      ],
+      "Kun": [
+        "わざ"
+      ],
+      "draw": [],
+      "Mind": "Có KĨ (技) thuật Chi (支) tiêu từ tiền kiếm được bằng đôi bàn Tay (扌) ",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "32",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "扌",
+          "Name": "Thủ",
+          "Meaning": "tay"
+        },
+        {
+          "Bo": "支",
+          "Name": "Chi",
+          "Meaning": "Chi tiêu"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "閣下",
+          "hiragara": "かっか",
+          "HanViet": "CÁC HẠ",
+          "meaning": "Ngài; quý ngài"
+        },
+        {
+          "id": 2,
+          "word": "内閣",
+          "hiragara": "ないかく",
+          "HanViet": "NỘI CÁC",
+          "meaning": "Nội các"
+        },
+        {
+          "id": 3,
+          "word": "倒閣",
+          "hiragara": "とうかく",
+          "HanViet": "ĐẢO CÁC",
+          "meaning": "đảo chính"
+        },
+        {
+          "id": 4,
+          "word": "殿閣",
+          "hiragara": "でんかく",
+          "HanViet": "ĐIỆN CÁC",
+          "meaning": "Lâu đài; cung điện ."
+        },
+        {
+          "id": 5,
+          "word": "閣議",
+          "hiragara": "かくぎ",
+          "HanViet": "CÁC NGHỊ",
+          "meaning": "Hội đồng chính phủ"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "kanji": "義",
+      "HanViet": "NGHĨA",
+      "meaning": "chủ nghĩa",
+      "On": [
+        "ギ"
+      ],
+      "Kun": [],
+      "draw": [],
+      "Mind": "",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "53",
+      "lookLearnNum": 0,
+      "Content": [],
+      "Example": [
+        {
+          "id": 1,
+          "word": "革",
+          "hiragara": "かわ",
+          "HanViet": "CÁCH",
+          "meaning": "Da (động vật)"
+        },
+        {
+          "id": 2,
+          "word": "改革",
+          "hiragara": "かいかく",
+          "HanViet": "CẢI CÁCH",
+          "meaning": "Cải cách"
+        },
+        {
+          "id": 3,
+          "word": "革新",
+          "hiragara": "かくしん",
+          "HanViet": "CÁCH TÂN",
+          "meaning": "Đổi mới; cách tân"
+        },
+        {
+          "id": 4,
+          "word": "革命",
+          "hiragara": "かくめい",
+          "HanViet": "CÁCH MỆNH",
+          "meaning": "Cách mạng"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "kanji": "疑",
+      "HanViet": "NGHI",
+      "meaning": "Nghi vấn",
+      "On": [
+        "ギ"
+      ],
+      "Kun": [
+        "うたが.う"
+      ],
+      "draw": [],
+      "Mind": "Người bị mũi Tên (矢) cắm vào Chân thì đáng nghi",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "54",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": " 矢",
+          "Name": "Thỉ ",
+          "Meaning": "Mũi tên"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "拡大",
+          "hiragara": "かくだい",
+          "HanViet": "KHUẾCH ĐẠI",
+          "meaning": "mở rộng; lan rộng"
+        },
+        {
+          "id": 2,
+          "word": "拡散",
+          "hiragara": "かくさん",
+          "HanViet": "KHUẾCH TÁN",
+          "meaning": "khuyếch tán; lan rộng"
+        },
+        {
+          "id": 3,
+          "word": "拡がる",
+          "hiragara": "ひろがる",
+          "HanViet": "KHUẾCH",
+          "meaning": "duỗi (tay)"
+        },
+        {
+          "id": 4,
+          "word": "拡張",
+          "hiragara": "かくちょう",
+          "HanViet": "KHUẾCH TRƯƠNG",
+          "meaning": "Mở rộng; khuyếch trương"
+        },
+        {
+          "id": 5,
+          "word": "拡声機",
+          "hiragara": "かくせいき",
+          "HanViet": "KHUẾCH THANH CƠ",
+          "meaning": "Cái loa"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "kanji": "逆",
+      "HanViet": "NGHỊCH",
+      "meaning": "phản nghịch",
+      "On": [
+        "ギャク",
+        "ゲキ"
+      ],
+      "Kun": [
+        "さか"
+      ],
+      "draw": [],
+      "Mind": "Chạy ở trên Đường mà 2 chân lại hướng lên trời là đối Nghịch",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "55",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "客",
+          "Name": "KHÁCH",
+          "Meaning": "Khách"
+        },
+        {
+          "Bo": "頁",
+          "Name": "HIỆT ",
+          "Meaning": "Trang giấy"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "額",
+          "hiragara": "ひたい",
+          "HanViet": "NGẠCH",
+          "meaning": "cái trán"
+        },
+        {
+          "id": 2,
+          "word": "金額",
+          "hiragara": "きんがく",
+          "HanViet": "KIM NGẠCH",
+          "meaning": "Kim ngạch; số tiền"
+        },
+        {
+          "id": 3,
+          "word": "全額",
+          "hiragara": "ぜんがく",
+          "HanViet": "TOÀN NGẠCH",
+          "meaning": "tổng, toàn bộ"
+        },
+        {
+          "id": 4,
+          "word": "半額",
+          "hiragara": "はんがく",
+          "HanViet": "BÁN NGẠCH",
+          "meaning": "nửa giá"
+        },
+        {
+          "id": 5,
+          "word": "定額",
+          "hiragara": "ていがく",
+          "HanViet": "ĐỊNH NGẠCH",
+          "meaning": "Định giá"
+        },
+        {
+          "id": 6,
+          "word": "価額",
+          "hiragara": "かがく",
+          "HanViet": "GIÁ NGẠCH",
+          "meaning": "Giá trị; số tiền"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "kanji": "旧",
+      "HanViet": "CỰU",
+      "meaning": "kì cựu",
+      "On": [
+        "キュウ"
+      ],
+      "Kun": [
+        "ふる.い",
+        "もと"
+      ],
+      "draw": [],
+      "Mind": "1 ngày trôi qua đã trở thành kì Cựu",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "56",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "丨",
+          "Name": "Cổn",
+          "Meaning": ""
+        },
+        {
+          "Bo": "日",
+          "Name": "NHẬT",
+          "Meaning": "Ngày"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "割",
+          "hiragara": "わり",
+          "HanViet": "CÁT",
+          "meaning": "Tỉ lệ"
+        },
+        {
+          "id": 2,
+          "word": "割れる",
+          "hiragara": "われる",
+          "HanViet": "CÁT",
+          "meaning": "Vỡ; rạn vỡ"
+        },
+        {
+          "id": 3,
+          "word": "割引き",
+          "hiragara": "わりびき",
+          "HanViet": "CÁT DẪN",
+          "meaning": "giảm giá ."
+        },
+        {
+          "id": 4,
+          "word": "分割",
+          "hiragara": "ぶんかつ",
+          "HanViet": "PHÂN CÁT",
+          "meaning": "phân cắt"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "kanji": "久",
+      "HanViet": "CỬU",
+      "meaning": "vĩnh cửu",
+      "On": [
+        "キュウ",
+        "ク"
+      ],
+      "Kun": [
+        "ひさ.しい"
+      ],
+      "draw": [],
+      "Mind": "ク (KƯ) thêm cây gậy thì thành vĩnh Cửu",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "57",
+      "lookLearnNum": 0,
+      "Content": [],
+      "Example": [
+        {
+          "id": 1,
+          "word": "簡単",
+          "hiragara": "かんたん",
+          "HanViet": "GIẢN ĐƠN",
+          "meaning": "Đơn giản; dễ dàng"
+        },
+        {
+          "id": 2,
+          "word": "簡易",
+          "hiragara": "かんい",
+          "HanViet": "GIẢN DỊ",
+          "meaning": "Giản dị; đơn giản"
+        },
+        {
+          "id": 3,
+          "word": "簡略",
+          "hiragara": "かんりゃく",
+          "HanViet": "GIẢN LƯỢC",
+          "meaning": "Đơn giản; giản lược"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "kanji": "吸",
+      "HanViet": "HẤP",
+      "meaning": "Hô hấp, hấp thụ",
+      "On": [
+        "キュウ"
+      ],
+      "Kun": [
+        "す.う"
+      ],
+      "draw": [],
+      "Mind": "3 người hô hấp bằng miệng",
+      "level": 2,
+      "levelK": "3k",
+      "NumK": "58",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "口",
+          "Name": "KHẨU",
+          "Meaning": "miệng"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "干す",
+          "hiragara": "ほす",
+          "HanViet": "CAN, KIỀN",
+          "meaning": "Phơi; làm khô"
+        },
+        {
+          "id": 2,
+          "word": "干支",
+          "hiragara": "えと",
+          "HanViet": "CAN CHI",
+          "meaning": "12 con giáp; can chi"
+        },
+        {
+          "id": 3,
+          "word": "干天",
+          "hiragara": "かんてん",
+          "HanViet": "KIỀN THIÊN",
+          "meaning": "Trời hạn"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "kanji": "許",
+      "HanViet": "HỨA",
+      "meaning": "cho phép",
+      "On": [
+        "キョ"
+      ],
+      "Kun": [
+        "ゆる.す"
+      ],
+      "draw": [],
+      "Mind": "Giờ NGỌ (午) mà HỨA gì NÓI (言) gì thì cũng được cho phép thôi",
+      "level": 1,
+      "levelK": "3k",
+      "NumK": "59",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "言",
+          "Name": "NGÔN",
+          "Meaning": "Ngôn ngữ, nói"
+        },
+        {
+          "Bo": "午",
+          "Name": "NGỌ",
+          "Meaning": "giờ ngọ"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "看",
+          "hiragara": "みる",
+          "HanViet": "KHÁN",
+          "meaning": "Xem; kiểm tra, trông coi"
+        },
+        {
+          "id": 2,
+          "word": "看守",
+          "hiragara": "かんしゅ",
+          "HanViet": "KHÁN THỦ",
+          "meaning": "giam giữ; cai ngục"
+        },
+        {
+          "id": 3,
+          "word": "看護",
+          "hiragara": "かんご",
+          "HanViet": "KHÁN HỘ",
+          "meaning": "Hộ lí; hộ lí; chăm sóc bệnh nhân"
+        },
+        {
+          "id": 4,
+          "word": "看破",
+          "hiragara": "かんぱ",
+          "HanViet": "KHÁN PHÁ",
+          "meaning": "Sự nhìn thấu suốt"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "kanji": "居",
+      "HanViet": "CƯ",
+      "meaning": "Cư trú",
+      "On": [
+        "キョ",
+        "コ"
+      ],
+      "Kun": [
+        "い.る",
+        "-い お.る"
+      ],
+      "draw": [],
+      "Mind": "Người ta đã Cư trú từ ngày Cổ (古) xưa",
+      "level": 3,
+      "levelK": "3k",
+      "NumK": "60",
+      "lookLearnNum": 0,
+      "Content": [
+        {
+          "Bo": "尸",
+          "Name": "Thi",
+          "Meaning": "Tim"
+        },
+        {
+          "Bo": "古",
+          "Name": "CỔ",
+          "Meaning": "Nhất quán"
+        }
+      ],
+      "Example": [
+        {
+          "id": 1,
+          "word": "慣れる",
+          "hiragara": "なれる",
+          "HanViet": "QUÁN",
+          "meaning": "Quen"
+        },
+        {
+          "id": 2,
+          "word": "習慣",
+          "hiragara": "しゅうかん",
+          "HanViet": "TẬP QUÁN",
+          "meaning": "Thói quen; tập quán"
+        },
+        {
+          "id": 3,
+          "word": "慣性",
+          "hiragara": "かんせい",
+          "HanViet": "QUÁN TÍNH",
+          "meaning": "Quán tính, tính trì trệ, tính chậm chạp"
+        },
+        {
+          "id": 4,
+          "word": "慣行",
+          "hiragara": "かんこう",
+          "HanViet": "QUÁN HÀNH",
+          "meaning": "thói quen"
+        }
+      ]
+    }
+  ]
+}

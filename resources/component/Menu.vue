@@ -3,21 +3,21 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center"  href="/">
+        <router-link class="sidebar-brand d-flex align-items-center justify-content-center" to="/">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
             <div class="sidebar-brand-text mx-3">X3 Japanese </div>
-        </a>
-
+        </router-link>
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="/">
+            <router-link class="nav-link" to="/" active-class="active" exact>
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Trang chủ</span></a>
+                <span>Trang chủ</span>
+            </router-link>
         </li>
 
         <!-- Divider -->
@@ -33,12 +33,13 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="">Giáo trình Kanji 360</a>
-                    <a class="collapse-item" href="">Trình độ N5</a>
-                    <a class="collapse-item" href="">Trình độ N4</a>
-                    <a class="collapse-item" href="">Trình độ N3</a>
-                    <a class="collapse-item" href="">Trình độ N2</a>
-                    <a class="collapse-item" href="">Trình độ N1</a>
+<!--                    <a class="collapse-item" href="#/kanji360"></a>-->
+                    <router-link class="collapse-item" to="/kanji360" active-class="active" exact>Giáo trình Kanji 360</router-link>
+                    <router-link class="collapse-item" to="/learn-level" active-class="active" exact>Trình độ N5</router-link>
+                    <router-link class="collapse-item" to="/kanji360">Trình độ N4</router-link>
+                    <router-link class="collapse-item" to="/kanji360">Trình độ N3</router-link>
+                    <router-link class="collapse-item" to="/kanji360">Trình độ N2</router-link>
+                    <router-link class="collapse-item" to="/kanji360">Trình độ N1</router-link>
                 </div>
             </div>
         </li>
@@ -51,11 +52,11 @@
             </a>
             <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="">Trình độ N5</a>
-                    <a class="collapse-item" href="">Trình độ N4</a>
-                    <a class="collapse-item" href="">Trình độ N3</a>
-                    <a class="collapse-item" href="">Trình độ N2</a>
-                    <a class="collapse-item" href="">Trình độ N1</a>
+                    <router-link class="collapse-item" to="/">Trình độ N5</router-link>
+                    <router-link class="collapse-item" to="/">Trình độ N4</router-link>
+                    <router-link class="collapse-item" to="/">Trình độ N3</router-link>
+                    <router-link class="collapse-item" to="/">Trình độ N2</router-link>
+                    <router-link class="collapse-item" to="/">Trình độ N1</router-link>
                 </div>
             </div>
         </li>

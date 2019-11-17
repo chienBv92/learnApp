@@ -17,7 +17,8 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <CourseMain></CourseMain>
+<!--                    <CourseMain></CourseMain>-->
+                    <router-view></router-view>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -32,7 +33,6 @@
         </div>
         <!-- End of Content Wrapper -->
     </div>
-
 </template>
 
 <script>

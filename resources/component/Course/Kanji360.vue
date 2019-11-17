@@ -1,11 +1,14 @@
 <template>
     <div class="row">
-<!--        <CourseItem v-for="data in dataTotal" v-bind:myData="data"></CourseItem>-->
+        <!--        <CourseItem v-for="data in dataTotal" v-bind:myData="data"></CourseItem>-->
         <div class="col-md-4 col-lg-4 courseCardrow" v-for="data in dataTotal">
             <div id="" class="courseCard">
 
                 <div class="course_thumbnail text-center">
-                    <a :href="data.metaTitle" class="" v-if="data.active"><img :src="data.Image" alt="Responsive image" class="img-responsive"></a>
+                    <router-link v-if="data.active" :to='{name: "kanji360Detail", params: { metatitle: data.metaTitle, id: data.id }}'>
+                        <img :src="data.Image" alt="Responsive image" class="img-responsive">
+
+                    </router-link>
                     <img :src="data.Image" alt="Responsive image" class="img-responsive" v-else="data.active">
 
                 </div>
@@ -29,28 +32,30 @@
                         </button>
                     </a>
                     <button :id="data.id" type="button" class="btn courseButton btn-secondary" v-else="data.active">
-                            Khám phá ngay
+                        Khám phá ngay
                     </button>
                 </div>
             </div>
         </div>
-    </div>
+<!--        <router-view></router-view>-->
 
+        <button @click="backHome">Back Home</button>
+    </div>
 </template>
 
 <script>
-    import json from './testCourse.json';
-    import CourseItem from "./CourseItem";
+    import json from './KanjiLevel.json';
     export default {
-        name: "CourseMain",
-        components: {CourseItem},
+        name: "Kanji360",
         data: function () {
             return {
                 dataTotal: json
             }
         },
         methods: {
-
+            backHome(){
+                this.$router.push('/');
+            }
         }
 
     }
