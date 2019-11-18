@@ -9,51 +9,7 @@
     "active": true,
     "level": 0,
     "TotalLesson": 20,
-    "LessonLearning": 3,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 3
   },
   {
     "id": 2,
@@ -63,53 +19,9 @@
     "Description": "Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt",
     "Detail": "Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt",
     "active": false,
-    "level": 3,
+    "level": 5,
     "TotalLesson": 12,
-    "LessonLearning": 3,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 3
   },
   {
     "id": 3,
@@ -119,53 +31,9 @@
     "Description": "Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt",
     "Detail": "Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt",
     "active": true,
-    "level": 3,
+    "level": 4,
     "TotalLesson": 32,
-    "LessonLearning": 8,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 8
   },
   {
     "id": 4,
@@ -175,53 +43,9 @@
     "Description": "Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt",
     "Detail": "Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt",
     "active": false,
-    "level": 2,
+    "level": 3,
     "TotalLesson": 20,
-    "LessonLearning": 0,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 0
   },
   {
     "id": 5,
@@ -231,53 +55,9 @@
     "Description": "Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt",
     "Detail": "Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt",
     "active": true,
-    "level": 3,
+    "level": 2,
     "TotalLesson": 20,
-    "LessonLearning": 0,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 0
   },
   {
     "id": 6,
@@ -287,52 +67,8 @@
     "Description": "Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt",
     "Detail": "Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt",
     "active": false,
-    "level": 3,
+    "level": 1,
     "TotalLesson": 20,
-    "LessonLearning": 0,
-    "Lesson": [
-      {
-        "id": 1,
-        "word": "圧し",
-        "hiragara": "おし",
-        "HanViet": "ÁP",
-        "meaning": "Làm nặng thêm, nén xuống"
-      },
-      {
-        "id": 2,
-        "word": "圧力",
-        "hiragara": "あつりょく",
-        "HanViet": "ÁP LỰC",
-        "meaning": "Áp lực; sức ép"
-      },
-      {
-        "id": 3,
-        "word": "圧制",
-        "hiragara": "あっせい",
-        "HanViet": "ÁP CHẾ",
-        "meaning": "đàn áp, áp bức"
-      },
-      {
-        "id": 4,
-        "word": "圧倒",
-        "hiragara": "あっとう",
-        "HanViet": "ÁP ĐẢO",
-        "meaning": "Áp đảo; sự vượt trội"
-      },
-      {
-        "id": 5,
-        "word": "内圧",
-        "hiragara": "ないあつ",
-        "HanViet": "NỘI ÁP",
-        "meaning": "Áp lực bên trong"
-      },
-      {
-        "id": 6,
-        "word": "気圧",
-        "hiragara": "きあつ",
-        "HanViet": "KHÍ ÁP",
-        "meaning": "Áp suất"
-      }
-    ]
+    "LessonLearning": 0
   }
 ]
