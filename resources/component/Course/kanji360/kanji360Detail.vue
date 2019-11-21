@@ -5,8 +5,11 @@
 <!--        <div v-for="data in dataLevel">-->
 <!--            <p>data</p>-->
 <!--        </div>-->
+        <div v-for="i in lessonMax">
+            <button @click="{i}">Bài học {{i}}</button>
+        </div>
         <div>{{data}}</div>
-        <div v-for="item in data.Lesson">
+        <div v-for="item in data">
             <p>{{item.HanViet}}</p>
             <p>{{item.hiragara}}</p>
             <p>{{item.meaning}}</p>
@@ -23,8 +26,10 @@
         data:function () {
             return {
                 metaTitle: this.$route.params.metatitle,
-                dataTotal: json,
-                data: null,
+                // dataTotal: json,
+                data: [],
+                lessonMax: 0,
+                error: []
                 // dataLevel: json.filter(function (el) {
                 //     return el.metaTitle == this.metaTitle;
                 // })
@@ -35,22 +40,23 @@
             console.log("Giá trị đầu tiên: " + this.metaTitle)
         },
         created() {
-            console.log(this.data);
-            console.log("Giá trị created: " + this.metaTitle)
-            this.getDefaultFilter();
-
-            console.log("Giá trị data created: " + this.data[0].id)
+            //console.log(this.data);
+            //console.log("Giá trị created: " + this.metaTitle)
+            //this.getDefaultFilter();
+            this.getListKanjiLevel();
+            //console.log("Giá trị data created: " + this.data[0].id)
 
             //console.log(document.getElementById('metaTi').innerHTML)
         },
         beforeMount() {
-            console.log("Giá trị beformount: " + this.metaTitle)
-
-            console.log(document.getElementById('metaTi').innerHTML)
+            // console.log("Giá trị beformount: " + this.metaTitle)
+            //
+            // console.log(document.getElementById('metaTi').innerHTML)
         },
         mounted() {
-            console.log(this.$el)
-            console.log(document.getElementById('metaTi').innerHTML)
+            // console.log(this.$el)
+            // console.log(document.getElementById('metaTi').innerHTML);
+            console.log(this.data);
         },
         watch: {
             '$route'(to, from){
@@ -72,6 +78,17 @@
                         return this.data;
                     }
                 }
+            },
+            getListKanjiLevel() {
+                axios.get('/getKanjiByLevel/' + this.metaTitle)
+                    .then(response => {
+                        console.log(response);
+                        this.data = response.data[0];
+                        this.lessonMax = response.data[1];
+                    })
+                    .catch(error => {
+                        this.errors = error.response;
+                    })
             }
 
         },

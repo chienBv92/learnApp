@@ -5,6 +5,8 @@ import Vue from 'vue';
 import VueRouter from "vue-router";
 import {routes} from "./routes";
 
+window.axios = require('axios');
+
 //import Bootrap from  './bootstrap';
 
 import Layout from  '../component/Layout';

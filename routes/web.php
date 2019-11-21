@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+
+// Lấy danh sách level
+Route::get('listKanjiLevel', 'Api\kanjiLevelController@index');
+
+// Lấy danh sách kanji by Level
+Route::get('getKanjiByLevel/{metaTitle}', 'Api\kanjiLevelController@getKanjiByLevel');

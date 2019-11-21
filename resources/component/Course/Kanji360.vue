@@ -49,14 +49,28 @@
         name: "Kanji360",
         data: function () {
             return {
-                dataTotal: json
+                dataTotal: [],
+                errors: [],
             }
         },
         methods: {
             backHome(){
                 this.$router.push('/');
+            },
+            getListLevel() {
+                axios.get('/listKanjiLevel')
+                    .then(response => {
+                        this.dataTotal = response.data;
+                        console.log(dataTotal);
+                    })
+                    .catch(error => {
+                        this.errors = error.response;
+                    })
             }
-        }
+        },
+        created() {
+            this.getListLevel()
+        },
 
     }
 </script>
