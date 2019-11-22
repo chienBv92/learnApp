@@ -27,11 +27,15 @@ class kanjiLevelController extends Controller
         if($kanjiLevel){
             $totalLesson = $kanjiLevel->TotalLesson;
             $kanji = Kanji::where('levelK', $kanjiLevel->level .'k')->get();
+            return response()->json([$kanji, $totalLesson, $kanjiLevel], 200);
+
         }
+
         //$kanji = Kanji::all();
         //$users = DB::collection('users')->get();
         // Thông số json
         //response()->json($data, $status, $headers, $options);
-        return response()->json([$kanji, $totalLesson, $kanjiLevel], 200);
+        return response()->json([], 400);
+
     }
 }

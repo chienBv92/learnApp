@@ -22,7 +22,7 @@ export const routes = [
         // ]
     },
     {
-        path: "/kanji360/:metatitle/:id",
+        path: "/kanji360/:metatitle",
         name: "kanji360Detail",
         component: kanji360Detail
     },

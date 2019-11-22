@@ -40,3 +40,8 @@ $(document).on('click', 'a.scroll-to-top', function(e) {
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
 });
+
+$('.lessonSelect').click(function(){
+    $('.lessonSelect').removeClass('active');
+    $(this).addClass('active');
+});

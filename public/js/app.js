@@ -2063,6 +2063,12 @@ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__web
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Kanji360",
@@ -2146,6 +2152,39 @@ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__web
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "kanji360Detail",
@@ -2154,32 +2193,20 @@ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__web
       metaTitle: this.$route.params.metatitle,
       // dataTotal: json,
       data: [],
+      kanjiLevel: {},
       lessonMax: 0,
-      error: [] // dataLevel: json.filter(function (el) {
-      //     return el.metaTitle == this.metaTitle;
-      // })
-      // dataLevel: json.filter(x=> x.metaTitle == this.metaTitle).
-
+      lessonActive: 1,
+      error: []
     };
   },
   beforeCreate: function beforeCreate() {
     console.log("Giá trị đầu tiên: " + this.metaTitle);
   },
   created: function created() {
-    //console.log(this.data);
-    //console.log("Giá trị created: " + this.metaTitle)
-    //this.getDefaultFilter();
-    this.getListKanjiLevel(); //console.log("Giá trị data created: " + this.data[0].id)
-    //console.log(document.getElementById('metaTi').innerHTML)
+    this.getListKanjiLevel();
   },
-  beforeMount: function beforeMount() {// console.log("Giá trị beformount: " + this.metaTitle)
-    //
-    // console.log(document.getElementById('metaTi').innerHTML)
-  },
-  mounted: function mounted() {
-    // console.log(this.$el)
-    // console.log(document.getElementById('metaTi').innerHTML);
-    console.log(this.data);
+  beforeMount: function beforeMount() {},
+  mounted: function mounted() {//console.log(this.data);
   },
   watch: {
     '$route': function $route(to, from) {
@@ -2205,11 +2232,19 @@ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__web
 
       axios.get('/getKanjiByLevel/' + this.metaTitle).then(function (response) {
         console.log(response);
-        _this.data = response.data[0];
-        _this.lessonMax = response.data[1];
+
+        if (response.status == 200) {
+          _this.data = response.data[0];
+          _this.lessonMax = response.data[1];
+          _this.kanjiLevel = response.data[2];
+        }
       })["catch"](function (error) {
         _this.errors = error.response;
       });
+    },
+    selectLesson: function selectLesson(id) {
+      console.log("get lesson" + id);
+      this.lessonActive = id;
     }
   },
   computed: {}
@@ -2686,6 +2721,25 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 // module
 exports.push([module.i, "\n#app {\n    font-family: \"Avenir\", Helvetica, Arial, sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    text-align: center;\n    color: #2c3e50;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.lessonSelect[data-v-8f34a954] {\n    font-size: 15px;\n    display: inline-block;\n    text-align: center;\n    font-weight: 600;\n    width: 95px;\n    cursor: pointer;\n    color: #4c4f64;\n    padding-top: 16px!important;\n    border-top-right-radius: 10px;\n    border-top-left-radius: 10px;\n    padding: 14px;\n    background-color: #fff;\n    margin-left: 5px;\n    margin-right: 5px;\n    margin-top: 16px;\n    height: 45px;\n    box-shadow: 1px -3px 1px -2px #65666a;\n}\n.lessonSelect.active[data-v-8f34a954] {\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #55c57a), to(#36a55b));\n    background: linear-gradient(180deg, #55c57a 0, #36a55b);\n}\n.menu_grade_mobile[data-v-8f34a954] {\n    display: none;\n}\n._1a0Cb[data-v-8f34a954] {\n    padding: 1px!important;\n    font-size: 28px;\n    padding-left: 4px!important;\n    padding-right: 4px!important;\n}\n@media (max-width: 768px) {\n.menu_grade_mobile[data-v-8f34a954] {\n        display: inherit;\n        margin-top: 21px !important;\n}\n}\n@media (max-width: 768px) {\n.lessonSelect[data-v-8f34a954] {\n        display: none;\n}\n._1Iav0[data-v-8f34a954] {\n        width: 350px;\n        padding: 8px !important;\n        font-size: 20px;\n        display: inline-block;\n        text-align: center;\n        font-weight: 600;\n        cursor: pointer;\n        color: #4c4f64;\n        border-radius: 10px;\n        background-color: #fff;\n        margin-left: 5px;\n        margin-right: 5px;\n        margin-top: 10px;\n        height: 45px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -3266,6 +3320,36 @@ options.transform = transform
 options.insertInto = undefined;
 
 var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -4158,7 +4242,7 @@ var render = function() {
                         attrs: {
                           to: {
                             name: "kanji360Detail",
-                            params: { metatitle: data.metaTitle, id: data.id }
+                            params: { metatitle: data.metaTitle }
                           }
                         }
                       },
@@ -4200,35 +4284,51 @@ var render = function() {
               _c("p", [_vm._v(_vm._s(data.Description))])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-button-wrapper text-center" }, [
-              data.active
-                ? _c("a", { attrs: { href: data.metaTitle, onclick: "" } }, [
-                    _c(
-                      "button",
+            _c(
+              "div",
+              { staticClass: "card-button-wrapper text-center" },
+              [
+                data.active
+                  ? _c(
+                      "router-link",
                       {
-                        staticClass: "btn startCourse btn-secondary",
-                        attrs: { type: "button" }
+                        attrs: {
+                          to: {
+                            name: "kanji360Detail",
+                            params: { metatitle: data.metaTitle }
+                          }
+                        }
                       },
                       [
-                        _vm._v(
-                          "\n                            Vào học ngay\n                        "
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn startCourse btn-secondary",
+                            attrs: { type: "button" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                            Vào học ngay\n                        "
+                            )
+                          ]
                         )
                       ]
                     )
-                  ])
-                : _c(
-                    "button",
-                    {
-                      staticClass: "btn courseButton btn-secondary",
-                      attrs: { id: data.id, type: "button" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Khám phá ngay\n                    "
-                      )
-                    ]
-                  )
-            ])
+                  : _c(
+                      "button",
+                      {
+                        staticClass: "btn courseButton btn-secondary",
+                        attrs: { id: data.id, type: "button" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Khám phá ngay\n                    "
+                        )
+                      ]
+                    )
+              ],
+              1
+            )
           ])
         ])
       }),
@@ -4286,29 +4386,86 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "kanjiDetail" },
     [
-      _vm._v(
-        "\n        Hán tự " + _vm._s(_vm.$route.params.metatitle) + "\n        "
-      ),
-      _c("p", { attrs: { id: "metaTi" } }, [_vm._v(_vm._s(_vm.metaTitle))]),
+      _vm.kanjiLevel
+        ? _c("div", { staticClass: "single_course_header" }, [
+            _c("div", { staticClass: "container-fluid" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-8" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-3 text-center" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: { src: _vm.kanjiLevel.Image, alt: "" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9 course_description" }, [
+                      _c("h2", [_vm._v(_vm._s(_vm.kanjiLevel.Name))]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(" " + _vm._s(_vm.kanjiLevel.Description))
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "course_progress" }, [
+                        _vm._v(
+                          "\n            26 lessons - 27 out\n            of  steps completed\n                            "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "progress" }, [
+                        _c("div", {
+                          staticClass: "progress-bar",
+                          style: {
+                            width:
+                              (_vm.kanjiLevel.LessonLearning /
+                                _vm.kanjiLevel.TotalLesson) *
+                                100 +
+                              "%"
+                          },
+                          attrs: {
+                            role: "progressbar",
+                            "aria-valuemin": "0",
+                            "aria-valuemax": _vm.kanjiLevel.TotalLesson,
+                            "aria-valuenow": _vm.kanjiLevel.LessonLearning
+                          }
+                        })
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(0)
+              ])
+            ])
+          ])
+        : _vm._e(),
       _vm._v(" "),
-      _vm._l(_vm.lessonMax, function(i) {
-        return _c("div", [
-          _c(
-            "button",
-            {
-              on: {
-                click: function($event) {
-                  {
-                    i
+      _c(
+        "div",
+        { staticClass: "divTop" },
+        [
+          _vm._l(_vm.lessonMax, function(i) {
+            return _c(
+              "div",
+              {
+                staticClass: "lessonSelect",
+                class: { active: _vm.lessonActive == i },
+                on: {
+                  click: function($event) {
+                    return _vm.selectLesson(i)
                   }
                 }
-              }
-            },
-            [_vm._v("Bài học " + _vm._s(i))]
-          )
-        ])
-      }),
+              },
+              [_c("span", [_vm._v("Trang " + _vm._s(i))])]
+            )
+          }),
+          _vm._v(" "),
+          _vm._m(1)
+        ],
+        2
+      ),
       _vm._v(" "),
       _c("div", [_vm._v(_vm._s(_vm.data))]),
       _vm._v(" "),
@@ -4325,7 +4482,41 @@ var render = function() {
     2
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 progress-icon text-center" }, [
+      _c("img", { attrs: { src: "img/inprocess.png", alt: "" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-center margin-top-grade menu_grade_mobile" },
+      [
+        _c("div", { staticClass: "_1Iav0 _1wciQ" }, [
+          _c("span", { staticClass: "span-grade" }, [
+            _vm._v("Lớp "),
+            _vm._v("7")
+          ]),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fa fa-chevron-circle-left pull-left _1a0Cb false"
+          }),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fa fa-chevron-circle-right pull-right _1a0Cb false"
+          })
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -20793,7 +20984,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _kanji360Detail_vue_vue_type_template_id_8f34a954_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kanji360Detail.vue?vue&type=template&id=8f34a954&scoped=true& */ "./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=template&id=8f34a954&scoped=true&");
 /* harmony import */ var _kanji360Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kanji360Detail.vue?vue&type=script&lang=js& */ "./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& */ "./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -20801,7 +20994,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _kanji360Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _kanji360Detail_vue_vue_type_template_id_8f34a954_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _kanji360Detail_vue_vue_type_template_id_8f34a954_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -20830,6 +21023,22 @@ component.options.__file = "resources/component/Course/kanji360/kanji360Detail.v
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./kanji360Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&":
+/*!*************************************************************************************************************************!*\
+  !*** ./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/Course/kanji360/kanji360Detail.vue?vue&type=style&index=0&id=8f34a954&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_kanji360Detail_vue_vue_type_style_index_0_id_8f34a954_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -21232,7 +21441,7 @@ var routes = [{
   // ]
 
 }, {
-  path: "/kanji360/:metatitle/:id",
+  path: "/kanji360/:metatitle",
   name: "kanji360Detail",
   component: _component_Course_kanji360_kanji360Detail__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {

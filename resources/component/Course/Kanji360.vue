@@ -5,7 +5,7 @@
             <div id="" class="courseCard">
 
                 <div class="course_thumbnail text-center">
-                    <router-link v-if="data.active" :to='{name: "kanji360Detail", params: { metatitle: data.metaTitle, id: data.id }}'>
+                    <router-link v-if="data.active" :to='{name: "kanji360Detail", params: { metatitle: data.metaTitle}}'>
                         <img :src="data.Image" alt="Responsive image" class="img-responsive">
 
                     </router-link>
@@ -26,11 +26,17 @@
                 </div>
 
                 <div  class="card-button-wrapper text-center">
-                    <a  :href="data.metaTitle" class="" v-if="data.active" onclick="">
+<!--                    <a  :href="data.metaTitle" class="" v-if="data.active" onclick="">-->
+<!--                        <button type="button" class="btn startCourse btn-secondary">-->
+<!--                            Vào học ngay-->
+<!--                        </button>-->
+<!--                    </a>-->
+                    <router-link v-if="data.active" :to='{name: "kanji360Detail", params: { metatitle: data.metaTitle}}'>
                         <button type="button" class="btn startCourse btn-secondary">
                             Vào học ngay
                         </button>
-                    </a>
+                    </router-link>
+
                     <button :id="data.id" type="button" class="btn courseButton btn-secondary" v-else="data.active">
                         Khám phá ngay
                     </button>
