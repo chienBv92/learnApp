@@ -2265,6 +2265,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     changeRandom: function changeRandom() {
       this.isRandom = !this.isRandom;
       this.$store.state.isRandom = this.isRandom;
+      this.getDataLesson();
     },
     changeDispHanViet: function changeDispHanViet() {
       this.isDispHanViet = !this.isDispHanViet;
@@ -2285,13 +2286,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           _this.data = response.data[0];
           _this.lessonMax = response.data[1];
           _this.kanjiLevel = response.data[2];
-          _this.dataLesson = _this.data.filter(function (item) {
-            return item.lesson === _this.lessonActive;
-          });
 
-          if (_this.isRandom) {
-            _this.dataLesson = _this.shuffle(_this.dataLesson);
-          }
+          _this.getDataLesson();
         }
       })["catch"](function (error) {
         _this.errors = error.response;
@@ -2299,10 +2295,27 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     },
     selectLesson: function selectLesson(id) {
-      var _this2 = this;
-
       console.log("get lesson" + id);
       this.lessonActive = id; //this.$store.state.lessonLearning = this.lessonActive;
+
+      this.getDataLesson();
+    },
+    selectLessonDec: function selectLessonDec(id) {
+      if (id > 1) {
+        this.lessonActive = id - 1; //this.$store.state.lessonLearning = this.lessonActive;
+
+        this.getDataLesson();
+      }
+    },
+    selectLessonInc: function selectLessonInc(id) {
+      if (id < this.lessonMax) {
+        this.lessonActive = id + 1; //this.$store.state.lessonLearning = this.lessonActive;
+
+        this.getDataLesson();
+      }
+    },
+    getDataLesson: function getDataLesson() {
+      var _this2 = this;
 
       this.dataLesson = this.data.filter(function (item) {
         return item.lesson === _this2.lessonActive;
@@ -2310,40 +2323,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       if (this.isRandom) {
         this.dataLesson = this.shuffle(this.dataLesson);
-      }
-    },
-    selectLessonDec: function selectLessonDec(id) {
-      var _this3 = this;
-
-      if (id > 1) {
-        this.lessonActive = id - 1; //this.$store.state.lessonLearning = this.lessonActive;
-
-        this.dataLesson = this.data.filter(function (item) {
-          return item.lesson === _this3.lessonActive;
-        });
-
-        if (this.isRandom) {
-          this.dataLesson = this.shuffle(this.dataLesson);
-        }
-
-        console.log("get lesson" + (id - 1));
-      }
-    },
-    selectLessonInc: function selectLessonInc(id) {
-      var _this4 = this;
-
-      if (id < this.lessonMax) {
-        this.lessonActive = id + 1; //this.$store.state.lessonLearning = this.lessonActive;
-
-        this.dataLesson = this.data.filter(function (item) {
-          return item.lesson === _this4.lessonActive;
-        });
-
-        if (this.isRandom) {
-          this.dataLesson = this.shuffle(this.dataLesson);
-        }
-
-        console.log("get lesson" + (id + 1));
       }
     },
     // Ham dao trat tu mang

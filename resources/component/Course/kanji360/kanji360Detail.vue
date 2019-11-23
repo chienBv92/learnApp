@@ -138,6 +138,7 @@
             changeRandom(){
                 this.isRandom = !this.isRandom;
                 this.$store.state.isRandom = this.isRandom;
+                this.getDataLesson();
             },
             changeDispHanViet(){
                 this.isDispHanViet = !this.isDispHanViet;
@@ -157,10 +158,7 @@
                             this.data = response.data[0];
                             this.lessonMax = response.data[1];
                             this.kanjiLevel = response.data[2];
-                            this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
-                            if(this.isRandom){
-                                this.dataLesson = this.shuffle(this.dataLesson);
-                            }
+                            this.getDataLesson();
                         }
                     })
                     .catch(error => {
@@ -172,33 +170,26 @@
                 console.log("get lesson" + id);
                 this.lessonActive = id;
                 //this.$store.state.lessonLearning = this.lessonActive;
-                this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
-                if(this.isRandom){
-                    this.dataLesson = this.shuffle(this.dataLesson);
-                }
+                this.getDataLesson();
             },
             selectLessonDec(id){
                 if(id > 1){
                     this.lessonActive = id - 1;
                     //this.$store.state.lessonLearning = this.lessonActive;
-                    this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
-                    if(this.isRandom){
-                        this.dataLesson = this.shuffle(this.dataLesson);
-                    }
-                    console.log("get lesson" + (id - 1));
-
+                    this.getDataLesson();
                 }
             },
             selectLessonInc(id){
                 if(id < this.lessonMax) {
                     this.lessonActive = id + 1;
                     //this.$store.state.lessonLearning = this.lessonActive;
-                    this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
-                    if(this.isRandom){
-                        this.dataLesson = this.shuffle(this.dataLesson);
-                    }
-                    console.log("get lesson" + (id + 1));
-
+                    this.getDataLesson();
+                }
+            },
+            getDataLesson(){
+                this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                if(this.isRandom){
+                    this.dataLesson = this.shuffle(this.dataLesson);
                 }
             },
             // Ham dao trat tu mang
