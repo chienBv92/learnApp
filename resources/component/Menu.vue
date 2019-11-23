@@ -72,10 +72,18 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Custom Setting:</h6>
-                    <a class="collapse-item" href="utilities-color.html">Colors</a>
-                    <a class="collapse-item" href="utilities-border.html">Borders</a>
-                    <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                    <a class="collapse-item" href="utilities-other.html">Other</a>
+                    <a class="collapse-item">
+                        <label style="cursor: pointer"><input type="checkbox" v-model="isRandom" class="" @click="changeRandom">Chế độ Random</label>
+                    </a>
+                    <a class="collapse-item">
+                        <label style="cursor: pointer"><input type="checkbox" class="" v-model="isDispHanViet" @click="changeDispHanViet">Chỉ hiển thị Hán Việt(kanji)</label>
+                    </a>
+                    <a class="collapse-item">
+                        <label style="cursor: pointer"><input type="checkbox" class="" v-model="isOnlyKanji" @click="changeOnlyKanji">Chỉ hiển thị Kanji</label>
+                    </a>
+                    <a class="collapse-item">Borders</a>
+                    <a class="collapse-item" >Animations</a>
+                    <a class="collapse-item">Other</a>
                 </div>
             </div>
         </li>
@@ -103,10 +111,36 @@
 
 <script>
     export default {
-        name: "Menu"
+        name: "Menu",
+        data: function(){
+            return{
+                isRandom: this.$store.state.isRandom,
+                isDispHanViet: this.$store.state.isDispHanViet,
+                isOnlyKanji: this.$store.state.isOnlyKanji
+            }
+        },
+        methods:{
+            changeRandom(){
+                console.log("Thay doi check" + this.isRandom);
+                this.isRandom = !this.isRandom;
+                this.$store.state.isRandom = this.isRandom;
+                console.log("Sau Thay doi check" + this.$store.state.isRandom);
+            },
+            changeDispHanViet(){
+                this.isDispHanViet = !this.isDispHanViet;
+                this.$store.state.isDispHanViet = this.isDispHanViet;
+            },
+            changeOnlyKanji(){
+                this.isOnlyKanji = !this.isOnlyKanji;
+                this.$store.state.isOnlyKanji = this.isOnlyKanji;
+            }
+
+        }
     }
 </script>
 
 <style scoped>
-
+.collapse-item{
+    cursor: pointer;
+}
 </style>

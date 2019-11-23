@@ -18,7 +18,9 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
 <!--                    <CourseMain></CourseMain>-->
-                    <router-view></router-view>
+                    <transition name="slide">
+                        <router-view></router-view>
+                    </transition>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -53,5 +55,24 @@
 </script>
 
 <style scoped>
+    .slide-leave-active{
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        animation: slide-out 0.5s ease-out forwards;
+    }
+    .slide-leave{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    @keyframes slide-out {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            tranform:translateX(30px)
+
+        }
+
+    }
 
 </style>

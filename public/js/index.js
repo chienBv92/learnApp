@@ -41,7 +41,7 @@ $(document).on('click', 'a.scroll-to-top', function(e) {
     e.preventDefault();
 });
 
-$('.lessonSelect').click(function(){
-    $('.lessonSelect').removeClass('active');
-    $(this).addClass('active');
-});
+// $('.lessonSelect').click(function(){
+//     $('.lessonSelect').removeClass('active');
+//     $(this).addClass('active');
+// });

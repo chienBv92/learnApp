@@ -4,6 +4,7 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 import {routes} from "./routes";
+import  {store} from "./store";
 
 window.axios = require('axios');
 
@@ -25,6 +26,7 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: '#app',
     router,
+    store,
     components: {
         Layout: Layout
     }

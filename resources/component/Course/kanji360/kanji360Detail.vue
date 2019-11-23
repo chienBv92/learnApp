@@ -1,5 +1,5 @@
 <template>
-    <div class="kanjiDetail">
+    <div class="kanjiDetail" v-if="status =='success'">
         <div v-if="kanjiLevel" class="single_course_header">
             <div class="container-fluid">
                 <div class="row">
@@ -11,12 +11,12 @@
                                 <h2>{{kanjiLevel.Name}}</h2>
                                 <p> {{kanjiLevel.Description}}</p>
                                 <span class="course_progress">
-                26 lessons - 27 out
+                {{lessonActive}} lessons - {{kanjiLevel.TotalLesson - lessonActive}} out
                 of  steps completed
                                 </span>
                                 <div class="progress">
-                                    <div role="progressbar" aria-valuemin="0" :aria-valuemax="kanjiLevel.TotalLesson" :aria-valuenow="kanjiLevel.LessonLearning" class="progress-bar"
-                                         :style="{width: (kanjiLevel.LessonLearning / kanjiLevel.TotalLesson) * 100 + '%'}">
+                                    <div role="progressbar" aria-valuemin="0" :aria-valuemax="kanjiLevel.TotalLesson" :aria-valuenow="lessonActive" class="progress-bar"
+                                         :style="{width: (lessonActive / kanjiLevel.TotalLesson) * 100 + '%'}">
                                         <!---->
                                     </div>
                                 </div>
@@ -29,24 +29,51 @@
             </div>
         </div>
 
+        <div class="settingDspKan">
+            <a class="collapse-item">
+                <label style="cursor: pointer"><input type="checkbox" v-model="isRandom" class="" @click="changeRandom">Chế độ Random</label>
+            </a>
+            <a class="collapse-item">
+                <label style="cursor: pointer"><input type="checkbox" class="" v-model="isDispHanViet" @click="changeDispHanViet">Hiển thị Hán Việt + kanji</label>
+            </a>
+            <a class="collapse-item">
+                <label style="cursor: pointer"><input type="checkbox" class="" v-model="isOnlyKanji" @click="changeOnlyKanji">Chỉ hiển thị Kanji</label>
+            </a>
+        </div>
+
         <div class="divTop" >
             <div class="lessonSelect" v-for="i in lessonMax" @click="selectLesson(i)" v-bind:class="{active:(lessonActive == i)}">
                 <span>Trang {{i}}</span>
             </div>
             <div class="text-center margin-top-grade menu_grade_mobile">
-                <div class="_1Iav0 _1wciQ"><span class="span-grade">Lớp <!-- -->7</span>
-                    <i class="fa fa-chevron-circle-left pull-left _1a0Cb false"></i>
-                    <i class="fa fa-chevron-circle-right pull-right _1a0Cb false"></i>
+                <div class="_1Iav0 _1wciQ" v-for="i in lessonMax" v-bind:class="{active:(lessonActive == i)}"
+                v-if="(lessonActive == i)">
+                    <span class="span-grade" @click="selectLesson(i)">Trang {{i}} </span>
+                    <i class="fa fa-chevron-circle-left pull-left _1a0Cb dec" @click="selectLessonDec(i)" v-bind:class="{'YEPux':(i<=1)}" :disabled="i<=1"></i>
+                    <i class="fa fa-chevron-circle-right pull-right _1a0Cb inc" @click="selectLessonInc(i)" v-bind:class="{'YEPux':(i>=lessonMax)}" :disabled="i==lessonMax"></i>
                 </div>
             </div>
         </div>
 
-        <div>{{data}}</div>
+        <div id="kanjiAll">
+            <div class="kanjiAll" v-for="item in dataLesson" @click="">
+                <div class="dsp-kanji"> {{item.kanji}}</div>
+                <div class="dsp-hanviet" v-if="!isOnlyKanji"> {{item.HanViet}} </div>
+                <div class="dsp-meaning" v-show="!isOnlyKanji"> {{item.meaning}} </div>
+
+            </div>
+
+        </div>
+
+
         <div v-for="item in data">
             <p>{{item.HanViet}}</p>
             <p>{{item.hiragara}}</p>
             <p>{{item.meaning}}</p>
         </div>
+    </div>
+    <div v-else>
+        Loading....
     </div>
 
 </template>
@@ -60,11 +87,18 @@
             return {
                 metaTitle: this.$route.params.metatitle,
                 // dataTotal: json,
+                isRandom: this.$store.state.isRandom,
+                isDispHanViet: this.$store.state.isDispHanViet,
+                isOnlyKanji: this.$store.state.isOnlyKanji,
+
                 data: [],
+                dataLesson: [],
                 kanjiLevel:{},
                 lessonMax: 0,
-                lessonActive: 1,
-                error: []
+                lessonActive: this.$store.state.lessonLearning,
+                isOnlyKanji: this.$store.state.isOnlyKanji,
+                error: [],
+                status:''
             }
         },
         beforeCreate() {
@@ -81,7 +115,8 @@
         watch: {
             '$route'(to, from){
                 this.id = to.params.id
-            }
+            },
+
         },
         // mounted() {
         //     this.getDefaultFilter();
@@ -99,27 +134,90 @@
                     }
                 }
             },
+            // setting hiển thị
+            changeRandom(){
+                this.isRandom = !this.isRandom;
+                this.$store.state.isRandom = this.isRandom;
+            },
+            changeDispHanViet(){
+                this.isDispHanViet = !this.isDispHanViet;
+                this.$store.state.isDispHanViet = this.isDispHanViet;
+            },
+            changeOnlyKanji(){
+                this.isOnlyKanji = !this.isOnlyKanji;
+                this.$store.state.isOnlyKanji = this.isOnlyKanji;
+            },
+
             getListKanjiLevel() {
                 axios.get('/getKanjiByLevel/' + this.metaTitle)
                     .then(response => {
                         console.log(response);
                         if(response.status == 200){
+                            this.status = 'success';
                             this.data = response.data[0];
                             this.lessonMax = response.data[1];
                             this.kanjiLevel = response.data[2];
+                            this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                            if(this.isRandom){
+                                this.dataLesson = this.shuffle(this.dataLesson);
+                            }
                         }
                     })
                     .catch(error => {
                         this.errors = error.response;
+                        this.status = 'error';
                     })
             },
             selectLesson(id){
                 console.log("get lesson" + id);
                 this.lessonActive = id;
+                //this.$store.state.lessonLearning = this.lessonActive;
+                this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                if(this.isRandom){
+                    this.dataLesson = this.shuffle(this.dataLesson);
+                }
+            },
+            selectLessonDec(id){
+                if(id > 1){
+                    this.lessonActive = id - 1;
+                    //this.$store.state.lessonLearning = this.lessonActive;
+                    this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                    if(this.isRandom){
+                        this.dataLesson = this.shuffle(this.dataLesson);
+                    }
+                    console.log("get lesson" + (id - 1));
+
+                }
+            },
+            selectLessonInc(id){
+                if(id < this.lessonMax) {
+                    this.lessonActive = id + 1;
+                    //this.$store.state.lessonLearning = this.lessonActive;
+                    this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                    if(this.isRandom){
+                        this.dataLesson = this.shuffle(this.dataLesson);
+                    }
+                    console.log("get lesson" + (id + 1));
+
+                }
+            },
+            // Ham dao trat tu mang
+            shuffle(a) {
+                var j, x, i;
+                for (i = a.length - 1; i > 0; i--) {
+                    j = Math.floor(Math.random() * (i + 1));
+                    x = a[i];
+                    a[i] = a[j];
+                    a[j] = x;
+                }
+                return a;
             }
 
         },
         computed: {
+            LessonLearning: function () {
+                return this.$store.state.lessonLearning
+            }
 
         }
     }
@@ -150,6 +248,47 @@
         -webkit-box-shadow: 1px -3px 1px -2px #65666a;
         box-shadow: 1px -3px 1px -2px #65666a;
     }
+    .settingDspKan{
+        padding-top: 10px;
+        background: #eceaf5;
+    }
+
+    #kanjiAll .kanjiAll {
+        font-size: 15px;
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+        width: 120px;
+        cursor: pointer;
+        color: #4c4f64;
+        padding-top: 16px!important;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        /*padding: 14px;*/
+        background-color: #fff;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+        height: 100px;
+        -webkit-box-shadow: 1px -3px 1px -2px #65666a;
+        box-shadow: 1px -3px 1px -2px #65666a;
+        border: solid 1px ;
+    }
+    #kanjiAll .dsp-kanji{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #kanjiAll .dsp-hanviet{
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+    }
+    #kanjiAll .dsp-meaning{
+        font-size: 11px;
+        font-weight: normal;
+        text-align: center;
+    }
 
     .lessonSelect.active {
         background: linear-gradient(180deg, #55c57a 0, #36a55b);
@@ -158,21 +297,24 @@
     .menu_grade_mobile {
         display: none;
     }
-    ._1a0Cb {
-        padding: 1px!important;
-        font-size: 28px;
-        padding-left: 4px!important;
-        padding-right: 4px!important;
-    }
+
     @media (max-width: 768px) {
+        .lessonSelect {
+            display: none;
+        }
         .menu_grade_mobile {
             display: inherit;
             margin-top: 21px !important;
         }
-    }
-    @media (max-width: 768px) {
-        .lessonSelect {
-            display: none;
+        ._1a0Cb {
+            color: white;
+            padding: 1px!important;
+            font-size: 28px;
+            padding-left: 4px!important;
+            padding-right: 4px!important;
+        }
+        .span-grade{
+            color: white;
         }
         ._1Iav0 {
             width: 350px;
@@ -189,6 +331,12 @@
             margin-right: 5px;
             margin-top: 10px;
             height: 45px;
+        }
+        ._1Iav0.active {
+            background: linear-gradient(180deg, #55c57a 0, #36a55b);
+        }
+        .YEPux {
+            color: #ffffff4d;
         }
     }
 
