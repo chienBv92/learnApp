@@ -18,8 +18,9 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
 <!--                    <CourseMain></CourseMain>-->
+                    <router-view></router-view>
                     <transition name="slide">
-                        <router-view></router-view>
+
                     </transition>
 
                 </div>
@@ -40,8 +41,8 @@
 <script>
     import Menu from './Menu';
     import Header from './Header';
-    import App from  './App';
-    import CourseMain from "./Course/CourseMain";
+    import App from '../App';
+    import CourseMain from "../Course/CourseMain";
 
     export default {
         name: "Layout",

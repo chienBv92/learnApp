@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>Học tiếng nhật online</title>
+    <title>Quản trị nội dung</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
 
 {{--    <title>@yield('title')</title>--}}
 
-    <!-- Custom fonts for this template-->
+<!-- Custom fonts for this template-->
     <link href="assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="assets/admin/css/numito.css" rel="stylesheet">
 {{--    <link href="assets/admin/css/font-awesome.css" rel="stylesheet">--}}
@@ -67,7 +67,7 @@
 {{--<script src="assets/admin/js/sb-admin-2.js"></script>--}}
 
 
-<script src="/js/client/app.js"></script>
+<script src="/js/admin/admin.js"></script>
 <script src="/js/index.js"></script>
 
 </body>

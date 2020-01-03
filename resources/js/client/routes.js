@@ -1,8 +1,8 @@
-import CourseMain from "../component/Course/CourseMain";
-import Kanji360 from "../component/Course/Kanji360";
-import CourseItem from "../component/Course/CourseItem";
-import LearnLevel from "../component/Course/LearnLevel";
-import kanji360Detail from "../component/Course/kanji360/kanji360Detail";
+import CourseMain from "../../component/client/Course/CourseMain";
+import Kanji360 from "../../component/client/Course/Kanji360";
+import CourseItem from "../../component/client/Course/CourseItem";
+import LearnLevel from "../../component/client/Course/LearnLevel";
+import kanji360Detail from "../../component/client/Course/kanji360/kanji360Detail";
 export const routes = [
     {
         path: "/",

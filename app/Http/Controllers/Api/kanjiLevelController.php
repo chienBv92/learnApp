@@ -13,10 +13,11 @@ class kanjiLevelController extends Controller
     //
     public function index()
     {
-        $kanjiLevel = KanjiLevel::all();
+        //$kanjiLevel = KanjiLevel::all();
+        $ketqua = ["hi", "Ki", "kasshi"];
 
         //$users = DB::collection('users')->get();
-        return response()->json($kanjiLevel, 200);
+        return response()->json($ketqua, 200);
     }
 
     public function getKanjiByLevel($metaTitle)

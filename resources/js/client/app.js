@@ -10,7 +10,7 @@ window.axios = require('axios');
 
 //import Bootrap from  './bootstrap';
 
-import Layout from  '../component/Layout';
+import Layout from '../../component/client/Layout';
 
 Vue.use(VueRouter);
 // sử dụng router bằng biến mới tên router
