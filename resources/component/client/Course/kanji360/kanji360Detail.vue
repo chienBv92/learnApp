@@ -80,6 +80,9 @@
 
 <script>
     import json from '../KanjiLevel.json';
+    import data3k from './3K.json';
+    import data4k from './4K.json';
+
     export default {
         name: "kanji360Detail",
 
@@ -105,7 +108,7 @@
             console.log("Giá trị đầu tiên: " + this.metaTitle)
         },
         created() {
-            this.getListKanjiLevel();
+            this.getData();
         },
         beforeMount() {
         },
@@ -165,6 +168,17 @@
                         this.errors = error.response;
                         this.status = 'error';
                     })
+            },
+            getData(){
+                switch (this.metaTitle){
+                    case 'hantu-4k' :
+                        this.data = data4k;
+                        break;
+                    case 'hantu-3k' :
+                        this.data = data3k;
+                        break;
+                }
+
             },
             selectLesson(id){
                 console.log("get lesson" + id);

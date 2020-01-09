@@ -1,0 +1,2372 @@
+[
+  {
+    "code": "4K001",
+    "kanji": "悪",
+    "HanViet": "ÁC",
+    "meaning": "Ác nhân"
+  },
+  {
+    "code": "4K002",
+    "kanji": "屋 ",
+    "HanViet": "ỐC",
+    "meaning": "Cao ốc"
+  },
+  {
+    "code": "4K003",
+    "kanji": "億 ",
+    "HanViet": "ỨC",
+    "meaning": "100 triệu"
+  },
+  {
+    "code": "4K004",
+    "kanji": "安",
+    "HanViet": "AN",
+    "meaning": "An toàn"
+  },
+  {
+    "code": "4K005",
+    "kanji": "暗",
+    "HanViet": "ÁM",
+    "meaning": "Tối"
+  },
+  {
+    "code": "4K006",
+    "kanji": "案",
+    "HanViet": "ÁN",
+    "meaning": "Đề án"
+  },
+  {
+    "code": "4K007",
+    "kanji": "意 ",
+    "HanViet": "Ý",
+    "meaning": "Ý chí"
+  },
+  {
+    "code": "4K008",
+    "kanji": "委",
+    "HanViet": "UỶ",
+    "meaning": "Uỷ viên"
+  },
+  {
+    "code": "4K009",
+    "kanji": "医",
+    "HanViet": "Y",
+    "meaning": "Y học"
+  },
+  {
+    "code": "4K010",
+    "kanji": "以",
+    "HanViet": "DĨ",
+    "meaning": "Cái mốc"
+  },
+  {
+    "code": "4K011",
+    "kanji": "位",
+    "HanViet": "VỊ",
+    "meaning": "Vị trí"
+  },
+  {
+    "code": "4K012",
+    "kanji": "胃",
+    "HanViet": "VỊ",
+    "meaning": "Dạ dày"
+  },
+  {
+    "code": "4K013",
+    "kanji": "囲 ",
+    "HanViet": "VI",
+    "meaning": "Phạm vi"
+  },
+  {
+    "code": "4K014",
+    "kanji": "衣",
+    "HanViet": "Y",
+    "meaning": "Y phục"
+  },
+  {
+    "code": "4K015",
+    "kanji": "塩",
+    "HanViet": "DIÊM",
+    "meaning": "Muối"
+  },
+  {
+    "code": "4K016",
+    "kanji": "院 ",
+    "HanViet": "BỆNH",
+    "meaning": "Bệnh viện"
+  },
+  {
+    "code": "4K017",
+    "kanji": "員",
+    "HanViet": "VIÊN",
+    "meaning": "Nhân viên"
+  },
+  {
+    "code": "4K018",
+    "kanji": "飮",
+    "HanViet": "ẨM",
+    "meaning": "Ẩm thực"
+  },
+  {
+    "code": "4K019",
+    "kanji": "横",
+    "HanViet": "HOÀNH",
+    "meaning": "Trục hoành"
+  },
+  {
+    "code": "4K020",
+    "kanji": "央 ",
+    "HanViet": "ƯƠNG",
+    "meaning": "Trung ương"
+  },
+  {
+    "code": "4K021",
+    "kanji": "僾",
+    "HanViet": "ÁI",
+    "meaning": "Tình ái"
+  },
+  {
+    "code": "4K022",
+    "kanji": "温",
+    "HanViet": "ÔN",
+    "meaning": "Tối"
+  },
+  {
+    "code": "4K023",
+    "kanji": "運 ",
+    "HanViet": "VẬN",
+    "meaning": "Vận động"
+  },
+  {
+    "code": "4K024",
+    "kanji": "育",
+    "HanViet": "DỤC",
+    "meaning": "Giáo dục"
+  },
+  {
+    "code": "4K025",
+    "kanji": "駅",
+    "HanViet": "DỊCH",
+    "meaning": "Nhà ga"
+  },
+  {
+    "code": "4K026",
+    "kanji": "泳",
+    "HanViet": "VỊNH",
+    "meaning": "Bơi"
+  },
+  {
+    "code": "4K027",
+    "kanji": "栄",
+    "HanViet": "VINH",
+    "meaning": "Vinh quang"
+  },
+  {
+    "code": "4K028",
+    "kanji": "英",
+    "HanViet": "ANH",
+    "meaning": "Tiếng Anh"
+  },
+  {
+    "code": "4K029",
+    "kanji": "印",
+    "HanViet": "ẤN",
+    "meaning": "Ấn tượng"
+  },
+  {
+    "code": "4K030",
+    "kanji": "荷",
+    "HanViet": "HÀ",
+    "meaning": "Hành lý"
+  },
+  {
+    "code": "4K031",
+    "kanji": "貨",
+    "HanViet": "HOÁ",
+    "meaning": "Hàng hoá"
+  },
+  {
+    "code": "4K032",
+    "kanji": "課",
+    "HanViet": "KHOÁ",
+    "meaning": "Khoá học"
+  },
+  {
+    "code": "4K033",
+    "kanji": "加",
+    "HanViet": "GIA",
+    "meaning": "Tham gia"
+  },
+  {
+    "code": "4K034",
+    "kanji": "果 ",
+    "HanViet": "QUẢ",
+    "meaning": "Kết quả"
+  },
+  {
+    "code": "4K035",
+    "kanji": "化",
+    "HanViet": "HOÁ",
+    "meaning": "Biến hoá"
+  },
+  {
+    "code": "4K036",
+    "kanji": "害",
+    "HanViet": "HẠI",
+    "meaning": "Tổn hại"
+  },
+  {
+    "code": "4K037",
+    "kanji": "街",
+    "HanViet": "NHAI",
+    "meaning": "Đường phố"
+  },
+  {
+    "code": "4K038",
+    "kanji": "覚",
+    "HanViet": "GIÁC",
+    "meaning": "Nhớ ra"
+  },
+  {
+    "code": "4K039",
+    "kanji": "名",
+    "HanViet": "CÁC",
+    "meaning": "Các vị"
+  },
+  {
+    "code": "4K040",
+    "kanji": "開",
+    "HanViet": "KHAI",
+    "meaning": "Khai vận"
+  },
+  {
+    "code": "4K041",
+    "kanji": "界",
+    "HanViet": "GIỚI",
+    "meaning": "Thế giới"
+  },
+  {
+    "code": "4K042",
+    "kanji": "階",
+    "HanViet": "GIAI",
+    "meaning": "Giai cấp"
+  },
+  {
+    "code": "4K043",
+    "kanji": "械",
+    "HanViet": "GIỚI",
+    "meaning": "Cơ giới"
+  },
+  {
+    "code": "4K044",
+    "kanji": "改 ",
+    "HanViet": "CẢI",
+    "meaning": "Cải cách"
+  },
+  {
+    "code": "4K045",
+    "kanji": "館",
+    "HanViet": "QUÁN",
+    "meaning": "Hội quán"
+  },
+  {
+    "code": "4K046",
+    "kanji": "感",
+    "HanViet": "CẢM",
+    "meaning": "Cảm tạ"
+  },
+  {
+    "code": "4K047",
+    "kanji": "寒",
+    "HanViet": "HÀN",
+    "meaning": "Lạnh"
+  },
+  {
+    "code": "4K048",
+    "kanji": "漢",
+    "HanViet": "HÁN",
+    "meaning": "Hán tự"
+  },
+  {
+    "code": "4K049",
+    "kanji": "関",
+    "HanViet": "QUAN",
+    "meaning": "Liên quan"
+  },
+  {
+    "code": "4K050",
+    "kanji": "完",
+    "HanViet": "HOÀN",
+    "meaning": "Hoàn thành"
+  },
+  {
+    "code": "4K051",
+    "kanji": "管",
+    "HanViet": "QUẢN",
+    "meaning": "Quản lý"
+  },
+  {
+    "code": "4K052",
+    "kanji": "官",
+    "HanViet": "QUAN",
+    "meaning": "Quan lại"
+  },
+  {
+    "code": "4K053",
+    "kanji": "観",
+    "HanViet": "QUAN",
+    "meaning": "Quan sát"
+  },
+  {
+    "code": "4K054",
+    "kanji": "岸",
+    "HanViet": "NGẠN",
+    "meaning": "Bờ biển"
+  },
+  {
+    "code": "4K055",
+    "kanji": "願",
+    "HanViet": "NGUYỆN",
+    "meaning": "Nguyện ước"
+  },
+  {
+    "code": "4K056",
+    "kanji": "起",
+    "HanViet": "KHỞI",
+    "meaning": "Thức dậy"
+  },
+  {
+    "code": "4K057",
+    "kanji": "期",
+    "HanViet": "KÌ",
+    "meaning": "Kì hạn"
+  },
+  {
+    "code": "4K058",
+    "kanji": "喜",
+    "HanViet": "HỶ",
+    "meaning": "Hạnh phúc"
+  },
+  {
+    "code": "4K059",
+    "kanji": "季",
+    "HanViet": "QUÝ",
+    "meaning": "Niên quý"
+  },
+  {
+    "code": "4K060",
+    "kanji": "旗",
+    "HanViet": "KÌ",
+    "meaning": "Quốc kì"
+  },
+  {
+    "code": "4K061",
+    "kanji": "紀",
+    "HanViet": "KỈ",
+    "meaning": "Thế kỉ"
+  },
+  {
+    "code": "4K062",
+    "kanji": "希",
+    "HanViet": "HI",
+    "meaning": "Hi vọng"
+  },
+  {
+    "code": "4K063",
+    "kanji": "希",
+    "HanViet": "CƠ",
+    "meaning": "Cơ khí"
+  },
+  {
+    "code": "4K064",
+    "kanji": "希",
+    "HanViet": "KHÍ",
+    "meaning": "Vũ khí"
+  },
+  {
+    "code": "4K065",
+    "kanji": "希",
+    "HanViet": "NGHỊ",
+    "meaning": "Hội nghị"
+  },
+  {
+    "code": "4K066",
+    "kanji": "希",
+    "HanViet": "KHÁCH",
+    "meaning": "Lữ khách"
+  },
+  {
+    "code": "4K067",
+    "kanji": "急",
+    "HanViet": "CẤP",
+    "meaning": "Khẩn cấp"
+  },
+  {
+    "code": "4K068",
+    "kanji": "級",
+    "HanViet": "CẤP",
+    "meaning": "Cấp độ"
+  },
+  {
+    "code": "4K069",
+    "kanji": "球",
+    "HanViet": "CẦU",
+    "meaning": "Quả cầu"
+  },
+  {
+    "code": "4K070",
+    "kanji": "究",
+    "HanViet": "CỨU",
+    "meaning": "Nghiên cứu"
+  },
+  {
+    "code": "4K071",
+    "kanji": "救",
+    "HanViet": "CỨU",
+    "meaning": "Cấp cứu"
+  },
+  {
+    "code": "4K072",
+    "kanji": "泣",
+    "HanViet": "Khấp",
+    "meaning": "Khóc"
+  },
+  {
+    "code": "4K073",
+    "kanji": "求",
+    "HanViet": "CẦU",
+    "meaning": "Yêu cầu"
+  },
+  {
+    "code": "4K074",
+    "kanji": "給",
+    "HanViet": "CẤP",
+    "meaning": "Cung cấp"
+  },
+  {
+    "code": "4K075",
+    "kanji": "宮",
+    "HanViet": "CUNG",
+    "meaning": "Cung điện"
+  },
+  {
+    "code": "4K076",
+    "kanji": "去",
+    "HanViet": "KHỨ",
+    "meaning": "Quá khứ"
+  },
+  {
+    "code": "4K077",
+    "kanji": "挙",
+    "HanViet": "CỬ",
+    "meaning": "Tiến cử"
+  },
+  {
+    "code": "4K078",
+    "kanji": "橋",
+    "HanViet": "KIỀU",
+    "meaning": "Cây cầu"
+  },
+  {
+    "code": "4K079",
+    "kanji": "競",
+    "HanViet": "CẠNH",
+    "meaning": "Cạnh tranh"
+  },
+  {
+    "code": "4K080",
+    "kanji": "共",
+    "HanViet": "CỘNG",
+    "meaning": "Công cộng"
+  },
+  {
+    "code": "4K081",
+    "kanji": "恊",
+    "HanViet": "HIỆP",
+    "meaning": "Hiệp lực"
+  },
+  {
+    "code": "4K082",
+    "kanji": "鏡",
+    "HanViet": "KÍNH",
+    "meaning": "Gương"
+  },
+  {
+    "code": "4K083",
+    "kanji": "業",
+    "HanViet": "NGHIỆP",
+    "meaning": "Nghiệp vụ"
+  },
+  {
+    "code": "4K084",
+    "kanji": "曲",
+    "HanViet": "KHÚC",
+    "meaning": "Khúc nhạc"
+  },
+  {
+    "code": "4K085",
+    "kanji": "局",
+    "HanViet": "CỤC",
+    "meaning": "Bưu cục"
+  },
+  {
+    "code": "4K086",
+    "kanji": "極",
+    "HanViet": "CỰC",
+    "meaning": "Cực đoan"
+  },
+  {
+    "code": "4K087",
+    "kanji": "銀",
+    "HanViet": "NGÂN",
+    "meaning": "Bạc, Ngân hàng"
+  },
+  {
+    "code": "4K088",
+    "kanji": "苦",
+    "HanViet": "KHỔ",
+    "meaning": "Đắng, Khốn khổ"
+  },
+  {
+    "code": "4K089",
+    "kanji": "区",
+    "HanViet": "KHU",
+    "meaning": "Khu vực"
+  },
+  {
+    "code": "4K090",
+    "kanji": "具",
+    "HanViet": "CỤ",
+    "meaning": "Công cụ, Đạo cụ"
+  },
+  {
+    "code": "4K091",
+    "kanji": "君",
+    "HanViet": "QUÂN",
+    "meaning": "Quân chủ"
+  },
+  {
+    "code": "4K092",
+    "kanji": "訓",
+    "HanViet": "HUẤN",
+    "meaning": "Giáo huấn"
+  },
+  {
+    "code": "4K093",
+    "kanji": "軍",
+    "HanViet": "QUÂN",
+    "meaning": "Quân đội"
+  },
+  {
+    "code": "4K094",
+    "kanji": "郡",
+    "HanViet": "QUẬN",
+    "meaning": "Quận huyện"
+  },
+  {
+    "code": "4K095",
+    "kanji": "軽",
+    "HanViet": "KHINH",
+    "meaning": "Nhẹ"
+  },
+  {
+    "code": "4K096",
+    "kanji": "係",
+    "HanViet": "HỆ",
+    "meaning": "Quan hệ"
+  },
+  {
+    "code": "4K097",
+    "kanji": "型",
+    "HanViet": "HÌNH",
+    "meaning": "Địa hình"
+  },
+  {
+    "code": "4K098",
+    "kanji": "径",
+    "HanViet": "KÍNH",
+    "meaning": "Đường kính"
+  },
+  {
+    "code": "4K099",
+    "kanji": "景",
+    "HanViet": "CẢNH",
+    "meaning": "Quang cảnh"
+  },
+  {
+    "code": "4K100",
+    "kanji": "芸",
+    "HanViet": "NGHỆ",
+    "meaning": "Nghệ thuật"
+  },
+  {
+    "code": "4K101",
+    "kanji": "血",
+    "HanViet": "HUYẾT",
+    "meaning": "Máu"
+  },
+  {
+    "code": "4K102",
+    "kanji": "決",
+    "HanViet": "QUYẾT",
+    "meaning": "Quyết định"
+  },
+  {
+    "code": "4K103",
+    "kanji": "結",
+    "HanViet": "KẾT",
+    "meaning": "Kết hôn"
+  },
+  {
+    "code": "4K104",
+    "kanji": "欠",
+    "HanViet": "KHIẾM",
+    "meaning": "Thiếu"
+  },
+  {
+    "code": "4K105",
+    "kanji": "県",
+    "HanViet": "HUYỆN",
+    "meaning": "Huyện, Tỉnh"
+  },
+  {
+    "code": "4K106",
+    "kanji": "研",
+    "HanViet": "NGHIÊN",
+    "meaning": "Nghiên cứu"
+  },
+  {
+    "code": "4K107",
+    "kanji": "建",
+    "HanViet": "KIẾN",
+    "meaning": "Xây dựng"
+  },
+  {
+    "code": "4K108",
+    "kanji": "健",
+    "HanViet": "KIỆN",
+    "meaning": "Tráng kiện"
+  },
+  {
+    "code": "4K109",
+    "kanji": "験",
+    "HanViet": "NGHIỆM",
+    "meaning": "Thí nghiệm"
+  },
+  {
+    "code": "4K110",
+    "kanji": "湖",
+    "HanViet": "HỒ",
+    "meaning": "Cái hồ"
+  },
+  {
+    "code": "4K111",
+    "kanji": "固",
+    "HanViet": "CỐ",
+    "meaning": "Kiên cố"
+  },
+  {
+    "code": "4K112",
+    "kanji": "庫",
+    "HanViet": "KHỐ",
+    "meaning": "Kho, Chứa"
+  },
+  {
+    "code": "4K113",
+    "kanji": "幸",
+    "HanViet": "HẠNH",
+    "meaning": "Hạnh phúc"
+  },
+  {
+    "code": "4K114",
+    "kanji": "向",
+    "HanViet": "HƯỚNG",
+    "meaning": "Hướng về"
+  },
+  {
+    "code": "4K115",
+    "kanji": "港",
+    "HanViet": "CẢNG",
+    "meaning": "Hải cảng"
+  },
+  {
+    "code": "4K116",
+    "kanji": "康",
+    "HanViet": "KHANG",
+    "meaning": "Sức khoẻ"
+  },
+  {
+    "code": "4K117",
+    "kanji": "候",
+    "HanViet": "HẬU",
+    "meaning": "Khí hậu"
+  },
+  {
+    "code": "4K118",
+    "kanji": "功",
+    "HanViet": "CÔNG",
+    "meaning": "Thành công"
+  },
+  {
+    "code": "4K119",
+    "kanji": "好",
+    "HanViet": "HẢO",
+    "meaning": "Thích"
+  },
+  {
+    "code": "4K120",
+    "kanji": "航",
+    "HanViet": "HÀNG",
+    "meaning": "Hàng hải"
+  },
+  {
+    "code": "4K121",
+    "kanji": "号",
+    "HanViet": "HIỆU",
+    "meaning": "Ký hiệu"
+  },
+  {
+    "code": "4K122",
+    "kanji": "告",
+    "HanViet": "CÁO",
+    "meaning": "Quảng cáo"
+  },
+  {
+    "code": "4K123",
+    "kanji": "芽",
+    "HanViet": "NHA",
+    "meaning": "Mạch nha"
+  },
+  {
+    "code": "4K124",
+    "kanji": "根",
+    "HanViet": "CĂN",
+    "meaning": "Gốc rễ"
+  },
+  {
+    "code": "4K125",
+    "kanji": "差",
+    "HanViet": "SAI",
+    "meaning": "Sai khác"
+  },
+  {
+    "code": "4K126",
+    "kanji": "皿",
+    "HanViet": "MÃNH",
+    "meaning": "Cái đĩa"
+  },
+  {
+    "code": "4K127",
+    "kanji": "祭",
+    "HanViet": "TẾ",
+    "meaning": "Tế lễ"
+  },
+  {
+    "code": "4K128",
+    "kanji": "最",
+    "HanViet": "TỐI",
+    "meaning": "Tối cao"
+  },
+  {
+    "code": "4K129",
+    "kanji": "菜",
+    "HanViet": "THÁI",
+    "meaning": "Rau"
+  },
+  {
+    "code": "4K130",
+    "kanji": "材",
+    "HanViet": "TÀI",
+    "meaning": "Khí tài"
+  },
+  {
+    "code": "4K131",
+    "kanji": "昨",
+    "HanViet": "TẠC",
+    "meaning": "Hôm qua"
+  },
+  {
+    "code": "4K132",
+    "kanji": "殺",
+    "HanViet": "SÁT",
+    "meaning": "Sát nhân"
+  },
+  {
+    "code": "4K133",
+    "kanji": "刷",
+    "HanViet": "LOÁT",
+    "meaning": "In ấn"
+  },
+  {
+    "code": "4K134",
+    "kanji": "札",
+    "HanViet": "TRÁT",
+    "meaning": "Tiền giấy"
+  },
+  {
+    "code": "4K135",
+    "kanji": "察",
+    "HanViet": "SÁT",
+    "meaning": "Cảnh sát"
+  },
+  {
+    "code": "4K136",
+    "kanji": "参",
+    "HanViet": "THAM",
+    "meaning": "Tham gia"
+  },
+  {
+    "code": "4K137",
+    "kanji": "散",
+    "HanViet": "TẢN",
+    "meaning": "Tản bộ"
+  },
+  {
+    "code": "4K138",
+    "kanji": "産",
+    "HanViet": "SẢN",
+    "meaning": "Sản nghiệp"
+  },
+  {
+    "code": "4K139",
+    "kanji": "残",
+    "HanViet": "Tàn",
+    "meaning": "Còn lại"
+  },
+  {
+    "code": "4K140",
+    "kanji": "指",
+    "HanViet": "CHỈ",
+    "meaning": "Ngón tay"
+  },
+  {
+    "code": "4K141",
+    "kanji": "始",
+    "HanViet": "THUỶ",
+    "meaning": "Bắt đầu"
+  },
+  {
+    "code": "4K142",
+    "kanji": "歯",
+    "HanViet": "XỈ",
+    "meaning": "Răng"
+  },
+  {
+    "code": "4K143",
+    "kanji": "死",
+    "HanViet": "TỬ",
+    "meaning": "Chết"
+  },
+  {
+    "code": "4K144",
+    "kanji": "詩",
+    "HanViet": "THI",
+    "meaning": "Thi ca"
+  },
+  {
+    "code": "4K145",
+    "kanji": "仕",
+    "HanViet": "SĨ",
+    "meaning": "Công việc"
+  },
+  {
+    "code": "4K146",
+    "kanji": "使",
+    "HanViet": "SỬ",
+    "meaning": "Sử dụng"
+  },
+  {
+    "code": "4K147",
+    "kanji": "氏",
+    "HanViet": "THỊ",
+    "meaning": "Họ tên"
+  },
+  {
+    "code": "4K148",
+    "kanji": "史",
+    "HanViet": "SỬ",
+    "meaning": "Lịch sử"
+  },
+  {
+    "code": "4K149",
+    "kanji": "試",
+    "HanViet": "THÍ",
+    "meaning": "Thử nghiệm"
+  },
+  {
+    "code": "4K150",
+    "kanji": "士",
+    "HanViet": "SĨ",
+    "meaning": "Nhân sĩ"
+  },
+  {
+    "code": "4K151",
+    "kanji": "司",
+    "HanViet": "TI",
+    "meaning": "Quản lý"
+  },
+  {
+    "code": "4K152",
+    "kanji": "次",
+    "HanViet": "THỨ",
+    "meaning": "Tiếp theo"
+  },
+  {
+    "code": "4K153",
+    "kanji": "持",
+    "HanViet": "TRÌ",
+    "meaning": "Duy trì"
+  },
+  {
+    "code": "4K154",
+    "kanji": "事",
+    "HanViet": "SỰ",
+    "meaning": "Sự việc"
+  },
+  {
+    "code": "4K155",
+    "kanji": "治",
+    "HanViet": "TRỊ",
+    "meaning": "Trị liệu"
+  },
+  {
+    "code": "4K156",
+    "kanji": "児",
+    "HanViet": "NHI",
+    "meaning": "Trẻ con"
+  },
+  {
+    "code": "4K157",
+    "kanji": "辞",
+    "HanViet": "TỪ",
+    "meaning": "Từ điển"
+  },
+  {
+    "code": "4K158",
+    "kanji": "式",
+    "HanViet": "THỨC",
+    "meaning": "Hình thức"
+  },
+  {
+    "code": "4K159",
+    "kanji": "写",
+    "HanViet": "TẢ",
+    "meaning": "Sao lại"
+  },
+  {
+    "code": "4K160",
+    "kanji": "者",
+    "HanViet": "GIẢ",
+    "meaning": "Người"
+  },
+  {
+    "code": "4K161",
+    "kanji": "失",
+    "HanViet": "THẤT",
+    "meaning": "Thất bại"
+  },
+  {
+    "code": "4K162",
+    "kanji": "実",
+    "HanViet": "THỰC",
+    "meaning": "Thực tế"
+  },
+  {
+    "code": "4K163",
+    "kanji": "借",
+    "HanViet": "TÁ",
+    "meaning": "Mượn"
+  },
+  {
+    "code": "4K164",
+    "kanji": "酒",
+    "HanViet": "TỬU",
+    "meaning": "Rượu"
+  },
+  {
+    "code": "4K165",
+    "kanji": "守",
+    "HanViet": "THỦ",
+    "meaning": "Bảo vệ"
+  },
+  {
+    "code": "4K166",
+    "kanji": "主",
+    "HanViet": "CHỦ",
+    "meaning": "Ông chủ"
+  },
+  {
+    "code": "4K167",
+    "kanji": "取",
+    "HanViet": "THỦ",
+    "meaning": "Lấy"
+  },
+  {
+    "code": "4K168",
+    "kanji": "種",
+    "HanViet": "CHỦNG",
+    "meaning": "Chủng loại"
+  },
+  {
+    "code": "4K169",
+    "kanji": "受",
+    "HanViet": "THỤ",
+    "meaning": "Nhận"
+  },
+  {
+    "code": "4K170",
+    "kanji": "習",
+    "HanViet": "TẬP",
+    "meaning": "Luyện tập"
+  },
+  {
+    "code": "4K171",
+    "kanji": "拾",
+    "HanViet": "THẬP",
+    "meaning": "Thu thập"
+  },
+  {
+    "code": "4K172",
+    "kanji": "集",
+    "HanViet": "TẬP",
+    "meaning": "Tập trung"
+  },
+  {
+    "code": "4K173",
+    "kanji": "終",
+    "HanViet": "CHUNG",
+    "meaning": "Kết thúc"
+  },
+  {
+    "code": "4K174",
+    "kanji": "州",
+    "HanViet": "CHÂU",
+    "meaning": "Cửu châu"
+  },
+  {
+    "code": "4K175",
+    "kanji": "周",
+    "HanViet": "CHU",
+    "meaning": "Chu vi"
+  },
+  {
+    "code": "4K176",
+    "kanji": "重",
+    "HanViet": "TRỌNG",
+    "meaning": "Nặng"
+  },
+  {
+    "code": "4K177",
+    "kanji": "住",
+    "HanViet": "TRÚ",
+    "meaning": "Cư trú"
+  },
+  {
+    "code": "4K178",
+    "kanji": "宿",
+    "HanViet": "TÚC",
+    "meaning": "Nhà trọ"
+  },
+  {
+    "code": "4K179",
+    "kanji": "祝",
+    "HanViet": "CHÚC",
+    "meaning": "Chúc mừng"
+  },
+  {
+    "code": "4K180",
+    "kanji": "順",
+    "HanViet": "THUẬN",
+    "meaning": "Thuận lợi"
+  },
+  {
+    "code": "4K181",
+    "kanji": "初",
+    "HanViet": "SƠ",
+    "meaning": "Sơ lược"
+  },
+  {
+    "code": "4K182",
+    "kanji": "暑",
+    "HanViet": "THỬ",
+    "meaning": "Nóng"
+  },
+  {
+    "code": "4K183",
+    "kanji": "所",
+    "HanViet": "SỞ",
+    "meaning": "Nơi chốn"
+  },
+  {
+    "code": "4K184",
+    "kanji": "助",
+    "HanViet": "TRỢ",
+    "meaning": "Trợ giúp"
+  },
+  {
+    "code": "4K185",
+    "kanji": "消",
+    "HanViet": "TIÊU",
+    "meaning": "Tiêu diệt"
+  },
+  {
+    "code": "4K186",
+    "kanji": "昭",
+    "HanViet": "CHIÊU",
+    "meaning": "Sáng"
+  },
+  {
+    "code": "4K187",
+    "kanji": "章",
+    "HanViet": "CHƯƠNG",
+    "meaning": "Chương hồi"
+  },
+  {
+    "code": "4K188",
+    "kanji": "商",
+    "HanViet": "THƯƠNG",
+    "meaning": "Thương phẩm"
+  },
+  {
+    "code": "4K189",
+    "kanji": "勝",
+    "HanViet": "THẮNG",
+    "meaning": "Chiến thắng"
+  },
+  {
+    "code": "4K190",
+    "kanji": "唱",
+    "HanViet": "XƯỚNG",
+    "meaning": "Ca xướng"
+  },
+  {
+    "code": "4K191",
+    "kanji": "笑",
+    "HanViet": "TIẾU",
+    "meaning": "Cười, Tiếu lâm"
+  },
+  {
+    "code": "4K192",
+    "kanji": "焼",
+    "HanViet": "THIÊU",
+    "meaning": "Thiêu đốt"
+  },
+  {
+    "code": "4K193",
+    "kanji": "松",
+    "HanViet": "TÙNG",
+    "meaning": "Hình thức"
+  },
+  {
+    "code": "4K194",
+    "kanji": "賞",
+    "HanViet": "THƯỞNG",
+    "meaning": "Tán thưởng"
+  },
+  {
+    "code": "4K195",
+    "kanji": "像",
+    "HanViet": "TƯỢNG",
+    "meaning": "Con voi"
+  },
+  {
+    "code": "4K196",
+    "kanji": "照",
+    "HanViet": "CHIẾU",
+    "meaning": "Chiếu sáng"
+  },
+  {
+    "code": "4K197",
+    "kanji": "省",
+    "HanViet": "TỈNH",
+    "meaning": "Coi xét"
+  },
+  {
+    "code": "4K198",
+    "kanji": "乗",
+    "HanViet": "THỪA",
+    "meaning": "Lên xe"
+  },
+  {
+    "code": "4K199",
+    "kanji": "埴",
+    "HanViet": "THỰC",
+    "meaning": "Trồng cây"
+  },
+  {
+    "code": "4K200",
+    "kanji": "身",
+    "HanViet": "THÂN",
+    "meaning": "Bản thân"
+  },
+  {
+    "code": "4K201",
+    "kanji": "進",
+    "HanViet": "TIẾN",
+    "meaning": "Tiến lên"
+  },
+  {
+    "code": "4K202",
+    "kanji": "申",
+    "HanViet": "THÂN",
+    "meaning": "Xưng tên"
+  },
+  {
+    "code": "4K203",
+    "kanji": "深",
+    "HanViet": "THÂM",
+    "meaning": "Sâu"
+  },
+  {
+    "code": "4K204",
+    "kanji": "真",
+    "HanViet": "CHÂN",
+    "meaning": "Chân thật"
+  },
+  {
+    "code": "4K205",
+    "kanji": "神",
+    "HanViet": "THẦN",
+    "meaning": "Thần thánh"
+  },
+  {
+    "code": "4K206",
+    "kanji": "信",
+    "HanViet": "TÍN",
+    "meaning": "Tín dụng"
+  },
+  {
+    "code": "4K207",
+    "kanji": "臣",
+    "HanViet": "THẦN",
+    "meaning": "Đại thần"
+  },
+  {
+    "code": "4K208",
+    "kanji": "世",
+    "HanViet": "THẾ",
+    "meaning": "Thế giới"
+  },
+  {
+    "code": "4K209",
+    "kanji": "整",
+    "HanViet": "CHỈNH ",
+    "meaning": "Chỉnh đốn"
+  },
+  {
+    "code": "4K210",
+    "kanji": "清",
+    "HanViet": "THANH",
+    "meaning": "Thanh khiết"
+  },
+  {
+    "code": "4K211",
+    "kanji": "静",
+    "HanViet": "TĨNH",
+    "meaning": "Yên tĩnh"
+  },
+  {
+    "code": "4K212",
+    "kanji": "成",
+    "HanViet": "THÀNH",
+    "meaning": "Thành công"
+  },
+  {
+    "code": "4K213",
+    "kanji": "全",
+    "HanViet": "TOÀN",
+    "meaning": "Hoàn toàn"
+  },
+  {
+    "code": "4K214",
+    "kanji": "蓆",
+    "HanViet": "TỊCH",
+    "meaning": "Chỗ ngồi"
+  },
+  {
+    "code": "4K215",
+    "kanji": "積",
+    "HanViet": "TÍCH",
+    "meaning": "Tích góp"
+  },
+  {
+    "code": "4K216",
+    "kanji": "昔",
+    "HanViet": "TÍCH",
+    "meaning": "Cổ tích"
+  },
+  {
+    "code": "4K217",
+    "kanji": "節",
+    "HanViet": "TIẾT",
+    "meaning": "Tiết kiệm"
+  },
+  {
+    "code": "4K218",
+    "kanji": "折",
+    "HanViet": "CHIẾT",
+    "meaning": "Bẻ gập"
+  },
+  {
+    "code": "4K219",
+    "kanji": "説",
+    "HanViet": "THUYẾT",
+    "meaning": "Thuyết minh"
+  },
+  {
+    "code": "4K220",
+    "kanji": "戦",
+    "HanViet": "CHIẾN",
+    "meaning": "Chiến tranh"
+  },
+  {
+    "code": "4K221",
+    "kanji": "選",
+    "HanViet": "TUYỂN",
+    "meaning": "Tuyển thủ"
+  },
+  {
+    "code": "4K222",
+    "kanji": "浅",
+    "HanViet": "THIỂN",
+    "meaning": "Cạn"
+  },
+  {
+    "code": "4K223",
+    "kanji": "卒",
+    "HanViet": "TỐT",
+    "meaning": "Tốt nghiệp"
+  },
+  {
+    "code": "4K224",
+    "kanji": "巣",
+    "HanViet": "SÀO",
+    "meaning": "Tổ chim"
+  },
+  {
+    "code": "4K225",
+    "kanji": "相",
+    "HanViet": "TƯƠNG",
+    "meaning": "Tương tự"
+  },
+  {
+    "code": "4K226",
+    "kanji": "送",
+    "HanViet": "TỐNG",
+    "meaning": "Đưa đi"
+  },
+  {
+    "code": "4K227",
+    "kanji": "想",
+    "HanViet": "TƯỞNG",
+    "meaning": "Tưởng tượng"
+  },
+  {
+    "code": "4K228",
+    "kanji": "争",
+    "HanViet": "TRANH",
+    "meaning": "Chiến tranh"
+  },
+  {
+    "code": "4K229",
+    "kanji": "倉",
+    "HanViet": "THƯƠNG",
+    "meaning": "Thương khố"
+  },
+  {
+    "code": "4K230",
+    "kanji": "息",
+    "HanViet": "TỨC",
+    "meaning": "Hơi thở"
+  },
+  {
+    "code": "4K231",
+    "kanji": "速",
+    "HanViet": "TỐC",
+    "meaning": "Tốc độ"
+  },
+  {
+    "code": "4K232",
+    "kanji": "束",
+    "HanViet": "THÚC",
+    "meaning": "Bó, Buộc"
+  },
+  {
+    "code": "4K233",
+    "kanji": "側",
+    "HanViet": "TRẮC",
+    "meaning": "Phía"
+  },
+  {
+    "code": "4K234",
+    "kanji": "続",
+    "HanViet": "TỤC",
+    "meaning": "Tiếp tục"
+  },
+  {
+    "code": "4K235",
+    "kanji": "族",
+    "HanViet": "TỘC",
+    "meaning": "Gia tộc"
+  },
+  {
+    "code": "4K236",
+    "kanji": "孫",
+    "HanViet": "TÔN",
+    "meaning": "Cháu"
+  },
+  {
+    "code": "4K237",
+    "kanji": "他",
+    "HanViet": "THA ",
+    "meaning": "Người lạ"
+  },
+  {
+    "code": "4K238",
+    "kanji": "打",
+    "HanViet": "ĐẢ",
+    "meaning": "Đánh"
+  },
+  {
+    "code": "4K239",
+    "kanji": "代",
+    "HanViet": "ĐẠI",
+    "meaning": "Hiện đại"
+  },
+  {
+    "code": "4K240",
+    "kanji": "対",
+    "HanViet": "ĐỐI",
+    "meaning": "Đối tượng"
+  },
+  {
+    "code": "4K241",
+    "kanji": "待",
+    "HanViet": "ĐÃI",
+    "meaning": "Chiêu đãi"
+  },
+  {
+    "code": "4K242",
+    "kanji": "隊",
+    "HanViet": "ĐỘI",
+    "meaning": "Quân đội"
+  },
+  {
+    "code": "4K243",
+    "kanji": "帯",
+    "HanViet": "ĐỚI",
+    "meaning": "Cái đai"
+  },
+  {
+    "code": "4K244",
+    "kanji": "第",
+    "HanViet": "ĐỆ",
+    "meaning": "Đệ nhất"
+  },
+  {
+    "code": "4K245",
+    "kanji": "題",
+    "HanViet": "ĐỀ",
+    "meaning": "Vấn đề"
+  },
+  {
+    "code": "4K246",
+    "kanji": "談",
+    "HanViet": "ĐÀM",
+    "meaning": "Đàm thoại"
+  },
+  {
+    "code": "4K247",
+    "kanji": "短",
+    "HanViet": "ĐOẢN",
+    "meaning": "Ngắn"
+  },
+  {
+    "code": "4K248",
+    "kanji": "炭",
+    "HanViet": "THAN ",
+    "meaning": "Than đá"
+  },
+  {
+    "code": "4K249",
+    "kanji": "単",
+    "HanViet": "ĐƠN",
+    "meaning": "Đơn giản"
+  },
+  {
+    "code": "4K250",
+    "kanji": "達",
+    "HanViet": "ĐẠT",
+    "meaning": "Truyền đạt"
+  },
+  {
+    "code": "4K251",
+    "kanji": "置",
+    "HanViet": "TRÍ",
+    "meaning": "Bố trí"
+  },
+  {
+    "code": "4K252",
+    "kanji": "着",
+    "HanViet": "TRƯỚC",
+    "meaning": "Đến nơi"
+  },
+  {
+    "code": "4K253",
+    "kanji": "注",
+    "HanViet": "CHÚ",
+    "meaning": "Chú ý"
+  },
+  {
+    "code": "4K254",
+    "kanji": "柱",
+    "HanViet": "TRỤ",
+    "meaning": "Cột trụ"
+  },
+  {
+    "code": "4K255",
+    "kanji": "仲",
+    "HanViet": "TRỌNG",
+    "meaning": "Trung gian"
+  },
+  {
+    "code": "4K256",
+    "kanji": "貯",
+    "HanViet": "TRỮ",
+    "meaning": "Tích trữ"
+  },
+  {
+    "code": "4K257",
+    "kanji": "調",
+    "HanViet": "ĐIỀU",
+    "meaning": "Điều hành"
+  },
+  {
+    "code": "4K258",
+    "kanji": "帳",
+    "HanViet": "TRƯỚNG",
+    "meaning": "Căng lên"
+  },
+  {
+    "code": "4K259",
+    "kanji": "兆",
+    "HanViet": "TRIỆU",
+    "meaning": "1 nghìn tỷ"
+  },
+  {
+    "code": "4K260",
+    "kanji": "腸",
+    "HanViet": "TRƯỜNG",
+    "meaning": "Ruột"
+  },
+  {
+    "code": "4K261",
+    "kanji": "丁",
+    "HanViet": "ĐINH",
+    "meaning": "Can thứ 4"
+  },
+  {
+    "code": "4K262",
+    "kanji": "定",
+    "HanViet": "ĐỊNH",
+    "meaning": "Cố định"
+  },
+  {
+    "code": "4K263",
+    "kanji": "庭",
+    "HanViet": "ĐÌNH",
+    "meaning": "Sân vườn"
+  },
+  {
+    "code": "4K264",
+    "kanji": "停",
+    "HanViet": "ĐÌNH",
+    "meaning": "Dừng lại"
+  },
+  {
+    "code": "4K265",
+    "kanji": "低",
+    "HanViet": "ĐÊ",
+    "meaning": "Thấp"
+  },
+  {
+    "code": "4K266",
+    "kanji": "底",
+    "HanViet": "ĐỂ",
+    "meaning": "Cái đáy"
+  },
+  {
+    "code": "4K267",
+    "kanji": "笛",
+    "HanViet": "ĐỊCH",
+    "meaning": "Cái sáo"
+  },
+  {
+    "code": "4K268",
+    "kanji": "的",
+    "HanViet": "ĐÍCH",
+    "meaning": "Mục đích"
+  },
+  {
+    "code": "4K269",
+    "kanji": "転",
+    "HanViet": "CHUYỂN",
+    "meaning": "Di chuyển"
+  },
+  {
+    "code": "4K270",
+    "kanji": "典",
+    "HanViet": "ĐIỂN",
+    "meaning": "Từ điển"
+  },
+  {
+    "code": "4K271",
+    "kanji": "伝",
+    "HanViet": "TRUYỀN",
+    "meaning": "Truyền tin"
+  },
+  {
+    "code": "4K272",
+    "kanji": "追",
+    "HanViet": "TRUY",
+    "meaning": "Truy đuổi"
+  },
+  {
+    "code": "4K273",
+    "kanji": "鉄",
+    "HanViet": "THIẾT",
+    "meaning": "Sắt"
+  },
+  {
+    "code": "4K274",
+    "kanji": "徒",
+    "HanViet": "ĐỒ",
+    "meaning": "Sinh đồ"
+  },
+  {
+    "code": "4K275",
+    "kanji": "都",
+    "HanViet": "ĐÔ",
+    "meaning": "Kinh đô"
+  },
+  {
+    "code": "4K276",
+    "kanji": "努",
+    "HanViet": "NỖ",
+    "meaning": "Nỗ lực"
+  },
+  {
+    "code": "4K277",
+    "kanji": "度",
+    "HanViet": "ĐỘ",
+    "meaning": "Nhiệt độ"
+  },
+  {
+    "code": "4K278",
+    "kanji": "島",
+    "HanViet": "ĐẢO ",
+    "meaning": "Hòn đảo"
+  },
+  {
+    "code": "4K279",
+    "kanji": "等",
+    "HanViet": "ĐẲNG",
+    "meaning": "Bình đẳng"
+  },
+  {
+    "code": "4K280",
+    "kanji": "登",
+    "HanViet": "ĐĂNG",
+    "meaning": "Đăng ký"
+  },
+  {
+    "code": "4K281",
+    "kanji": "湯",
+    "HanViet": "THANG",
+    "meaning": "Nước nóng"
+  },
+  {
+    "code": "4K282",
+    "kanji": "投",
+    "HanViet": "ĐẦU",
+    "meaning": "Ném, Đầu tư"
+  },
+  {
+    "code": "4K283",
+    "kanji": "豆",
+    "HanViet": "ĐẬU",
+    "meaning": "Hạt đậu"
+  },
+  {
+    "code": "4K284",
+    "kanji": "灯",
+    "HanViet": "ĐĂNG",
+    "meaning": "Cái đèn"
+  },
+  {
+    "code": "4K285",
+    "kanji": "動",
+    "HanViet": "ĐỘNG",
+    "meaning": "Chuyển động"
+  },
+  {
+    "code": "4K286",
+    "kanji": "童",
+    "HanViet": "ĐỒNG",
+    "meaning": "Nhi đồng"
+  },
+  {
+    "code": "4K287",
+    "kanji": "働",
+    "HanViet": "ĐỘNG",
+    "meaning": "Lao động"
+  },
+  {
+    "code": "4K288",
+    "kanji": "堂",
+    "HanViet": "ĐƯỜNG",
+    "meaning": "Võ đường"
+  },
+  {
+    "code": "4K289",
+    "kanji": "特",
+    "HanViet": "ĐẶC",
+    "meaning": "Đặc biệt"
+  },
+  {
+    "code": "4K290",
+    "kanji": "得",
+    "HanViet": "ĐẮC",
+    "meaning": "Đắc ý"
+  },
+  {
+    "code": "4K291",
+    "kanji": "毒",
+    "HanViet": "ĐỘC",
+    "meaning": "Độc dược"
+  },
+  {
+    "code": "4K292",
+    "kanji": "農",
+    "HanViet": "NÔNG",
+    "meaning": "Nông nghiệp"
+  },
+  {
+    "code": "4K293",
+    "kanji": "熱",
+    "HanViet": "NHIỆT",
+    "meaning": "Nóng"
+  },
+  {
+    "code": "4K294",
+    "kanji": "然",
+    "HanViet": "NHIÊN",
+    "meaning": "Tự nhiên"
+  },
+  {
+    "code": "4K295",
+    "kanji": "念",
+    "HanViet": "NIỆM",
+    "meaning": "Kỉ niệm"
+  },
+  {
+    "code": "4K296",
+    "kanji": "波",
+    "HanViet": "BA",
+    "meaning": "Con sóng"
+  },
+  {
+    "code": "4K297",
+    "kanji": "配",
+    "HanViet": "PHỐI",
+    "meaning": "Phân phối"
+  },
+  {
+    "code": "4K298",
+    "kanji": "敗",
+    "HanViet": "BẠI",
+    "meaning": "Thất bại"
+  },
+  {
+    "code": "4K299",
+    "kanji": "倍",
+    "HanViet": "BỘI",
+    "meaning": "Bội số"
+  },
+  {
+    "code": "4K300",
+    "kanji": "梅",
+    "HanViet": "MAI",
+    "meaning": "Cây mai"
+  },
+  {
+    "code": "4K301",
+    "kanji": "箱",
+    "HanViet": "TƯƠNG",
+    "meaning": "Cái hộp"
+  },
+  {
+    "code": "4K302",
+    "kanji": "畑",
+    "HanViet": "ĐIỀN",
+    "meaning": "Ruộng"
+  },
+  {
+    "code": "4K303",
+    "kanji": "博",
+    "HanViet": "BÁC",
+    "meaning": "Bác học"
+  },
+  {
+    "code": "4K304",
+    "kanji": "発",
+    "HanViet": "PHÁT",
+    "meaning": "Phát triển"
+  },
+  {
+    "code": "4K305",
+    "kanji": "反",
+    "HanViet": "PHẢN",
+    "meaning": "Phản đối"
+  },
+  {
+    "code": "4K306",
+    "kanji": "板",
+    "HanViet": "BẢN",
+    "meaning": "Cái bảng"
+  },
+  {
+    "code": "4K307",
+    "kanji": "坂",
+    "HanViet": "PHẢN",
+    "meaning": "Cái dốc"
+  },
+  {
+    "code": "4K308",
+    "kanji": "飯",
+    "HanViet": "PHẠN",
+    "meaning": "Cơm"
+  },
+  {
+    "code": "4K309",
+    "kanji": "悲",
+    "HanViet": "BI",
+    "meaning": "Bi ai, Buồn"
+  },
+  {
+    "code": "4K310",
+    "kanji": "皮",
+    "HanViet": "BÌ",
+    "meaning": "Cái vỏ"
+  },
+  {
+    "code": "4K311",
+    "kanji": "飛",
+    "HanViet": "PHI",
+    "meaning": "Bay"
+  },
+  {
+    "code": "4K312",
+    "kanji": "費",
+    "HanViet": "PHÍ",
+    "meaning": "Tiêu phí"
+  },
+  {
+    "code": "4K313",
+    "kanji": "鼻",
+    "HanViet": "TỴ",
+    "meaning": "Cái mũi"
+  },
+  {
+    "code": "4K314",
+    "kanji": "美",
+    "HanViet": "MỸ",
+    "meaning": "Mỹ thuật"
+  },
+  {
+    "code": "4K315",
+    "kanji": "筆",
+    "HanViet": "BÚT",
+    "meaning": "Cái bút"
+  },
+  {
+    "code": "4K316",
+    "kanji": "必",
+    "HanViet": "TẤT",
+    "meaning": "Tất yếu"
+  },
+  {
+    "code": "4K317",
+    "kanji": "品",
+    "HanViet": "PHẨM",
+    "meaning": "Sản phẩm"
+  },
+  {
+    "code": "4K318",
+    "kanji": "部",
+    "HanViet": "BỘ",
+    "meaning": "Bộ trưởng"
+  },
+  {
+    "code": "4K319",
+    "kanji": "便",
+    "HanViet": "TIỆN",
+    "meaning": "Tiện lợi"
+  },
+  {
+    "code": "4K320",
+    "kanji": "氷",
+    "HanViet": "BĂNG",
+    "meaning": "Nước đá"
+  },
+  {
+    "code": "4K321",
+    "kanji": "表",
+    "HanViet": "BIỂU",
+    "meaning": "Biểu hiện"
+  },
+  {
+    "code": "4K322",
+    "kanji": "票",
+    "HanViet": "PHIẾU",
+    "meaning": "Ngân phiếu"
+  },
+  {
+    "code": "4K323",
+    "kanji": "標",
+    "HanViet": "TIÊU",
+    "meaning": "Tiêu chuẩn"
+  },
+  {
+    "code": "4K324",
+    "kanji": "病",
+    "HanViet": "BỆNH",
+    "meaning": "Bệnh tật"
+  },
+  {
+    "code": "4K325",
+    "kanji": "秒",
+    "HanViet": "MIỂU",
+    "meaning": "Giây"
+  },
+  {
+    "code": "4K326",
+    "kanji": "福",
+    "HanViet": "PHÚC",
+    "meaning": "Phúc lợi"
+  },
+  {
+    "code": "4K327",
+    "kanji": "服",
+    "HanViet": "PHỤC",
+    "meaning": "Trang phục"
+  },
+  {
+    "code": "4K328",
+    "kanji": "副",
+    "HanViet": "PHÓ",
+    "meaning": "Phụ, Thứ 2"
+  },
+  {
+    "code": "4K329",
+    "kanji": "負",
+    "HanViet": "PHỤ",
+    "meaning": "Thua"
+  },
+  {
+    "code": "4K330",
+    "kanji": "付",
+    "HanViet": "PHÓ",
+    "meaning": "Dính"
+  },
+  {
+    "code": "4K331",
+    "kanji": "府",
+    "HanViet": "PHỦ",
+    "meaning": "Phủ huyện"
+  },
+  {
+    "code": "4K332",
+    "kanji": "不",
+    "HanViet": "BẤT",
+    "meaning": "Không có"
+  },
+  {
+    "code": "4K333",
+    "kanji": "夫",
+    "HanViet": "PHU",
+    "meaning": "Chồng"
+  },
+  {
+    "code": "4K334",
+    "kanji": "無",
+    "HanViet": "VÔ",
+    "meaning": "Vô lý"
+  },
+  {
+    "code": "4K335",
+    "kanji": "物",
+    "HanViet": "VẬT",
+    "meaning": "Động vật"
+  },
+  {
+    "code": "4K336",
+    "kanji": "平",
+    "HanViet": "BÌNH",
+    "meaning": "Hoà bình"
+  },
+  {
+    "code": "4K337",
+    "kanji": "兵",
+    "HanViet": "BINH",
+    "meaning": "Binh lính"
+  },
+  {
+    "code": "4K338",
+    "kanji": "粉",
+    "HanViet": "PHẤN",
+    "meaning": "Phấn hoa"
+  },
+  {
+    "code": "4K339",
+    "kanji": "別",
+    "HanViet": "BIỆT",
+    "meaning": "Phân biệt"
+  },
+  {
+    "code": "4K340",
+    "kanji": "返",
+    "HanViet": "PHẢN",
+    "meaning": "Trả lại"
+  },
+  {
+    "code": "4K341",
+    "kanji": "辺",
+    "HanViet": "BIÊN",
+    "meaning": "Biên giới"
+  },
+  {
+    "code": "4K342",
+    "kanji": "変",
+    "HanViet": "BIẾN",
+    "meaning": "Biến hoá"
+  },
+  {
+    "code": "4K343",
+    "kanji": "勉",
+    "HanViet": "MIỄN",
+    "meaning": "Cố gắng"
+  },
+  {
+    "code": "4K344",
+    "kanji": "牧",
+    "HanViet": "MỤC",
+    "meaning": "Mục sư"
+  },
+  {
+    "code": "4K345",
+    "kanji": "放",
+    "HanViet": "PHÓNG",
+    "meaning": "Giải phóng"
+  },
+  {
+    "code": "4K346",
+    "kanji": "法",
+    "HanViet": "PHÁP",
+    "meaning": "Phương pháp"
+  },
+  {
+    "code": "4K347",
+    "kanji": "包",
+    "HanViet": "BAO",
+    "meaning": "Bao bọc"
+  },
+  {
+    "code": "4K348",
+    "kanji": "末",
+    "HanViet": "MẠT",
+    "meaning": "Cuối cùng"
+  },
+  {
+    "code": "4K349",
+    "kanji": "満",
+    "HanViet": "MÃN",
+    "meaning": "Mãn nguyện"
+  },
+  {
+    "code": "4K350",
+    "kanji": "未",
+    "HanViet": "VỊ",
+    "meaning": "Chưa đến"
+  },
+  {
+    "code": "4K351",
+    "kanji": "脈",
+    "HanViet": "MẠCH",
+    "meaning": "Mạch máu"
+  },
+  {
+    "code": "4K352",
+    "kanji": "民",
+    "HanViet": "DÂN",
+    "meaning": "Dân chúng"
+  },
+  {
+    "code": "4K353",
+    "kanji": "薬",
+    "HanViet": "DƯỢC",
+    "meaning": "Thuốc"
+  },
+  {
+    "code": "4K354",
+    "kanji": "役",
+    "HanViet": "DỊCH",
+    "meaning": "Dịch vụ"
+  },
+  {
+    "code": "4K355",
+    "kanji": "約",
+    "HanViet": "ƯỚC",
+    "meaning": "Ước vọng"
+  },
+  {
+    "code": "4K356",
+    "kanji": "浴",
+    "HanViet": "DỤC",
+    "meaning": "Tắm"
+  },
+  {
+    "code": "4K357",
+    "kanji": "油",
+    "HanViet": "DU",
+    "meaning": "Dầu"
+  },
+  {
+    "code": "4K358",
+    "kanji": "由",
+    "HanViet": "DO",
+    "meaning": "Tự do"
+  },
+  {
+    "code": "4K359",
+    "kanji": "遊",
+    "HanViet": "DU",
+    "meaning": "Chơi, Du hý"
+  },
+  {
+    "code": "4K360",
+    "kanji": "有",
+    "HanViet": "HỮU",
+    "meaning": "Có, Tồn tại"
+  },
+  {
+    "code": "4K361",
+    "kanji": "勇",
+    "HanViet": "DŨNG",
+    "meaning": "Dũng cảm"
+  },
+  {
+    "code": "4K362",
+    "kanji": "予",
+    "HanViet": "DỰ",
+    "meaning": "Dự báo"
+  },
+  {
+    "code": "4K363",
+    "kanji": "葉",
+    "HanViet": "DIỆP",
+    "meaning": "Cái lá"
+  },
+  {
+    "code": "4K364",
+    "kanji": "陽",
+    "HanViet": "DƯƠNG",
+    "meaning": "Mặt trời"
+  },
+  {
+    "code": "4K365",
+    "kanji": "羊",
+    "HanViet": "DƯƠNG",
+    "meaning": "Con cừu"
+  },
+  {
+    "code": "4K366",
+    "kanji": "要",
+    "HanViet": "YẾU",
+    "meaning": "Tất yếu"
+  },
+  {
+    "code": "4K367",
+    "kanji": "洋",
+    "HanViet": "DƯƠNG",
+    "meaning": "Đại dương"
+  },
+  {
+    "code": "4K368",
+    "kanji": "様",
+    "HanViet": "DẠNG",
+    "meaning": "Hình dạng"
+  },
+  {
+    "code": "4K369",
+    "kanji": "養",
+    "HanViet": "DƯỠNG",
+    "meaning": "Dinh dưỡng"
+  },
+  {
+    "code": "4K370",
+    "kanji": "落",
+    "HanViet": "LẠC",
+    "meaning": "Rơi xuống"
+  },
+  {
+    "code": "4K371",
+    "kanji": "旅",
+    "HanViet": "LỮ",
+    "meaning": "Lữ hành"
+  },
+  {
+    "code": "4K372",
+    "kanji": "両",
+    "HanViet": "LƯỠNG",
+    "meaning": "2 bên, Lưỡng tính"
+  },
+  {
+    "code": "4K373",
+    "kanji": "量",
+    "HanViet": "LƯỢNG",
+    "meaning": "Số lượng"
+  },
+  {
+    "code": "4K374",
+    "kanji": "良",
+    "HanViet": "LƯƠNG",
+    "meaning": "Tốt"
+  },
+  {
+    "code": "4K375",
+    "kanji": "漁",
+    "HanViet": "NGƯ",
+    "meaning": "Bắt cá"
+  },
+  {
+    "code": "4K376",
+    "kanji": "料",
+    "HanViet": "LIỆU",
+    "meaning": "Nguyên liệu"
+  },
+  {
+    "code": "4K377",
+    "kanji": "緑",
+    "HanViet": "LỤC",
+    "meaning": "Màu xanh lá cây"
+  },
+  {
+    "code": "4K378",
+    "kanji": "録",
+    "HanViet": "LỤC",
+    "meaning": "Kỷ lục"
+  },
+  {
+    "code": "4K379",
+    "kanji": "流",
+    "HanViet": "LƯU",
+    "meaning": "Dòng chảy hạ lưu"
+  },
+  {
+    "code": "4K380",
+    "kanji": "礼",
+    "HanViet": "LỄ",
+    "meaning": "Lễ nghi"
+  },
+  {
+    "code": "4K381",
+    "kanji": "令",
+    "HanViet": "LỆNH",
+    "meaning": "Mệnh lệnh"
+  },
+  {
+    "code": "4K382",
+    "kanji": "冷",
+    "HanViet": "LÃNH",
+    "meaning": "Lạnh"
+  },
+  {
+    "code": "4K383",
+    "kanji": "例",
+    "HanViet": "LỆ",
+    "meaning": "Ví dụ"
+  },
+  {
+    "code": "4K384",
+    "kanji": "列",
+    "HanViet": "LIỆT",
+    "meaning": "Hàng lối"
+  },
+  {
+    "code": "4K385",
+    "kanji": "練",
+    "HanViet": "LUYỆN",
+    "meaning": "Luyện tập"
+  },
+  {
+    "code": "4K386",
+    "kanji": "連",
+    "HanViet": "LIÊN",
+    "meaning": "Liên lạc"
+  },
+  {
+    "code": "4K387",
+    "kanji": "路",
+    "HanViet": "LỘ",
+    "meaning": "Quốc lộ"
+  },
+  {
+    "code": "4K388",
+    "kanji": "利",
+    "HanViet": "LỢI",
+    "meaning": "Tiện lợi"
+  },
+  {
+    "code": "4K389",
+    "kanji": "陸",
+    "HanViet": "LỤC",
+    "meaning": "Châu lục"
+  },
+  {
+    "code": "4K390",
+    "kanji": "歴",
+    "HanViet": "LỊCH",
+    "meaning": "Lý lịch"
+  },
+  {
+    "code": "4K391",
+    "kanji": "類",
+    "HanViet": "LOẠI",
+    "meaning": "Chủng loại"
+  },
+  {
+    "code": "4K392",
+    "kanji": "輪",
+    "HanViet": "LUÂN",
+    "meaning": "Bánh xe"
+  },
+  {
+    "code": "4K393",
+    "kanji": "老",
+    "HanViet": "LÃO",
+    "meaning": "Lão già"
+  },
+  {
+    "code": "4K394",
+    "kanji": "労",
+    "HanViet": "LAO",
+    "meaning": "Lao động"
+  },
+  {
+    "code": "4K395",
+    "kanji": "和",
+    "HanViet": "HOÀ",
+    "meaning": "Hoà bình"
+  }
+]
