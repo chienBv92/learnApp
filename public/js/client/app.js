@@ -2074,27 +2074,26 @@ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__web
   name: "Kanji360",
   data: function data() {
     return {
-      dataTotal: [],
+      dataTotal: _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0__,
       errors: []
     };
   },
   methods: {
     backHome: function backHome() {
       this.$router.push('/');
-    },
-    getListLevel: function getListLevel() {
-      var _this = this;
+    } // getListLevel() {
+    //     axios.get('/listKanjiLevel')
+    //         .then(response => {
+    //             this.dataTotal = response.data;
+    //             console.log(dataTotal);
+    //         })
+    //         .catch(error => {
+    //             this.errors = error.response;
+    //         })
+    // }
 
-      axios.get('/listKanjiLevel').then(function (response) {
-        _this.dataTotal = response.data;
-        console.log(dataTotal);
-      })["catch"](function (error) {
-        _this.errors = error.response;
-      });
-    }
   },
-  created: function created() {
-    this.getListLevel();
+  created: function created() {//this.getListLevel()
   }
 });
 
@@ -2132,6 +2131,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../KanjiLevel.json */ "./resources/component/client/Course/KanjiLevel.json");
 var _KanjiLevel_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../KanjiLevel.json */ "./resources/component/client/Course/KanjiLevel.json", 1);
+/* harmony import */ var _3K_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./3K.json */ "./resources/component/client/Course/kanji360/3K.json");
+var _3K_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./3K.json */ "./resources/component/client/Course/kanji360/3K.json", 1);
+/* harmony import */ var _4K_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./4K.json */ "./resources/component/client/Course/kanji360/4K.json");
+var _4K_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./4K.json */ "./resources/component/client/Course/kanji360/4K.json", 1);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 //
@@ -2215,6 +2218,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "kanji360Detail",
   data: function data() {
@@ -2230,14 +2235,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       dataLesson: [],
       kanjiLevel: {},
       lessonMax: 0,
-      lessonActive: this.$store.state.lessonLearning
+      lessonActive: 1
     }, _defineProperty(_ref, "isOnlyKanji", this.$store.state.isOnlyKanji), _defineProperty(_ref, "error", []), _defineProperty(_ref, "status", ''), _ref;
   },
   beforeCreate: function beforeCreate() {
     console.log("Giá trị đầu tiên: " + this.metaTitle);
   },
   created: function created() {
-    this.getListKanjiLevel();
+    this.getData();
   },
   beforeMount: function beforeMount() {},
   mounted: function mounted() {//console.log(this.data);
@@ -2294,6 +2299,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.status = 'error';
       });
     },
+    getData: function getData() {
+      switch (this.metaTitle) {
+        case 'hantu-4k':
+          this.data = _4K_json__WEBPACK_IMPORTED_MODULE_2__;
+          this.lessonMax = 9;
+          break;
+
+        case 'hantu-3k':
+          this.data = _3K_json__WEBPACK_IMPORTED_MODULE_1__;
+          this.lessonMax = 10;
+          break;
+      }
+
+      this.status = 'success';
+      this.getDataLesson();
+    },
     selectLesson: function selectLesson(id) {
       console.log("get lesson" + id);
       this.lessonActive = id; //this.$store.state.lessonLearning = this.lessonActive;
@@ -2324,6 +2345,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       if (this.isRandom) {
         this.dataLesson = this.shuffle(this.dataLesson);
       }
+    },
+    playSound: function playSound(sound) {
+      if (sound) {
+        var link_mp3 = "/media/" + sound + ".mp3";
+
+        try {
+          var audio = new Audio(link_mp3);
+          audio.play();
+        } catch (e) {
+          console.log("sorry, file not found");
+        }
+      }
+    },
+    showDetail: function showDetail(item) {
+      console.log(item);
     },
     // Ham dao trat tu mang
     shuffle: function shuffle(a) {
@@ -2374,6 +2410,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['address', 'phone']
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/client/Footer.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/component/client/Footer.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Footer.vue"
 });
 
 /***/ }),
@@ -2612,8 +2673,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Menu */ "./resources/component/client/Menu.vue");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./resources/component/client/Header.vue");
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./resources/component/client/App.vue");
-/* harmony import */ var _Course_CourseMain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Course/CourseMain */ "./resources/component/client/Course/CourseMain.vue");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./resources/component/client/Footer.vue");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./resources/component/client/App.vue");
+/* harmony import */ var _Course_CourseMain__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Course/CourseMain */ "./resources/component/client/Course/CourseMain.vue");
 //
 //
 //
@@ -2653,6 +2715,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 
@@ -2662,8 +2725,9 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Menu: _Menu__WEBPACK_IMPORTED_MODULE_0__["default"],
     Header: _Header__WEBPACK_IMPORTED_MODULE_1__["default"],
-    App: _App__WEBPACK_IMPORTED_MODULE_2__["default"],
-    CourseMain: _Course_CourseMain__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Footer: _Footer__WEBPACK_IMPORTED_MODULE_2__["default"],
+    App: _App__WEBPACK_IMPORTED_MODULE_3__["default"],
+    CourseMain: _Course_CourseMain__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 });
 
@@ -2925,7 +2989,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.collapse-item[data-v-7675d229]{\r\n    cursor: pointer;\n}\r\n", ""]);
+exports.push([module.i, "\n.collapse-item[data-v-7675d229]{\n    cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -4327,7 +4391,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\r\n    chi tiet khoa hoc\r\n")])
+  return _c("div", [_vm._v("\n    chi tiet khoa hoc\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -4612,341 +4676,339 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _vm.status == "success"
-    ? _c(
-        "div",
-        { staticClass: "kanjiDetail" },
-        [
-          _vm.kanjiLevel
-            ? _c("div", { staticClass: "single_course_header" }, [
-                _c("div", { staticClass: "container-fluid" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-8" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-md-3 text-center" }, [
-                          _c("img", {
-                            staticClass: "img-responsive",
-                            attrs: { src: _vm.kanjiLevel.Image, alt: "" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-9 course_description" },
-                          [
-                            _c("h2", [_vm._v(_vm._s(_vm.kanjiLevel.Name))]),
-                            _vm._v(" "),
-                            _c("p", [
-                              _vm._v(" " + _vm._s(_vm.kanjiLevel.Description))
-                            ]),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "course_progress" }, [
-                              _vm._v(
-                                "\n            " +
-                                  _vm._s(_vm.lessonActive) +
-                                  " lessons - " +
-                                  _vm._s(
-                                    _vm.kanjiLevel.TotalLesson -
-                                      _vm.lessonActive
-                                  ) +
-                                  " out\n            of  steps completed\n                            "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "progress" }, [
-                              _c("div", {
-                                staticClass: "progress-bar",
-                                style: {
-                                  width:
-                                    (_vm.lessonActive /
-                                      _vm.kanjiLevel.TotalLesson) *
-                                      100 +
-                                    "%"
-                                },
-                                attrs: {
-                                  role: "progressbar",
-                                  "aria-valuemin": "0",
-                                  "aria-valuemax": _vm.kanjiLevel.TotalLesson,
-                                  "aria-valuenow": _vm.lessonActive
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(0)
-                  ])
+    ? _c("div", { staticClass: "kanjiDetail" }, [
+        _vm.kanjiLevel
+          ? _c("div", { staticClass: "single_course_header" }, [
+              _c("div", { staticClass: "container-fluid" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-8" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-3 text-center" }, [
+                        _c("img", {
+                          staticClass: "img-responsive",
+                          attrs: { src: _vm.kanjiLevel.Image, alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-9 course_description" },
+                        [
+                          _c("h2", [_vm._v(_vm._s(_vm.kanjiLevel.Name))]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(" " + _vm._s(_vm.kanjiLevel.Description))
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "course_progress" }, [
+                            _vm._v(
+                              "\n                " +
+                                _vm._s(_vm.lessonActive) +
+                                " lessons - " +
+                                _vm._s(
+                                  _vm.kanjiLevel.TotalLesson - _vm.lessonActive
+                                ) +
+                                " out\n                of  steps completed\n                                "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              style: {
+                                width:
+                                  (_vm.lessonActive /
+                                    _vm.kanjiLevel.TotalLesson) *
+                                    100 +
+                                  "%"
+                              },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": _vm.kanjiLevel.TotalLesson,
+                                "aria-valuenow": _vm.lessonActive
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0)
                 ])
               ])
-            : _vm._e(),
-          _vm._v(" "),
-          _c("div", { staticClass: "settingDspKan" }, [
-            _c("a", { staticClass: "collapse-item" }, [
-              _c("label", { staticStyle: { cursor: "pointer" } }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.isRandom,
-                      expression: "isRandom"
-                    }
-                  ],
-                  attrs: { type: "checkbox" },
-                  domProps: {
-                    checked: Array.isArray(_vm.isRandom)
-                      ? _vm._i(_vm.isRandom, null) > -1
-                      : _vm.isRandom
-                  },
-                  on: {
-                    click: _vm.changeRandom,
-                    change: function($event) {
-                      var $$a = _vm.isRandom,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = null,
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 && (_vm.isRandom = $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            (_vm.isRandom = $$a
-                              .slice(0, $$i)
-                              .concat($$a.slice($$i + 1)))
-                        }
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _c("div", { staticClass: "settingDspKan" }, [
+          _c("a", { staticClass: "collapse-item" }, [
+            _c("label", { staticStyle: { cursor: "pointer" } }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.isRandom,
+                    expression: "isRandom"
+                  }
+                ],
+                attrs: { type: "checkbox" },
+                domProps: {
+                  checked: Array.isArray(_vm.isRandom)
+                    ? _vm._i(_vm.isRandom, null) > -1
+                    : _vm.isRandom
+                },
+                on: {
+                  click: _vm.changeRandom,
+                  change: function($event) {
+                    var $$a = _vm.isRandom,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = null,
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 && (_vm.isRandom = $$a.concat([$$v]))
                       } else {
-                        _vm.isRandom = $$c
+                        $$i > -1 &&
+                          (_vm.isRandom = $$a
+                            .slice(0, $$i)
+                            .concat($$a.slice($$i + 1)))
                       }
+                    } else {
+                      _vm.isRandom = $$c
                     }
                   }
-                }),
-                _vm._v("Chế độ Random")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("a", { staticClass: "collapse-item" }, [
-              _c("label", { staticStyle: { cursor: "pointer" } }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.isDispHanViet,
-                      expression: "isDispHanViet"
-                    }
-                  ],
-                  attrs: { type: "checkbox" },
-                  domProps: {
-                    checked: Array.isArray(_vm.isDispHanViet)
-                      ? _vm._i(_vm.isDispHanViet, null) > -1
-                      : _vm.isDispHanViet
-                  },
-                  on: {
-                    click: _vm.changeDispHanViet,
-                    change: function($event) {
-                      var $$a = _vm.isDispHanViet,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = null,
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 && (_vm.isDispHanViet = $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            (_vm.isDispHanViet = $$a
-                              .slice(0, $$i)
-                              .concat($$a.slice($$i + 1)))
-                        }
-                      } else {
-                        _vm.isDispHanViet = $$c
-                      }
-                    }
-                  }
-                }),
-                _vm._v("Hiển thị Hán Việt + kanji")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("a", { staticClass: "collapse-item" }, [
-              _c("label", { staticStyle: { cursor: "pointer" } }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.isOnlyKanji,
-                      expression: "isOnlyKanji"
-                    }
-                  ],
-                  attrs: { type: "checkbox" },
-                  domProps: {
-                    checked: Array.isArray(_vm.isOnlyKanji)
-                      ? _vm._i(_vm.isOnlyKanji, null) > -1
-                      : _vm.isOnlyKanji
-                  },
-                  on: {
-                    click: _vm.changeOnlyKanji,
-                    change: function($event) {
-                      var $$a = _vm.isOnlyKanji,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = null,
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 && (_vm.isOnlyKanji = $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            (_vm.isOnlyKanji = $$a
-                              .slice(0, $$i)
-                              .concat($$a.slice($$i + 1)))
-                        }
-                      } else {
-                        _vm.isOnlyKanji = $$c
-                      }
-                    }
-                  }
-                }),
-                _vm._v("Chỉ hiển thị Kanji")
-              ])
+                }
+              }),
+              _vm._v("Chế độ Random")
             ])
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "divTop" },
-            [
+          _c("a", { staticClass: "collapse-item" }, [
+            _c("label", { staticStyle: { cursor: "pointer" } }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.isDispHanViet,
+                    expression: "isDispHanViet"
+                  }
+                ],
+                attrs: { type: "checkbox" },
+                domProps: {
+                  checked: Array.isArray(_vm.isDispHanViet)
+                    ? _vm._i(_vm.isDispHanViet, null) > -1
+                    : _vm.isDispHanViet
+                },
+                on: {
+                  click: _vm.changeDispHanViet,
+                  change: function($event) {
+                    var $$a = _vm.isDispHanViet,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = null,
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 && (_vm.isDispHanViet = $$a.concat([$$v]))
+                      } else {
+                        $$i > -1 &&
+                          (_vm.isDispHanViet = $$a
+                            .slice(0, $$i)
+                            .concat($$a.slice($$i + 1)))
+                      }
+                    } else {
+                      _vm.isDispHanViet = $$c
+                    }
+                  }
+                }
+              }),
+              _vm._v("Hiển thị Hán Việt + kanji")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "collapse-item" }, [
+            _c("label", { staticStyle: { cursor: "pointer" } }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.isOnlyKanji,
+                    expression: "isOnlyKanji"
+                  }
+                ],
+                attrs: { type: "checkbox" },
+                domProps: {
+                  checked: Array.isArray(_vm.isOnlyKanji)
+                    ? _vm._i(_vm.isOnlyKanji, null) > -1
+                    : _vm.isOnlyKanji
+                },
+                on: {
+                  click: _vm.changeOnlyKanji,
+                  change: function($event) {
+                    var $$a = _vm.isOnlyKanji,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = null,
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 && (_vm.isOnlyKanji = $$a.concat([$$v]))
+                      } else {
+                        $$i > -1 &&
+                          (_vm.isOnlyKanji = $$a
+                            .slice(0, $$i)
+                            .concat($$a.slice($$i + 1)))
+                      }
+                    } else {
+                      _vm.isOnlyKanji = $$c
+                    }
+                  }
+                }
+              }),
+              _vm._v("Chỉ hiển thị Kanji")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "divTop" },
+          [
+            _vm._l(_vm.lessonMax, function(i) {
+              return _c(
+                "div",
+                {
+                  staticClass: "lessonSelect",
+                  class: { active: _vm.lessonActive == i },
+                  on: {
+                    click: function($event) {
+                      return _vm.selectLesson(i)
+                    }
+                  }
+                },
+                [_c("span", [_vm._v("Trang " + _vm._s(i))])]
+              )
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "text-center margin-top-grade menu_grade_mobile" },
               _vm._l(_vm.lessonMax, function(i) {
-                return _c(
+                return _vm.lessonActive == i
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "_1Iav0 _1wciQ",
+                        class: { active: _vm.lessonActive == i }
+                      },
+                      [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "span-grade",
+                            on: {
+                              click: function($event) {
+                                return _vm.selectLesson(i)
+                              }
+                            }
+                          },
+                          [_vm._v("Trang " + _vm._s(i) + " ")]
+                        ),
+                        _vm._v(" "),
+                        _c("i", {
+                          staticClass:
+                            "fa fa-chevron-circle-left pull-left _1a0Cb dec",
+                          class: { YEPux: i <= 1 },
+                          attrs: { disabled: i <= 1 },
+                          on: {
+                            click: function($event) {
+                              return _vm.selectLessonDec(i)
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("i", {
+                          staticClass:
+                            "fa fa-chevron-circle-right pull-right _1a0Cb inc",
+                          class: { YEPux: i >= _vm.lessonMax },
+                          attrs: { disabled: i == _vm.lessonMax },
+                          on: {
+                            click: function($event) {
+                              return _vm.selectLessonInc(i)
+                            }
+                          }
+                        })
+                      ]
+                    )
+                  : _vm._e()
+              }),
+              0
+            )
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { attrs: { id: "kanjiAll" } },
+          _vm._l(_vm.dataLesson, function(item) {
+            return _c(
+              "div",
+              {
+                staticClass: "kanjiAll",
+                on: {
+                  click: function($event) {
+                    return _vm.showDetail(item)
+                  }
+                }
+              },
+              [
+                _c(
                   "div",
                   {
-                    staticClass: "lessonSelect",
-                    class: { active: _vm.lessonActive == i },
+                    staticClass: "dsp-kanji",
                     on: {
                       click: function($event) {
-                        return _vm.selectLesson(i)
+                        return _vm.playSound(item.file_mp3)
                       }
                     }
                   },
-                  [_c("span", [_vm._v("Trang " + _vm._s(i))])]
+                  [_vm._v(" " + _vm._s(item.kanji))]
+                ),
+                _vm._v(" "),
+                !_vm.isOnlyKanji
+                  ? _c("div", { staticClass: "dsp-hanviet" }, [
+                      _vm._v(" " + _vm._s(item.HanViet) + " ")
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: !_vm.isOnlyKanji,
+                        expression: "!isOnlyKanji"
+                      }
+                    ],
+                    staticClass: "dsp-meaning"
+                  },
+                  [_vm._v(" " + _vm._s(item.meaning) + " ")]
                 )
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "text-center margin-top-grade menu_grade_mobile"
-                },
-                _vm._l(_vm.lessonMax, function(i) {
-                  return _vm.lessonActive == i
-                    ? _c(
-                        "div",
-                        {
-                          staticClass: "_1Iav0 _1wciQ",
-                          class: { active: _vm.lessonActive == i }
-                        },
-                        [
-                          _c(
-                            "span",
-                            {
-                              staticClass: "span-grade",
-                              on: {
-                                click: function($event) {
-                                  return _vm.selectLesson(i)
-                                }
-                              }
-                            },
-                            [_vm._v("Trang " + _vm._s(i) + " ")]
-                          ),
-                          _vm._v(" "),
-                          _c("i", {
-                            staticClass:
-                              "fa fa-chevron-circle-left pull-left _1a0Cb dec",
-                            class: { YEPux: i <= 1 },
-                            attrs: { disabled: i <= 1 },
-                            on: {
-                              click: function($event) {
-                                return _vm.selectLessonDec(i)
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("i", {
-                            staticClass:
-                              "fa fa-chevron-circle-right pull-right _1a0Cb inc",
-                            class: { YEPux: i >= _vm.lessonMax },
-                            attrs: { disabled: i == _vm.lessonMax },
-                            on: {
-                              click: function($event) {
-                                return _vm.selectLessonInc(i)
-                              }
-                            }
-                          })
-                        ]
-                      )
-                    : _vm._e()
-                }),
-                0
-              )
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { attrs: { id: "kanjiAll" } },
-            _vm._l(_vm.dataLesson, function(item) {
-              return _c(
-                "div",
-                { staticClass: "kanjiAll", on: { click: function($event) {} } },
-                [
-                  _c("div", { staticClass: "dsp-kanji" }, [
-                    _vm._v(" " + _vm._s(item.kanji))
-                  ]),
-                  _vm._v(" "),
-                  !_vm.isOnlyKanji
-                    ? _c("div", { staticClass: "dsp-hanviet" }, [
-                        _vm._v(" " + _vm._s(item.HanViet) + " ")
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: !_vm.isOnlyKanji,
-                          expression: "!isOnlyKanji"
-                        }
-                      ],
-                      staticClass: "dsp-meaning"
-                    },
-                    [_vm._v(" " + _vm._s(item.meaning) + " ")]
-                  )
-                ]
-              )
-            }),
-            0
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.data, function(item) {
-            return _c("div", [
-              _c("p", [_vm._v(_vm._s(item.HanViet))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(item.hiragara))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(item.meaning))])
-            ])
-          })
-        ],
-        2
-      )
-    : _c("div", [_vm._v("\n    Loading....\n")])
+              ]
+            )
+          }),
+          0
+        )
+      ])
+    : _c("div", [_vm._v("\n        Loading....\n    ")])
 }
 var staticRenderFns = [
   function() {
@@ -4996,6 +5058,50 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "footer",
+      {
+        staticClass: "sticky-footer bg-white",
+        staticStyle: { "margin-top": "20px" }
+      },
+      [
+        _c("div", { staticClass: "container my-auto" }, [
+          _c("div", { staticClass: "copyright text-center my-auto" }, [
+            _c("span", [_vm._v("Copyright ©2020 Học - Thi tiếng Nhật Online")])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -5595,8 +5701,11 @@ var render = function() {
               )
             ],
             1
-          )
-        ]
+          ),
+          _vm._v(" "),
+          _c("Footer")
+        ],
+        1
       )
     ],
     1
@@ -22520,7 +22629,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! exports provided: 0, 1, 2, 3, 4, 5, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":1,\"Name\":\"Bộ Thủ\",\"metaTitle\":\"bothu\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-2.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":0,\"TotalLesson\":20,\"LessonLearning\":3},{\"id\":2,\"Name\":\"Hán tự 5K\",\"metaTitle\":\"hantu-5k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-2.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":false,\"level\":5,\"TotalLesson\":12,\"LessonLearning\":3},{\"id\":3,\"Name\":\"Hán tự 4K\",\"metaTitle\":\"hantu-4k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-3.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":4,\"TotalLesson\":32,\"LessonLearning\":8},{\"id\":4,\"Name\":\"Hán tự 3K\",\"metaTitle\":\"hantu-3k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":false,\"level\":3,\"TotalLesson\":20,\"LessonLearning\":0},{\"id\":5,\"Name\":\"Hán tự 2K\",\"metaTitle\":\"hantu-2k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":2,\"TotalLesson\":20,\"LessonLearning\":0},{\"id\":6,\"Name\":\"Hán tự 1K\",\"metaTitle\":\"hantu-1k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Phá băng tiếng Anh, thành thạo giao tiếp cơ bản với người bản xứ chỉ sau 144 giờ luyện tập, dựa trên 3 kỹ thuật nền tảng. Việt\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":false,\"level\":1,\"TotalLesson\":20,\"LessonLearning\":0}]");
+module.exports = JSON.parse("[{\"id\":1,\"Name\":\"Bộ Thủ\",\"metaTitle\":\"bothu\",\"Image\":\"/img/kan01.png\",\"Description\":\"Đột phá học tiếng Nhật qua Hán tự bằng cách nhớ bắt đầu từ bộ Thủ\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":0,\"TotalLesson\":20,\"LessonLearning\":3},{\"id\":2,\"Name\":\"Hán tự 5K\",\"metaTitle\":\"hantu-5k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-2.png\",\"Description\":\"Đột phá học Hán tự bắt đầu từ hán tự dễ nhớ 5k\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":5,\"TotalLesson\":12,\"LessonLearning\":3},{\"id\":3,\"Name\":\"Hán tự 4K\",\"metaTitle\":\"hantu-4k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-3.png\",\"Description\":\"Đột phá học Hán tự từ quyển 4k\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":4,\"TotalLesson\":32,\"LessonLearning\":8},{\"id\":4,\"Name\":\"Hán tự 3K\",\"metaTitle\":\"hantu-3k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Đột phá học Hán tự từ quyển 3k\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":3,\"TotalLesson\":20,\"LessonLearning\":0},{\"id\":5,\"Name\":\"Hán tự 2K\",\"metaTitle\":\"hantu-2k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Đột phá học Hán tự từ quyển 2k\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":true,\"level\":2,\"TotalLesson\":20,\"LessonLearning\":0},{\"id\":6,\"Name\":\"Hán tự 1K\",\"metaTitle\":\"hantu-1k\",\"Image\":\"https://dev.learn.x3english.com/wp-content/uploads/2018/05/photo-1.png\",\"Description\":\"Đột phá học Hán tự và làm chủ Hán Tự 1k\",\"Detail\":\"Eng Breaking – Phá Tan Nỗi Sợ Giao Tiếp Tiếng Anh </br> Trọn bộ Eng Breaking: 12 Lessons Phần Bonus: 12 Lessons Thời gian luyện: 144 tiếng, tương ứng với 12 tuần – 3 tháng luyện tập & thực hành Tài khoản học Online trong 6 tháng kể từ ngày kích hoạt\",\"active\":false,\"level\":1,\"TotalLesson\":20,\"LessonLearning\":0}]");
 
 /***/ }),
 
@@ -22590,6 +22699,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LearnLevel_vue_vue_type_template_id_273b434c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/component/client/Course/kanji360/3K.json":
+/*!************************************************************!*\
+  !*** ./resources/component/client/Course/kanji360/3K.json ***!
+  \************************************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"code\":\"3K001\",\"lesson\":1,\"file_mp3\":\"ap_che\",\"kanji\":\"圧\",\"HanViet\":\"ÁP\",\"meaning\":\"Áp chế\"},{\"code\":\"3K002\",\"lesson\":1,\"file_mp3\":\"di_chuyen\",\"kanji\":\"栘\",\"HanViet\":\"DI\",\"meaning\":\"Di chuyển\"},{\"code\":\"3K003\",\"lesson\":1,\"file_mp3\":\"khac_thuong\",\"kanji\":\"異\",\"HanViet\":\"DỊ\",\"meaning\":\"Khác thường\"},{\"code\":\"3K004\",\"lesson\":1,\"file_mp3\":\"di_chuc\",\"kanji\":\"遺\",\"HanViet\":\"DI\",\"meaning\":\"Di chúc\"},{\"code\":\"3K005\",\"lesson\":1,\"file_mp3\":\"khu_vuc\",\"kanji\":\"域\",\"HanViet\":\"VỰC\",\"meaning\":\"Khu vực\"},{\"code\":\"3K006\",\"lesson\":1,\"file_mp3\":\"vu_tru\",\"kanji\":\"宇\",\"HanViet\":\"VŨ\",\"meaning\":\"Vũ trụ\"},{\"code\":\"3K007\",\"lesson\":1,\"file_mp3\":\"vinh_cuu\",\"kanji\":\"永\",\"HanViet\":\"VĨNH\",\"meaning\":\"Vĩnh cửu\"},{\"code\":\"3K008\",\"lesson\":1,\"file_mp3\":\"ve_tinh\",\"kanji\":\"衛\",\"HanViet\":\"VỆ\",\"meaning\":\"Vệ tinh, phòng vệ\"},{\"code\":\"3K009\",\"lesson\":1,\"kanji\":\"営\",\"HanViet\":\"DOANH\",\"meaning\":\"Kinh doanh\"},{\"code\":\"3K010\",\"lesson\":1,\"kanji\":\"映\",\"HanViet\":\"ÁNH\",\"meaning\":\"Phản ánh\"},{\"code\":\"3K011\",\"lesson\":1,\"kanji\":\"益\",\"HanViet\":\"ÍCH\",\"meaning\":\"Lợi ích\"},{\"code\":\"3K012\",\"lesson\":1,\"kanji\":\"易\",\"HanViet\":\"DỊCH\",\"meaning\":\"Mậu dịch\"},{\"code\":\"3K013\",\"lesson\":1,\"kanji\":\"液\",\"HanViet\":\"DỊCH\",\"meaning\":\"Chất lỏng\"},{\"code\":\"3K014\",\"lesson\":1,\"kanji\":\"演\",\"HanViet\":\"DIỄN\",\"meaning\":\"Diễn xuất\"},{\"code\":\"3K015\",\"lesson\":1,\"kanji\":\"沿\",\"HanViet\":\"DUYÊN\",\"meaning\":\"Dọc theo\"},{\"code\":\"3K016\",\"lesson\":1,\"kanji\":\"延\",\"HanViet\":\"DUYÊN\",\"meaning\":\"Kéo dài\"},{\"code\":\"3K017\",\"lesson\":1,\"kanji\":\"桜\",\"HanViet\":\"ANH\",\"meaning\":\"Anh đào\"},{\"code\":\"3K018\",\"lesson\":1,\"kanji\":\"応\",\"HanViet\":\"ỨNG\",\"meaning\":\"Phản ứng\"},{\"code\":\"3K019\",\"lesson\":1,\"kanji\":\"往\",\"HanViet\":\"VÃNG\",\"meaning\":\"Đã qua, dĩ vãng\"},{\"code\":\"3K020\",\"lesson\":1,\"kanji\":\"恩\",\"HanViet\":\"ÂN\",\"meaning\":\"Ân nhân\"},{\"code\":\"3K021\",\"lesson\":1,\"kanji\":\"価\",\"HanViet\":\"GÍA\",\"meaning\":\"Giá cả\"},{\"code\":\"3K022\",\"lesson\":1,\"kanji\":\"過\",\"HanViet\":\"QUÁ\",\"meaning\":\"Vượt qua, quá khứ\"},{\"code\":\"3K023\",\"lesson\":1,\"kanji\":\"可\",\"HanViet\":\"KHẢ\",\"meaning\":\"Khả năng\"},{\"code\":\"3K024\",\"lesson\":1,\"kanji\":\"河\",\"HanViet\":\"HÀ\",\"meaning\":\"Sông\"},{\"code\":\"3K025\",\"lesson\":1,\"kanji\":\"仮\",\"HanViet\":\"GIẢ\",\"meaning\":\"Giả thuyết, giả định\"},{\"code\":\"3K026\",\"lesson\":1,\"kanji\":\"解\",\"HanViet\":\"GIẢI\",\"meaning\":\"Giải quyết, lý giải\"},{\"code\":\"3K027\",\"lesson\":1,\"kanji\":\"快\",\"HanViet\":\"KHOÁI\",\"meaning\":\"Khoái thích\"},{\"code\":\"3K028\",\"lesson\":1,\"kanji\":\"灰\",\"HanViet\":\"HÔI\",\"meaning\":\"Tro\"},{\"code\":\"3K029\",\"lesson\":1,\"kanji\":\"届\",\"HanViet\":\"GIỚI\",\"meaning\":\"Gửi đến\"},{\"code\":\"3K030\",\"lesson\":1,\"kanji\":\"賀\",\"HanViet\":\"HẠ\",\"meaning\":\"Chúc mừng\"},{\"code\":\"3K031\",\"lesson\":1,\"kanji\":\"我\",\"HanViet\":\"NGÃ\",\"meaning\":\"Bản ngã\"},{\"code\":\"3K032\",\"lesson\":1,\"kanji\":\"閣\",\"HanViet\":\"CÁC\",\"meaning\":\"Nội các\"},{\"code\":\"3K033\",\"lesson\":1,\"kanji\":\"革\",\"HanViet\":\"CÁCH\",\"meaning\":\"Cải cách\"},{\"code\":\"3K034\",\"lesson\":1,\"kanji\":\"拡\",\"HanViet\":\"KHUẾCH\",\"meaning\":\"Khuếch tán\"},{\"code\":\"3K035\",\"lesson\":1,\"kanji\":\"額\",\"HanViet\":\"NGẠCH\",\"meaning\":\"Cái trán, hạn ngạch\"},{\"code\":\"3K036\",\"lesson\":1,\"kanji\":\"割\",\"HanViet\":\"CÁT\",\"meaning\":\"Vỡ\"},{\"code\":\"3K037\",\"lesson\":1,\"kanji\":\"簡\",\"HanViet\":\"GIẢN\",\"meaning\":\"Đơn giản\"},{\"code\":\"3K038\",\"lesson\":1,\"kanji\":\"干\",\"HanViet\":\"CAN\",\"meaning\":\"Khô\"},{\"code\":\"3K039\",\"lesson\":1,\"kanji\":\"看\",\"HanViet\":\"KHÁN\",\"meaning\":\"Trông coi, giữ gìn\"},{\"code\":\"3K040\",\"lesson\":1,\"kanji\":\"慣\",\"HanViet\":\"QUÁN\",\"meaning\":\"Quen, tập quán\"},{\"code\":\"3K041\",\"lesson\":2,\"kanji\":\"幹\",\"HanViet\":\"CÁN\",\"meaning\":\"Cán bộ\"},{\"code\":\"3K042\",\"lesson\":2,\"kanji\":\"刊\",\"HanViet\":\"SAN\",\"meaning\":\"Tập san\"},{\"code\":\"3K043\",\"lesson\":2,\"kanji\":\"巻\",\"HanViet\":\"QUYỂN\",\"meaning\":\"Quyển sách\"},{\"code\":\"3K044\",\"lesson\":2,\"kanji\":\"眼\",\"HanViet\":\"NHÃN\",\"meaning\":\"Con mắt\"},{\"code\":\"3K045\",\"lesson\":2,\"kanji\":\"危\",\"HanViet\":\"NGUY\",\"meaning\":\"Nguy hiểm\"},{\"code\":\"3K046\",\"lesson\":2,\"kanji\":\"揮\",\"HanViet\":\"HUY\",\"meaning\":\"Chỉ huy\"},{\"code\":\"3K047\",\"lesson\":2,\"kanji\":\"机\",\"HanViet\":\"KỶ\",\"meaning\":\"Cái bàn\"},{\"code\":\"3K048\",\"lesson\":2,\"kanji\":\"貴\",\"HanViet\":\"QUÝ\",\"meaning\":\"Quý tộc\"},{\"code\":\"3K049\",\"lesson\":2,\"kanji\":\"規\",\"HanViet\":\"QUY\",\"meaning\":\"Quy tắc\"},{\"code\":\"3K050\",\"lesson\":2,\"kanji\":\"基\",\"HanViet\":\"CƠ\",\"meaning\":\"Cơ bản\"},{\"code\":\"3K051\",\"lesson\":2,\"kanji\":\"寄\",\"HanViet\":\"KÍ\",\"meaning\":\"Kí gửi, kí túc\"},{\"code\":\"3K052\",\"lesson\":2,\"kanji\":\"技\",\"HanViet\":\"KĨ\",\"meaning\":\"Kĩ thuật\"},{\"code\":\"3K053\",\"lesson\":2,\"kanji\":\"義\",\"HanViet\":\"NGHĨA\",\"meaning\":\"Chính nghĩa\"},{\"code\":\"3K054\",\"lesson\":2,\"kanji\":\"疑\",\"HanViet\":\"NGHI\",\"meaning\":\"Nghi vấn\"},{\"code\":\"3K055\",\"lesson\":2,\"kanji\":\"逆\",\"HanViet\":\"NGHỊCH\",\"meaning\":\"Phản nghịch\"},{\"code\":\"3K056\",\"lesson\":2,\"kanji\":\"旧\",\"HanViet\":\"CỰU\",\"meaning\":\"Kì cựu\"},{\"code\":\"3K057\",\"lesson\":2,\"kanji\":\"久\",\"HanViet\":\"CỬU\",\"meaning\":\"Vĩnh cửu\"},{\"code\":\"3K058\",\"lesson\":2,\"kanji\":\"吸\",\"HanViet\":\"HẤP\",\"meaning\":\"Hô hấp, hấp thụ\"},{\"code\":\"3K059\",\"lesson\":2,\"kanji\":\"許\",\"HanViet\":\"HỨA\",\"meaning\":\"Cho phép\"},{\"code\":\"3K060\",\"lesson\":2,\"kanji\":\"居\",\"HanViet\":\"CƯ\",\"meaning\":\"Cư trú, định cư\"},{\"code\":\"3K061\",\"lesson\":2,\"kanji\":\"境\",\"HanViet\":\"CẢNH\",\"meaning\":\"Hoàn cảnh\"},{\"code\":\"3K062\",\"lesson\":2,\"kanji\":\"郷\",\"HanViet\":\"HƯƠNG\",\"meaning\":\"Quê hương\"},{\"code\":\"3K063\",\"lesson\":2,\"kanji\":\"胸\",\"HanViet\":\"HUNG\",\"meaning\":\"Ngực\"},{\"code\":\"3K064\",\"lesson\":2,\"kanji\":\"供\",\"HanViet\":\"CUNG\",\"meaning\":\"Cung cấp\"},{\"code\":\"3K065\",\"lesson\":2,\"kanji\":\"筋\",\"HanViet\":\"CÂN\",\"meaning\":\"Bắp thịt\"},{\"code\":\"3K066\",\"lesson\":2,\"kanji\":\"勤\",\"HanViet\":\"CẦN\",\"meaning\":\"Cần cù\"},{\"code\":\"3K067\",\"lesson\":2,\"kanji\":\"禁\",\"HanViet\":\"CẤM\",\"meaning\":\"Nghiêm cấm\"},{\"code\":\"3K068\",\"lesson\":2,\"kanji\":\"句\",\"HanViet\":\"CÚ\",\"meaning\":\"Câu cú\"},{\"code\":\"3K069\",\"lesson\":2,\"kanji\":\"群\",\"HanViet\":\"QUẦN\",\"meaning\":\"Quần đảo, quần cư\"},{\"code\":\"3K070\",\"lesson\":2,\"kanji\":\"経\",\"HanViet\":\"KINH\",\"meaning\":\"Kinh tế, kinh độ\"},{\"code\":\"3K071\",\"lesson\":2,\"kanji\":\"系\",\"HanViet\":\"HỆ\",\"meaning\":\"Hệ thống\"},{\"code\":\"3K072\",\"lesson\":2,\"kanji\":\"警\",\"HanViet\":\"CẢNH\",\"meaning\":\"Cảnh sát\"},{\"code\":\"3K073\",\"lesson\":2,\"kanji\":\"敬\",\"HanViet\":\"KÍNH\",\"meaning\":\"Tôn kính\"},{\"code\":\"3K074\",\"lesson\":2,\"kanji\":\"劇\",\"HanViet\":\"KỊCH\",\"meaning\":\"Vở kịch\"},{\"code\":\"3K075\",\"lesson\":2,\"kanji\":\"激\",\"HanViet\":\"KÍCH\",\"meaning\":\"Cảm kích\"},{\"code\":\"3K076\",\"lesson\":2,\"kanji\":\"穴\",\"HanViet\":\"HUYỆT\",\"meaning\":\"Cái hố\"},{\"code\":\"3K077\",\"lesson\":2,\"kanji\":\"潔\",\"HanViet\":\"KHIẾT\",\"meaning\":\"Thanh khiết\"},{\"code\":\"3K078\",\"lesson\":2,\"kanji\":\"険\",\"HanViet\":\"HIỂM\",\"meaning\":\"Nguy hiểm\"},{\"code\":\"3K079\",\"lesson\":2,\"kanji\":\"検\",\"HanViet\":\"KIỂM\",\"meaning\":\"Kiểm tra\"},{\"code\":\"3K080\",\"lesson\":2,\"kanji\":\"券\",\"HanViet\":\"KHOÁN\",\"meaning\":\"Chứng khoán\"},{\"code\":\"3K081\",\"kanji\":\"件\",\"HanViet\":\"KIỆN\",\"meaning\":\"Sự kiện\"},{\"code\":\"3K082\",\"kanji\":\"絹\",\"HanViet\":\"QUYÊN\",\"meaning\":\"Lụa\"},{\"code\":\"3K083\",\"kanji\":\"憲\",\"HanViet\":\"HIẾN\",\"meaning\":\"Hiến pháp\"},{\"code\":\"3K084\",\"kanji\":\"権\",\"HanViet\":\"QUYỀN\",\"meaning\":\"Quyền lợi\"},{\"code\":\"3K085\",\"kanji\":\"現\",\"HanViet\":\"HIỆN\",\"meaning\":\"Hiện thực, hiện đại\"},{\"code\":\"3K086\",\"kanji\":\"厳\",\"HanViet\":\"NGHIÊM\",\"meaning\":\"Nghiêm khắc\"},{\"code\":\"3K087\",\"kanji\":\"源\",\"HanViet\":\"NGUYÊN\",\"meaning\":\"Nguyên thủy\"},{\"code\":\"3K088\",\"kanji\":\"限\",\"HanViet\":\"HẠN\",\"meaning\":\"Giới hạn\"},{\"code\":\"3K089\",\"kanji\":\"減\",\"HanViet\":\"GIẢM\",\"meaning\":\"Giảm thiểu\"},{\"code\":\"3K090\",\"kanji\":\"個\",\"HanViet\":\"CÁ\",\"meaning\":\"Cá nhân\"},{\"code\":\"3K091\",\"kanji\":\"己\",\"HanViet\":\"KỶ\",\"meaning\":\"Bản thân\"},{\"code\":\"3K092\",\"kanji\":\"呼\",\"HanViet\":\"HÔ\",\"meaning\":\"Hô hấp\"},{\"code\":\"3K093\",\"kanji\":\"故\",\"HanViet\":\"CỐ\",\"meaning\":\"Sự cố, biến cố\"},{\"code\":\"3K094\",\"kanji\":\"効\",\"HanViet\":\"HIỆU\",\"meaning\":\"Hiệu quả\"},{\"code\":\"3K095\",\"kanji\":\"講\",\"HanViet\":\"GIẢNG\",\"meaning\":\"Cắt nghĩa\"},{\"code\":\"3K096\",\"kanji\":\"構\",\"HanViet\":\"CẤU\",\"meaning\":\"Cấu tạo\"},{\"code\":\"3K097\",\"kanji\":\"鉱\",\"HanViet\":\"KHOÁNG\",\"meaning\":\"Khoáng sản\"},{\"code\":\"3K098\",\"kanji\":\"耕\",\"HanViet\":\"CANH\",\"meaning\":\"Canh tác, cày ruộng\"},{\"code\":\"3K099\",\"kanji\":\"厚\",\"HanViet\":\"HẬU\",\"meaning\":\"Bề dày\"},{\"code\":\"3K0100\",\"kanji\":\"興\",\"HanViet\":\"HƯNG\",\"meaning\":\"Hưng thịnh\"},{\"code\":\"3K101\",\"kanji\":\"孝\",\"HanViet\":\"HIẾU\",\"meaning\":\"Hiếu thảo\"},{\"code\":\"3K102\",\"kanji\":\"皇\",\"HanViet\":\"HOÀNG\",\"meaning\":\"Hoàng đế\"},{\"code\":\"3K103\",\"kanji\":\"后\",\"HanViet\":\"HẬU\",\"meaning\":\"Hoàng hậu\"},{\"code\":\"3K104\",\"kanji\":\"紅\",\"HanViet\":\"HỒNG\",\"meaning\":\"Màu đỏ\"},{\"code\":\"3K105\",\"kanji\":\"鋼\",\"HanViet\":\"CƯƠNG\",\"meaning\":\"Thép\"},{\"code\":\"3K106\",\"kanji\":\"降\",\"HanViet\":\"GIÁNG\",\"meaning\":\"Rơi, xuống xe\"},{\"code\":\"3K107\",\"kanji\":\"骨\",\"HanViet\":\"CỐT\",\"meaning\":\"Xương\"},{\"code\":\"3K108\",\"kanji\":\"榖\",\"HanViet\":\"CỐC\",\"meaning\":\"Ngũ cốc\"},{\"code\":\"3K109\",\"kanji\":\"刻\",\"HanViet\":\"KHẮC\",\"meaning\":\"Điêu khắc\"},{\"code\":\"3K110\",\"kanji\":\"困\",\"HanViet\":\"KHỐN\",\"meaning\":\"Khó khăn\"},{\"code\":\"3K111\",\"kanji\":\"混\",\"HanViet\":\"HỖN\",\"meaning\":\"Hỗn loạn\"},{\"code\":\"3K112\",\"kanji\":\"砂\",\"HanViet\":\"SA\",\"meaning\":\"Cát\"},{\"code\":\"3K113\",\"kanji\":\"査\",\"HanViet\":\"TRA\",\"meaning\":\"Kiểm tra\"},{\"code\":\"3K114\",\"kanji\":\"座\",\"HanViet\":\"TỌA\",\"meaning\":\"Ngồi\"},{\"code\":\"3K115\",\"kanji\":\"災\",\"HanViet\":\"TAI\",\"meaning\":\"Tai họa, tai ương\"},{\"code\":\"3K116\",\"kanji\":\"採\",\"HanViet\":\"THÁI\",\"meaning\":\"Hái, chọn nhặt\"},{\"code\":\"3K117\",\"kanji\":\"妻\",\"HanViet\":\"THÊ\",\"meaning\":\"Vợ\"},{\"code\":\"3K118\",\"kanji\":\"際\",\"HanViet\":\"TẾ\",\"meaning\":\"Quốc tế\"},{\"code\":\"3K119\",\"kanji\":\"再\",\"HanViet\":\"TÁI\",\"meaning\":\"Làm lại, tái tạo\"},{\"code\":\"3K120\",\"kanji\":\"裁\",\"HanViet\":\"TÀI\",\"meaning\":\"Trọng tài, phán xét\"},{\"code\":\"3K121\",\"kanji\":\"済\",\"HanViet\":\"TẾ\",\"meaning\":\"Kinh tế\"},{\"code\":\"3K122\",\"kanji\":\"在\",\"HanViet\":\"TẠI\",\"meaning\":\"Tồn tại\"},{\"code\":\"3K123\",\"kanji\":\"罪\",\"HanViet\":\"TỘI\",\"meaning\":\"Tội lỗi\"},{\"code\":\"3K124\",\"kanji\":\"財\",\"HanViet\":\"TÀI\",\"meaning\":\"Tiền tài, tài chính\"},{\"code\":\"3K125\",\"kanji\":\"策\",\"HanViet\":\"SÁCH\",\"meaning\":\"Sách lược\"},{\"code\":\"3K126\",\"kanji\":\"冊\",\"HanViet\":\"SÁCH\",\"meaning\":\"Quyển sách\"},{\"code\":\"3K127\",\"kanji\":\"雑\",\"HanViet\":\"TẠP\",\"meaning\":\"tạp chí, phức tạp\"},{\"code\":\"3K128\",\"kanji\":\"賛\",\"HanViet\":\"TÁN\",\"meaning\":\"Tán thành\"},{\"code\":\"3K129\",\"kanji\":\"蚕\",\"HanViet\":\"TÀM\",\"meaning\":\"Con tằm\"},{\"code\":\"3K130\",\"kanji\":\"酸\",\"HanViet\":\"TOAN\",\"meaning\":\"Dấm, chua\"},{\"code\":\"3K131\",\"kanji\":\"誌\",\"HanViet\":\"CHÍ\",\"meaning\":\"Tạp chí\"},{\"code\":\"3K132\",\"kanji\":\"視\",\"HanViet\":\"THỊ\",\"meaning\":\"Thị sát\"},{\"code\":\"3K133\",\"kanji\":\"私\",\"HanViet\":\"TƯ\",\"meaning\":\"Tư nhân\"},{\"code\":\"3K134\",\"kanji\":\"詞\",\"HanViet\":\"TỪ\",\"meaning\":\"Từ ngữ\"},{\"code\":\"3K135\",\"kanji\":\"至\",\"HanViet\":\"CHÍ\",\"meaning\":\"Đến\"},{\"code\":\"3K136\",\"kanji\":\"姿\",\"HanViet\":\"TƯ\",\"meaning\":\"Tư thế\"},{\"code\":\"3K137\",\"kanji\":\"支\",\"HanViet\":\"CHI\",\"meaning\":\"Chi nhánh\"},{\"code\":\"3K138\",\"kanji\":\"資\",\"HanViet\":\"TƯ\",\"meaning\":\"Của cải, đầu tư\"},{\"code\":\"3K139\",\"kanji\":\"師\",\"HanViet\":\"SƯ\",\"meaning\":\"Thầy giáo\"},{\"code\":\"3K140\",\"kanji\":\"志 \",\"HanViet\":\"CHÍ\",\"meaning\":\"Ý chí\"},{\"code\":\"3K141\",\"kanji\":\"飼\",\"HanViet\":\"TỰ\",\"meaning\":\"Nuôi\"},{\"code\":\"3K142\",\"kanji\":\"枝\",\"HanViet\":\"CHI\",\"meaning\":\"Cành cây\"},{\"code\":\"3K143\",\"kanji\":\"示\",\"HanViet\":\"THỊ\",\"meaning\":\"Chỉ thị\"},{\"code\":\"3K144\",\"kanji\":\"似\",\"HanViet\":\"TỰ\",\"meaning\":\"Tương tự\"},{\"code\":\"3K145\",\"kanji\":\"磁\",\"HanViet\":\"TỪ\",\"meaning\":\"Từ trường\"},{\"code\":\"3K146\",\"kanji\":\"識\",\"HanViet\":\"THỨC\",\"meaning\":\"Tri thức\"},{\"code\":\"3K147\",\"kanji\":\"質\",\"HanViet\":\"CHẤT\",\"meaning\":\"Hỏi, chất vấn\"},{\"code\":\"3K148\",\"kanji\":\"謝\",\"HanViet\":\"TẠ\",\"meaning\":\"Cảm tạ\"},{\"code\":\"3K149\",\"kanji\":\"舎\",\"HanViet\":\"XÁ\",\"meaning\":\"Phố xá\"},{\"code\":\"3K150\",\"kanji\":\"捨\",\"HanViet\":\"XẢ\",\"meaning\":\"Vứt\"},{\"code\":\"3K151\",\"kanji\":\"射\",\"HanViet\":\"XẠ\",\"meaning\":\"Bắn\"},{\"code\":\"3K152\",\"kanji\":\"尺\",\"HanViet\":\"XÍCH\",\"meaning\":\"Đơn vị đo\"},{\"code\":\"3K153\",\"kanji\":\"若\",\"HanViet\":\"NHƯỢC\",\"meaning\":\"Trẻ\"},{\"code\":\"3K154\",\"kanji\":\"授\",\"HanViet\":\"THỤ\",\"meaning\":\"Truyền thụ, trao đổi\"},{\"code\":\"3K155\",\"kanji\":\"樹\",\"HanViet\":\"THỤ\",\"meaning\":\"Cổ thụ\"},{\"code\":\"3K156\",\"kanji\":\"従\",\"HanViet\":\"TÒNG\",\"meaning\":\"Làm theo\"},{\"code\":\"3K157\",\"kanji\":\"縦\",\"HanViet\":\"TUNG\",\"meaning\":\"Trục tung\"},{\"code\":\"3K158\",\"kanji\":\"宗\",\"HanViet\":\"TÔNG\",\"meaning\":\"Tôn giáo\"},{\"code\":\"3K159\",\"kanji\":\"収\",\"HanViet\":\"THU\",\"meaning\":\"Thu thập\"},{\"code\":\"3K160\",\"kanji\":\"衆\",\"HanViet\":\"CHÚNG\",\"meaning\":\"Quần chúng\"},{\"code\":\"3K161\",\"kanji\":\"就\",\"HanViet\":\"TỰU\",\"meaning\":\"Thành tựu\"},{\"code\":\"3K162\",\"kanji\":\"修\",\"HanViet\":\"TU\",\"meaning\":\"Tu sửa, tu nghiệp\"},{\"code\":\"3K163\",\"kanji\":\"縮\",\"HanViet\":\"SÚC\",\"meaning\":\"Co lại\"},{\"code\":\"3K164\",\"kanji\":\"熟\",\"HanViet\":\"THỤC\",\"meaning\":\"Thành thục\"},{\"code\":\"3K165\",\"kanji\":\"述\",\"HanViet\":\"THUẬT\",\"meaning\":\"Nêu ra, thuật ra\"},{\"code\":\"3K166\",\"kanji\":\"術\",\"HanViet\":\"THUẬT\",\"meaning\":\"Kĩ thuật, mỹ thuật\"},{\"code\":\"3K167\",\"kanji\":\"準\",\"HanViet\":\"CHUẨN\",\"meaning\":\"Chuẩn bị\"},{\"code\":\"3K168\",\"kanji\":\"純\",\"HanViet\":\"THUẦN\",\"meaning\":\"Đơn thuần\"},{\"code\":\"3K169\",\"kanji\":\"署\",\"HanViet\":\"THỰ\",\"meaning\":\"Dinh thự\"},{\"code\":\"3K170\",\"kanji\":\"処\",\"HanViet\":\"XỬ\",\"meaning\":\"Xử lý\"},{\"code\":\"3K171\",\"kanji\":\"諸\",\"HanViet\":\"CHƯ\",\"meaning\":\"Chư hầu, các\"},{\"code\":\"3K172\",\"kanji\":\"除\",\"HanViet\":\"TRỪ\",\"meaning\":\"Trừ bỏ\"},{\"code\":\"3K173\",\"kanji\":\"傷\",\"HanViet\":\"THƯƠNG\",\"meaning\":\"Vết thương\"},{\"code\":\"3K174\",\"kanji\":\"障\",\"HanViet\":\"CHƯỚNG\",\"meaning\":\"Chướng ngại\"},{\"code\":\"3K175\",\"kanji\":\"将\",\"HanViet\":\"TƯƠNG\",\"meaning\":\"Tương lai\"},{\"code\":\"3K176\",\"kanji\":\"証\",\"HanViet\":\"CHỨNG\",\"meaning\":\"Chứng minh\"},{\"code\":\"3K177\",\"kanji\":\"承\",\"HanViet\":\"THỪA\",\"meaning\":\"Thừa nhận\"},{\"code\":\"3K178\",\"kanji\":\"招\",\"HanViet\":\"CHIÊU\",\"meaning\":\"mời, vẫy\"},{\"code\":\"3K179\",\"kanji\":\"序\",\"HanViet\":\"TỰ \",\"meaning\":\"Thứ tự, tựa đề\"},{\"code\":\"3K180\",\"kanji\":\"城\",\"HanViet\":\"THÀNH\",\"meaning\":\"Thành lũy\"},{\"code\":\"3K181\",\"kanji\":\"蒸\",\"HanViet\":\"CHƯNG\",\"meaning\":\"Chưng cất\"},{\"code\":\"3K182\",\"kanji\":\"常\",\"HanViet\":\"THƯỜNG\",\"meaning\":\"Bình thường\"},{\"code\":\"3K183\",\"kanji\":\"状\",\"HanViet\":\"TRẠNG\",\"meaning\":\"Trạng thái\"},{\"code\":\"3K184\",\"kanji\":\"条\",\"HanViet\":\"ĐIỀU\",\"meaning\":\"Điều kiện\"},{\"code\":\"3K185\",\"kanji\":\"情\",\"HanViet\":\"TÌNH\",\"meaning\":\"Tình cảm\"},{\"code\":\"3K186\",\"kanji\":\"職\",\"HanViet\":\"CHỨC\",\"meaning\":\"Chức vụ\"},{\"code\":\"3K187\",\"kanji\":\"織\",\"HanViet\":\"CHỨC\",\"meaning\":\"Dệt vải\"},{\"code\":\"3K188\",\"kanji\":\"針\",\"HanViet\":\"CHÂM\",\"meaning\":\"Cái kim, phương châm\"},{\"code\":\"3K189\",\"kanji\":\"仁\",\"HanViet\":\"NHÂN\",\"meaning\":\"Nhân nghĩa\"},{\"code\":\"3K190\",\"kanji\":\"推\",\"HanViet\":\"SUY\",\"meaning\":\"Suy tính\"},{\"code\":\"3K191\",\"kanji\":\"垂\",\"HanViet\":\"THÙY\",\"meaning\":\"Rủ xuống\"},{\"code\":\"3K192\",\"kanji\":\"寸\",\"HanViet\":\"THỐN\",\"meaning\":\"Đơn vị đo\"},{\"code\":\"3K193\",\"kanji\":\"誠\",\"HanViet\":\"THÀNH\",\"meaning\":\"Thành thực\"},{\"code\":\"3K194\",\"kanji\":\"聖\",\"HanViet\":\"THÁNH\",\"meaning\":\"Thần thánh\"},{\"code\":\"3K195\",\"kanji\":\"盛\",\"HanViet\":\"THỊNH\",\"meaning\":\"Thịnh vượng\"},{\"code\":\"3K196\",\"kanji\":\"製\",\"HanViet\":\"CHẾ\",\"meaning\":\"Chế tạo, chế phẩm\"},{\"code\":\"3K197\",\"kanji\":\"精\",\"HanViet\":\"TINH\",\"meaning\":\"Tinh luyện\"},{\"code\":\"3K198\",\"kanji\":\"性\",\"HanViet\":\"TÍNH\",\"meaning\":\"Tính cách\"},{\"code\":\"3K199\",\"kanji\":\"政\",\"HanViet\":\"CHÍNH\",\"meaning\":\"Chính sách, chính trị\"},{\"code\":\"3K200\",\"kanji\":\"制\",\"HanViet\":\"CHẾ\",\"meaning\":\"Chế độ\"},{\"code\":\"3K201\",\"kanji\":\"勢\",\"HanViet\":\"THẾ \",\"meaning\":\"Thế lực\"},{\"code\":\"3K202\",\"kanji\":\"税\",\"HanViet\":\"THUẾ\",\"meaning\":\"Tiền thuế\"},{\"code\":\"3K203\",\"kanji\":\"責\",\"HanViet\":\"TRÁCH\",\"meaning\":\"Trách nhiệm\"},{\"code\":\"3K204\",\"kanji\":\"績\",\"HanViet\":\"TÍCH\",\"meaning\":\"Thành tích\"},{\"code\":\"3K205\",\"kanji\":\"設\",\"HanViet\":\"THIẾT\",\"meaning\":\"Thiết lập\"},{\"code\":\"3K206\",\"kanji\":\"接\",\"HanViet\":\"TIẾP\",\"meaning\":\"Tiếp xúc\"},{\"code\":\"3K207\",\"kanji\":\"絶\",\"HanViet\":\"TUYỆT\",\"meaning\":\"Cự tuyệt, tuyệt giao\"},{\"code\":\"3K208\",\"kanji\":\"舌\",\"HanViet\":\"THIỆT\",\"meaning\":\"Cái lưỡi\"},{\"code\":\"3K209\",\"kanji\":\"銭\",\"HanViet\":\"TIỀN\",\"meaning\":\"Tiền bạc\"},{\"code\":\"3K210\",\"kanji\":\"専\",\"HanViet\":\"CHUYÊN\",\"meaning\":\"Chuyên môn\"},{\"code\":\"3K211\",\"kanji\":\"宣\",\"HanViet\":\"TUYÊN\",\"meaning\":\"Tuyên truyền\"},{\"code\":\"3K212\",\"kanji\":\"染\",\"HanViet\":\"NHIỄM\",\"meaning\":\"Truyền nhiễm\"},{\"code\":\"3K213\",\"kanji\":\"泉\",\"HanViet\":\"TUYỀN\",\"meaning\":\"Dòng sông\"},{\"code\":\"3K214\",\"kanji\":\"洗\",\"HanViet\":\"TIỂN\",\"meaning\":\"Tẩy rửa\"},{\"code\":\"3K215\",\"kanji\":\"善\",\"HanViet\":\"THIỆN\",\"meaning\":\"Cải thiện\"},{\"code\":\"3K216\",\"kanji\":\"祖\",\"HanViet\":\"TỔ\",\"meaning\":\"Tổ tiên\"},{\"code\":\"3K217\",\"kanji\":\"素\",\"HanViet\":\"TỐ\",\"meaning\":\"Nguyên tố, yếu tố\"},{\"code\":\"3K218\",\"kanji\":\"総\",\"HanViet\":\"TỔNG\",\"meaning\":\"Tổng hợp\"},{\"code\":\"3K219\",\"kanji\":\"層\",\"HanViet\":\"TẦNG\",\"meaning\":\"Cao tầng\"},{\"code\":\"3K220\",\"kanji\":\"裝\",\"HanViet\":\"TRANG\",\"meaning\":\"Trang sức\"},{\"code\":\"3K221\",\"kanji\":\"奏\",\"HanViet\":\"TẤU\",\"meaning\":\"Diễn tấu\"},{\"code\":\"3K222\",\"kanji\":\"操\",\"HanViet\":\"THAO\",\"meaning\":\"Thao tác\"},{\"code\":\"3K223\",\"kanji\":\"創\",\"HanViet\":\"SÁNG\",\"meaning\":\"Sáng tạo\"},{\"code\":\"3K224\",\"kanji\":\"窓\",\"HanViet\":\"SONG\",\"meaning\":\"Cửa sổ\"},{\"code\":\"3K225\",\"kanji\":\"蔵\",\"HanViet\":\"TÀNG\",\"meaning\":\"Tàng trữ\"},{\"code\":\"3K226\",\"kanji\":\"臓\",\"HanViet\":\"TẠNG\",\"meaning\":\"Nội tạng\"},{\"code\":\"3K227\",\"kanji\":\"増\",\"HanViet\":\"TĂNG\",\"meaning\":\"Tăng lên\"},{\"code\":\"3K228\",\"kanji\":\"像\",\"HanViet\":\"TƯỢNG\",\"meaning\":\"Hình tượng\"},{\"code\":\"3K229\",\"kanji\":\"造\",\"HanViet\":\"TẠO\",\"meaning\":\"Chế tạo\"},{\"code\":\"3K230\",\"kanji\":\"則\",\"HanViet\":\"TẮC\",\"meaning\":\"Quy tắc\"},{\"code\":\"3K231\",\"kanji\":\"測\",\"HanViet\":\"TRẮC\",\"meaning\":\"Đo lường\"},{\"code\":\"3K232\",\"kanji\":\"属\",\"HanViet\":\"THUỘC\",\"meaning\":\"Phụ thuộc\"},{\"code\":\"3K233\",\"kanji\":\"損\",\"HanViet\":\"TỔN\",\"meaning\":\"Tổn hại\"},{\"code\":\"3K234\",\"kanji\":\"尊\",\"HanViet\":\"TÔN\",\"meaning\":\"Tôn kính\"},{\"code\":\"3K235\",\"kanji\":\"存\",\"HanViet\":\"TỒN\",\"meaning\":\"Tồn tại\"},{\"code\":\"3K236\",\"kanji\":\"貸\",\"HanViet\":\"THẢI\",\"meaning\":\"Cho vay\"},{\"code\":\"3K237\",\"kanji\":\"退\",\"HanViet\":\"THOÁI\",\"meaning\":\"Rút lui\"},{\"code\":\"3K238\",\"kanji\":\"態\",\"HanViet\":\"THÁI\",\"meaning\":\"Trạng thái\"},{\"code\":\"3K239\",\"kanji\":\"探\",\"HanViet\":\"THÁM\",\"meaning\":\"Tìm kiếm\"},{\"code\":\"3K240\",\"kanji\":\"担\",\"HanViet\":\"ĐẢM\",\"meaning\":\"Đảm nhận \"},{\"code\":\"3K241\",\"kanji\":\"誕\",\"HanViet\":\"ĐẢN\",\"meaning\":\"Sinh ra\"},{\"code\":\"3K242\",\"kanji\":\"団\",\"HanViet\":\"ĐOÀN\",\"meaning\":\"Đoàn thể\"},{\"code\":\"3K243\",\"kanji\":\"断\",\"HanViet\":\"ĐOẠN\",\"meaning\":\"Đoạn tuyệt\"},{\"code\":\"3K244\",\"kanji\":\"暖\",\"HanViet\":\"NOÃN\",\"meaning\":\"Ấm\"},{\"code\":\"3K245\",\"kanji\":\"段\",\"HanViet\":\"ĐOẠN\",\"meaning\":\"Giai đoạn\"},{\"code\":\"3K246\",\"kanji\":\"宅\",\"HanViet\":\"TRẠCH\",\"meaning\":\"Nhà riêng\"},{\"code\":\"3K247\",\"kanji\":\"値\",\"HanViet\":\"TRỊ\",\"meaning\":\"Giá trị\"},{\"code\":\"3K248\",\"kanji\":\"築\",\"HanViet\":\"TRÚC\",\"meaning\":\"Kiến trúc\"},{\"code\":\"3K249\",\"kanji\":\"宙\",\"HanViet\":\"TRỤ\",\"meaning\":\"Vũ trụ\"},{\"code\":\"3K250\",\"kanji\":\"忠\",\"HanViet\":\"TRUNG\",\"meaning\":\"Trung thực\"},{\"code\":\"3K251\",\"kanji\":\"著\",\"HanViet\":\"TRỨ\",\"meaning\":\"Trứ danh\"},{\"code\":\"3K252\",\"kanji\":\"張\",\"HanViet\":\"TRƯƠNG\",\"meaning\":\"Kéo dài\"},{\"code\":\"3K253\",\"kanji\":\"潮\",\"HanViet\":\"TRIỀU\",\"meaning\":\"Thủy triều\"},{\"code\":\"3K254\",\"kanji\":\"頂\",\"HanViet\":\"ĐỈNH\",\"meaning\":\"Đỉnh cao\"},{\"code\":\"3K255\",\"kanji\":\"庁\",\"HanViet\":\"SẢNH\",\"meaning\":\"Đại sảnh\"},{\"code\":\"3K256\",\"kanji\":\"程\",\"HanViet\":\"TRÌNH\",\"meaning\":\"Trình độ\"},{\"code\":\"3K257\",\"kanji\":\"提\",\"HanViet\":\"ĐỀ\",\"meaning\":\"Đề cử\"},{\"code\":\"3K258\",\"kanji\":\"敵\",\"HanViet\":\"ĐỊCH\",\"meaning\":\"Địch thủ\"},{\"code\":\"3K259\",\"kanji\":\"適\",\"HanViet\":\"THÍCH\",\"meaning\":\"Thích hợp, thích đáng\"},{\"code\":\"3K260\",\"kanji\":\"統\",\"HanViet\":\"THỐNG\",\"meaning\":\"Truyền thống\"},{\"code\":\"3K261\",\"kanji\":\"党\",\"HanViet\":\"ĐẢNG\",\"meaning\":\"Đảng phái\"},{\"code\":\"3K262\",\"kanji\":\"討\",\"HanViet\":\"THẢO\",\"meaning\":\"Thảo luận\"},{\"code\":\"3K263\",\"kanji\":\"糖\",\"HanViet\":\"ĐƯỜNG\",\"meaning\":\"Chất đường\"},{\"code\":\"3K264\",\"kanji\":\"銅\",\"HanViet\":\"ĐỒNG\",\"meaning\":\"Chất đồng\"},{\"code\":\"3K265\",\"kanji\":\"導\",\"HanViet\":\"ĐẠO\",\"meaning\":\"Chỉ đạo\"},{\"code\":\"3K266\",\"kanji\":\"徳\",\"HanViet\":\"ĐỨC\",\"meaning\":\"Đạo đức\"},{\"code\":\"3K267\",\"kanji\":\"独\",\"HanViet\":\"ĐỘC\",\"meaning\":\"Độc thân, cô độc\"},{\"code\":\"3K268\",\"kanji\":\"賃\",\"HanViet\":\"NHÂM\",\"meaning\":\"Thuê\"},{\"code\":\"3K269\",\"kanji\":\"痛\",\"HanViet\":\"THỐNG\",\"meaning\":\"Đau\"},{\"code\":\"3K270\",\"kanji\":\"展\",\"HanViet\":\"TRIỂN\",\"meaning\":\"Phát triển\"},{\"code\":\"3K271\",\"kanji\":\"任\",\"HanViet\":\"NHIỆM\",\"meaning\":\"Trách nhiệm\"},{\"code\":\"3K272\",\"kanji\":\"認\",\"HanViet\":\"NHẬN\",\"meaning\":\"Xác nhận\"},{\"code\":\"3K273\",\"kanji\":\"燃\",\"HanViet\":\"NHIÊN\",\"meaning\":\"Nhiên liệu\"},{\"code\":\"3K274\",\"kanji\":\"能\",\"HanViet\":\"NĂNG\",\"meaning\":\"Năng lực\"},{\"code\":\"3K275\",\"kanji\":\"脳\",\"HanViet\":\"NÃO\",\"meaning\":\"Bộ não\"},{\"code\":\"3K276\",\"kanji\":\"納\",\"HanViet\":\"NẠP \",\"meaning\":\"Nộp\"},{\"code\":\"3K277\",\"kanji\":\"難\",\"HanViet\":\"NAN\",\"meaning\":\"Gian nan\"},{\"code\":\"3K278\",\"kanji\":\"乳\",\"HanViet\":\"NHŨ\",\"meaning\":\"Sữa\"},{\"code\":\"3K279\",\"kanji\":\"破\",\"HanViet\":\"PHÁ\",\"meaning\":\"Xé rách\"},{\"code\":\"3K280\",\"kanji\":\"派\",\"HanViet\":\"PHÁI\",\"meaning\":\"Đảng phái\"},{\"code\":\"3K281\",\"kanji\":\"肺\",\"HanViet\":\"PHẾ\",\"meaning\":\"Phổi\"},{\"code\":\"3K282\",\"kanji\":\"背\",\"HanViet\":\"BỐI\",\"meaning\":\"Cái lưng\"},{\"code\":\"3K283\",\"kanji\":\"俳\",\"HanViet\":\"BÀI\",\"meaning\":\"Nghệ sỹ\"},{\"code\":\"3K284\",\"kanji\":\"拝\",\"HanViet\":\"BÁI\",\"meaning\":\"Khấn bái\"},{\"code\":\"3K285\",\"kanji\":\"犯\",\"HanViet\":\"PHẠM\",\"meaning\":\"Tội phạm\"},{\"code\":\"3K286\",\"kanji\":\"版\",\"HanViet\":\"BẢN\",\"meaning\":\"Xuất bản\"},{\"code\":\"3K287\",\"kanji\":\"判\",\"HanViet\":\"PHÁN\",\"meaning\":\"Phán đoán\"},{\"code\":\"3K288\",\"kanji\":\"班\",\"HanViet\":\"BAN\",\"meaning\":\"Nhóm\"},{\"code\":\"3K289\",\"kanji\":\"晩\",\"HanViet\":\"VÃN\",\"meaning\":\"Buổi tối\"},{\"code\":\"3K290\",\"kanji\":\"肥\",\"HanViet\":\"PHÌ\",\"meaning\":\"Màu mỡ\"},{\"code\":\"3K291\",\"kanji\":\"比\",\"HanViet\":\"TỶ\",\"meaning\":\"So sánh\"},{\"code\":\"3K292\",\"kanji\":\"非\",\"HanViet\":\"PHI\",\"meaning\":\"Phi thường\"},{\"code\":\"3K293\",\"kanji\":\"否\",\"HanViet\":\"PHỦ\",\"meaning\":\"Phủ nhận\"},{\"code\":\"3K294\",\"kanji\":\"秘\",\"HanViet\":\"BÍ\",\"meaning\":\"Bí mật\"},{\"code\":\"3K295\",\"kanji\":\"批\",\"HanViet\":\"PHÊ\",\"meaning\":\"Phê bình\"},{\"code\":\"3K296\",\"kanji\":\"備\",\"HanViet\":\"BỊ\",\"meaning\":\"Chuẩn bị\"},{\"code\":\"3K297\",\"kanji\":\"貧\",\"HanViet\":\"BẦN\",\"meaning\":\"Nghèo đói\"},{\"code\":\"3K298\",\"kanji\":\"奮\",\"HanViet\":\"PHẤN\",\"meaning\":\"Hưng phấn\"},{\"code\":\"3K299\",\"kanji\":\"俵\",\"HanViet\":\"BIỂU\",\"meaning\":\"Bao, túi\"},{\"code\":\"3K300\",\"kanji\":\"評\",\"HanViet\":\"BÌNH\",\"meaning\":\"Bình luận\"},{\"code\":\"3K301\",\"kanji\":\"富\",\"HanViet\":\"PHÚ\",\"meaning\":\"Phú quý\"},{\"code\":\"3K302\",\"kanji\":\"布\",\"HanViet\":\"BỐ\",\"meaning\":\"Vải\"},{\"code\":\"3K303\",\"kanji\":\"婦\",\"HanViet\":\"PHỤ\",\"meaning\":\"Phụ nữ\"},{\"code\":\"3K304\",\"kanji\":\"武\",\"HanViet\":\"VŨ\",\"meaning\":\"Vũ khí\"},{\"code\":\"3K305\",\"kanji\":\"復\",\"HanViet\":\"PHỤC\",\"meaning\":\"Phục hồi\"},{\"code\":\"3K306\",\"kanji\":\"複\",\"HanViet\":\"PHỨC\",\"meaning\":\"Phức tạp\"},{\"code\":\"3K307\",\"kanji\":\"腹\",\"HanViet\":\"PHÚC\",\"meaning\":\"Cái bụng\"},{\"code\":\"3K308\",\"kanji\":\"仏\",\"HanViet\":\"PHẬT\",\"meaning\":\"Phật giáo\"},{\"code\":\"3K309\",\"kanji\":\"弁\",\"HanViet\":\"BIỆN\",\"meaning\":\"Biện luận\"},{\"code\":\"3K310\",\"kanji\":\"編\",\"HanViet\":\"BIÊN\",\"meaning\":\"Biên tập\"},{\"code\":\"3K311\",\"kanji\":\"片\",\"HanViet\":\"PHIẾN\",\"meaning\":\"Một mảnh\"},{\"code\":\"3K312\",\"kanji\":\"並\",\"HanViet\":\"TỊNH\",\"meaning\":\"Xếp hàng\"},{\"code\":\"3K313\",\"kanji\":\"閉\",\"HanViet\":\"BẾ\",\"meaning\":\"Đóng\"},{\"code\":\"3K314\",\"kanji\":\"陛\",\"HanViet\":\"BỆ\",\"meaning\":\"Bệ hạ\"},{\"code\":\"3K315\",\"kanji\":\"保\",\"HanViet\":\"BẢO\",\"meaning\":\"Bảo đảm\"},{\"code\":\"3K316\",\"kanji\":\"補\",\"HanViet\":\"BỔ\",\"meaning\":\"Bổ sung\"},{\"code\":\"3K317\",\"kanji\":\"豊\",\"HanViet\":\"PHONG\",\"meaning\":\"Phong phú\"},{\"code\":\"3K318\",\"kanji\":\"報\",\"HanViet\":\"BÁO\",\"meaning\":\"Báo cáo\"},{\"code\":\"3K319\",\"kanji\":\"訪\",\"HanViet\":\"PHỎNG\",\"meaning\":\"Viếng thăm\"},{\"code\":\"3K320\",\"kanji\":\"宝\",\"HanViet\":\"BẢO\",\"meaning\":\"Quý hiếm\"},{\"code\":\"3K321\",\"kanji\":\"墓\",\"HanViet\":\"MỘ\",\"meaning\":\"Mộ phần\"},{\"code\":\"3K322\",\"kanji\":\"暮\",\"HanViet\":\"MỘ\",\"meaning\":\"Trời tối\"},{\"code\":\"3K323\",\"kanji\":\"棒\",\"HanViet\":\"BỔNG\",\"meaning\":\"Cái gậy\"},{\"code\":\"3K324\",\"kanji\":\"忘\",\"HanViet\":\"VONG\",\"meaning\":\"Quên\"},{\"code\":\"3K325\",\"kanji\":\"亡\",\"HanViet\":\"VONG\",\"meaning\":\"Tử vong\"},{\"code\":\"3K326\",\"kanji\":\"防\",\"HanViet\":\"PHÒNG\",\"meaning\":\"Phòng chống\"},{\"code\":\"3K327\",\"kanji\":\"夢\",\"HanViet\":\"MỘNG\",\"meaning\":\"Giấc mơ\"},{\"code\":\"3K328\",\"kanji\":\"務\",\"HanViet\":\"VỤ\",\"meaning\":\"Sự vụ\"},{\"code\":\"3K329\",\"kanji\":\"迷\",\"HanViet\":\"MÊ\",\"meaning\":\"Lạc, mê cung\"},{\"code\":\"3K330\",\"kanji\":\"盟\",\"HanViet\":\"MINH\",\"meaning\":\"Đồng minh\"},{\"code\":\"3K331\",\"kanji\":\"綿\",\"HanViet\":\"MIÊN\",\"meaning\":\"Bông vải\"},{\"code\":\"3K332\",\"kanji\":\"枚\",\"HanViet\":\"MAI\",\"meaning\":\"Đếm vật mỏng\"},{\"code\":\"3K333\",\"kanji\":\"幕\",\"HanViet\":\"MẠC\",\"meaning\":\"Cái rèm, khai mạc\"},{\"code\":\"3K334\",\"kanji\":\"密\",\"HanViet\":\"MẬT\",\"meaning\":\"Bí mật\"},{\"code\":\"3K335\",\"kanji\":\"模\",\"HanViet\":\"MÔ\",\"meaning\":\"Mô hình\"},{\"code\":\"3K336\",\"kanji\":\"輸\",\"HanViet\":\"THÂU\",\"meaning\":\"Nhập khẩu\"},{\"code\":\"3K337\",\"kanji\":\"余\",\"HanViet\":\"DƯ\",\"meaning\":\"Dư thừa\"},{\"code\":\"3K338\",\"kanji\":\"預\",\"HanViet\":\"DỰ\",\"meaning\":\"Gửi\"},{\"code\":\"3K339\",\"kanji\":\"容\",\"HanViet\":\"DUNG\",\"meaning\":\"Nội dung, bao dung\"},{\"code\":\"3K340\",\"kanji\":\"幼\",\"HanViet\":\"ẤU\",\"meaning\":\"Ấu thơ\"},{\"code\":\"3K341\",\"kanji\":\"訳\",\"HanViet\":\"DỊCH\",\"meaning\":\"Phiên dịch\"},{\"code\":\"3K342\",\"kanji\":\"優\",\"HanViet\":\"ƯU\",\"meaning\":\"Ưu tú\"},{\"code\":\"3K343\",\"kanji\":\"郵\",\"HanViet\":\"BƯU\",\"meaning\":\"Bưu cục\"},{\"code\":\"3K344\",\"kanji\":\"欲\",\"HanViet\":\"DỤC\",\"meaning\":\"Dục vọng\"},{\"code\":\"3K345\",\"kanji\":\"翌\",\"HanViet\":\"DỰC\",\"meaning\":\"Ngày mai\"},{\"code\":\"3K346\",\"kanji\":\"率\",\"HanViet\":\"SUẤT\",\"meaning\":\"Năng suất\"},{\"code\":\"3K347\",\"kanji\":\"律\",\"HanViet\":\"LUẬT\",\"meaning\":\"Luật pháp\"},{\"code\":\"3K348\",\"kanji\":\"略\",\"HanViet\":\"LƯỢC\",\"meaning\":\"Chiến lược, sơ lược\"},{\"code\":\"3K349\",\"kanji\":\"留\",\"HanViet\":\"LƯU\",\"meaning\":\"Lưu lại, ưu tú\"},{\"code\":\"3K350\",\"kanji\":\"領\",\"HanViet\":\"LÃNH\",\"meaning\":\"Lãnh đạo\"},{\"code\":\"3K351\",\"kanji\":\"卵\",\"HanViet\":\"NOÃN\",\"meaning\":\"Trứng\"},{\"code\":\"3K352\",\"kanji\":\"乱\",\"HanViet\":\"LOẠN\",\"meaning\":\"Rối loạn\"},{\"code\":\"3K353\",\"kanji\":\"覧\",\"HanViet\":\"LÃM\",\"meaning\":\"Triển lãm\"},{\"code\":\"3K354\",\"kanji\":\"裏\",\"HanViet\":\"LÝ\",\"meaning\":\"Mặt trái\"},{\"code\":\"3K355\",\"kanji\":\"臨\",\"HanViet\":\"LÂM\",\"meaning\":\"Lâm thời\"},{\"code\":\"3K356\",\"kanji\":\"朗\",\"HanViet\":\"LÃNG\",\"meaning\":\"Chiếu sáng\"},{\"code\":\"3K357\",\"kanji\":\"論\",\"HanViet\":\"LUẬN\",\"meaning\":\"Thảo luận\"}]");
+
+/***/ }),
+
+/***/ "./resources/component/client/Course/kanji360/4K.json":
+/*!************************************************************!*\
+  !*** ./resources/component/client/Course/kanji360/4K.json ***!
+  \************************************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"code\":\"4K001\",\"kanji\":\"悪\",\"HanViet\":\"ÁC\",\"meaning\":\"Ác nhân\"},{\"code\":\"4K002\",\"kanji\":\"屋 \",\"HanViet\":\"ỐC\",\"meaning\":\"Cao ốc\"},{\"code\":\"4K003\",\"kanji\":\"億 \",\"HanViet\":\"ỨC\",\"meaning\":\"100 triệu\"},{\"code\":\"4K004\",\"kanji\":\"安\",\"HanViet\":\"AN\",\"meaning\":\"An toàn\"},{\"code\":\"4K005\",\"kanji\":\"暗\",\"HanViet\":\"ÁM\",\"meaning\":\"Tối\"},{\"code\":\"4K006\",\"kanji\":\"案\",\"HanViet\":\"ÁN\",\"meaning\":\"Đề án\"},{\"code\":\"4K007\",\"kanji\":\"意 \",\"HanViet\":\"Ý\",\"meaning\":\"Ý chí\"},{\"code\":\"4K008\",\"kanji\":\"委\",\"HanViet\":\"UỶ\",\"meaning\":\"Uỷ viên\"},{\"code\":\"4K009\",\"kanji\":\"医\",\"HanViet\":\"Y\",\"meaning\":\"Y học\"},{\"code\":\"4K010\",\"kanji\":\"以\",\"HanViet\":\"DĨ\",\"meaning\":\"Cái mốc\"},{\"code\":\"4K011\",\"kanji\":\"位\",\"HanViet\":\"VỊ\",\"meaning\":\"Vị trí\"},{\"code\":\"4K012\",\"kanji\":\"胃\",\"HanViet\":\"VỊ\",\"meaning\":\"Dạ dày\"},{\"code\":\"4K013\",\"kanji\":\"囲 \",\"HanViet\":\"VI\",\"meaning\":\"Phạm vi\"},{\"code\":\"4K014\",\"kanji\":\"衣\",\"HanViet\":\"Y\",\"meaning\":\"Y phục\"},{\"code\":\"4K015\",\"kanji\":\"塩\",\"HanViet\":\"DIÊM\",\"meaning\":\"Muối\"},{\"code\":\"4K016\",\"kanji\":\"院 \",\"HanViet\":\"BỆNH\",\"meaning\":\"Bệnh viện\"},{\"code\":\"4K017\",\"kanji\":\"員\",\"HanViet\":\"VIÊN\",\"meaning\":\"Nhân viên\"},{\"code\":\"4K018\",\"kanji\":\"飮\",\"HanViet\":\"ẨM\",\"meaning\":\"Ẩm thực\"},{\"code\":\"4K019\",\"kanji\":\"横\",\"HanViet\":\"HOÀNH\",\"meaning\":\"Trục hoành\"},{\"code\":\"4K020\",\"kanji\":\"央 \",\"HanViet\":\"ƯƠNG\",\"meaning\":\"Trung ương\"},{\"code\":\"4K021\",\"kanji\":\"僾\",\"HanViet\":\"ÁI\",\"meaning\":\"Tình ái\"},{\"code\":\"4K022\",\"kanji\":\"温\",\"HanViet\":\"ÔN\",\"meaning\":\"Tối\"},{\"code\":\"4K023\",\"kanji\":\"運 \",\"HanViet\":\"VẬN\",\"meaning\":\"Vận động\"},{\"code\":\"4K024\",\"kanji\":\"育\",\"HanViet\":\"DỤC\",\"meaning\":\"Giáo dục\"},{\"code\":\"4K025\",\"kanji\":\"駅\",\"HanViet\":\"DỊCH\",\"meaning\":\"Nhà ga\"},{\"code\":\"4K026\",\"kanji\":\"泳\",\"HanViet\":\"VỊNH\",\"meaning\":\"Bơi\"},{\"code\":\"4K027\",\"kanji\":\"栄\",\"HanViet\":\"VINH\",\"meaning\":\"Vinh quang\"},{\"code\":\"4K028\",\"kanji\":\"英\",\"HanViet\":\"ANH\",\"meaning\":\"Tiếng Anh\"},{\"code\":\"4K029\",\"kanji\":\"印\",\"HanViet\":\"ẤN\",\"meaning\":\"Ấn tượng\"},{\"code\":\"4K030\",\"kanji\":\"荷\",\"HanViet\":\"HÀ\",\"meaning\":\"Hành lý\"},{\"code\":\"4K031\",\"kanji\":\"貨\",\"HanViet\":\"HOÁ\",\"meaning\":\"Hàng hoá\"},{\"code\":\"4K032\",\"kanji\":\"課\",\"HanViet\":\"KHOÁ\",\"meaning\":\"Khoá học\"},{\"code\":\"4K033\",\"kanji\":\"加\",\"HanViet\":\"GIA\",\"meaning\":\"Tham gia\"},{\"code\":\"4K034\",\"kanji\":\"果 \",\"HanViet\":\"QUẢ\",\"meaning\":\"Kết quả\"},{\"code\":\"4K035\",\"kanji\":\"化\",\"HanViet\":\"HOÁ\",\"meaning\":\"Biến hoá\"},{\"code\":\"4K036\",\"kanji\":\"害\",\"HanViet\":\"HẠI\",\"meaning\":\"Tổn hại\"},{\"code\":\"4K037\",\"kanji\":\"街\",\"HanViet\":\"NHAI\",\"meaning\":\"Đường phố\"},{\"code\":\"4K038\",\"kanji\":\"覚\",\"HanViet\":\"GIÁC\",\"meaning\":\"Nhớ ra\"},{\"code\":\"4K039\",\"kanji\":\"名\",\"HanViet\":\"CÁC\",\"meaning\":\"Các vị\"},{\"code\":\"4K040\",\"kanji\":\"開\",\"HanViet\":\"KHAI\",\"meaning\":\"Khai vận\"},{\"code\":\"4K041\",\"kanji\":\"界\",\"HanViet\":\"GIỚI\",\"meaning\":\"Thế giới\"},{\"code\":\"4K042\",\"kanji\":\"階\",\"HanViet\":\"GIAI\",\"meaning\":\"Giai cấp\"},{\"code\":\"4K043\",\"kanji\":\"械\",\"HanViet\":\"GIỚI\",\"meaning\":\"Cơ giới\"},{\"code\":\"4K044\",\"kanji\":\"改 \",\"HanViet\":\"CẢI\",\"meaning\":\"Cải cách\"},{\"code\":\"4K045\",\"kanji\":\"館\",\"HanViet\":\"QUÁN\",\"meaning\":\"Hội quán\"},{\"code\":\"4K046\",\"kanji\":\"感\",\"HanViet\":\"CẢM\",\"meaning\":\"Cảm tạ\"},{\"code\":\"4K047\",\"kanji\":\"寒\",\"HanViet\":\"HÀN\",\"meaning\":\"Lạnh\"},{\"code\":\"4K048\",\"kanji\":\"漢\",\"HanViet\":\"HÁN\",\"meaning\":\"Hán tự\"},{\"code\":\"4K049\",\"kanji\":\"関\",\"HanViet\":\"QUAN\",\"meaning\":\"Liên quan\"},{\"code\":\"4K050\",\"kanji\":\"完\",\"HanViet\":\"HOÀN\",\"meaning\":\"Hoàn thành\"},{\"code\":\"4K051\",\"kanji\":\"管\",\"HanViet\":\"QUẢN\",\"meaning\":\"Quản lý\"},{\"code\":\"4K052\",\"kanji\":\"官\",\"HanViet\":\"QUAN\",\"meaning\":\"Quan lại\"},{\"code\":\"4K053\",\"kanji\":\"観\",\"HanViet\":\"QUAN\",\"meaning\":\"Quan sát\"},{\"code\":\"4K054\",\"kanji\":\"岸\",\"HanViet\":\"NGẠN\",\"meaning\":\"Bờ biển\"},{\"code\":\"4K055\",\"kanji\":\"願\",\"HanViet\":\"NGUYỆN\",\"meaning\":\"Nguyện ước\"},{\"code\":\"4K056\",\"kanji\":\"起\",\"HanViet\":\"KHỞI\",\"meaning\":\"Thức dậy\"},{\"code\":\"4K057\",\"kanji\":\"期\",\"HanViet\":\"KÌ\",\"meaning\":\"Kì hạn\"},{\"code\":\"4K058\",\"kanji\":\"喜\",\"HanViet\":\"HỶ\",\"meaning\":\"Hạnh phúc\"},{\"code\":\"4K059\",\"kanji\":\"季\",\"HanViet\":\"QUÝ\",\"meaning\":\"Niên quý\"},{\"code\":\"4K060\",\"kanji\":\"旗\",\"HanViet\":\"KÌ\",\"meaning\":\"Quốc kì\"},{\"code\":\"4K061\",\"kanji\":\"紀\",\"HanViet\":\"KỈ\",\"meaning\":\"Thế kỉ\"},{\"code\":\"4K062\",\"kanji\":\"希\",\"HanViet\":\"HI\",\"meaning\":\"Hi vọng\"},{\"code\":\"4K063\",\"kanji\":\"希\",\"HanViet\":\"CƠ\",\"meaning\":\"Cơ khí\"},{\"code\":\"4K064\",\"kanji\":\"希\",\"HanViet\":\"KHÍ\",\"meaning\":\"Vũ khí\"},{\"code\":\"4K065\",\"kanji\":\"希\",\"HanViet\":\"NGHỊ\",\"meaning\":\"Hội nghị\"},{\"code\":\"4K066\",\"kanji\":\"希\",\"HanViet\":\"KHÁCH\",\"meaning\":\"Lữ khách\"},{\"code\":\"4K067\",\"kanji\":\"急\",\"HanViet\":\"CẤP\",\"meaning\":\"Khẩn cấp\"},{\"code\":\"4K068\",\"kanji\":\"級\",\"HanViet\":\"CẤP\",\"meaning\":\"Cấp độ\"},{\"code\":\"4K069\",\"kanji\":\"球\",\"HanViet\":\"CẦU\",\"meaning\":\"Quả cầu\"},{\"code\":\"4K070\",\"kanji\":\"究\",\"HanViet\":\"CỨU\",\"meaning\":\"Nghiên cứu\"},{\"code\":\"4K071\",\"kanji\":\"救\",\"HanViet\":\"CỨU\",\"meaning\":\"Cấp cứu\"},{\"code\":\"4K072\",\"kanji\":\"泣\",\"HanViet\":\"Khấp\",\"meaning\":\"Khóc\"},{\"code\":\"4K073\",\"kanji\":\"求\",\"HanViet\":\"CẦU\",\"meaning\":\"Yêu cầu\"},{\"code\":\"4K074\",\"kanji\":\"給\",\"HanViet\":\"CẤP\",\"meaning\":\"Cung cấp\"},{\"code\":\"4K075\",\"kanji\":\"宮\",\"HanViet\":\"CUNG\",\"meaning\":\"Cung điện\"},{\"code\":\"4K076\",\"kanji\":\"去\",\"HanViet\":\"KHỨ\",\"meaning\":\"Quá khứ\"},{\"code\":\"4K077\",\"kanji\":\"挙\",\"HanViet\":\"CỬ\",\"meaning\":\"Tiến cử\"},{\"code\":\"4K078\",\"kanji\":\"橋\",\"HanViet\":\"KIỀU\",\"meaning\":\"Cây cầu\"},{\"code\":\"4K079\",\"kanji\":\"競\",\"HanViet\":\"CẠNH\",\"meaning\":\"Cạnh tranh\"},{\"code\":\"4K080\",\"kanji\":\"共\",\"HanViet\":\"CỘNG\",\"meaning\":\"Công cộng\"},{\"code\":\"4K081\",\"kanji\":\"恊\",\"HanViet\":\"HIỆP\",\"meaning\":\"Hiệp lực\"},{\"code\":\"4K082\",\"kanji\":\"鏡\",\"HanViet\":\"KÍNH\",\"meaning\":\"Gương\"},{\"code\":\"4K083\",\"kanji\":\"業\",\"HanViet\":\"NGHIỆP\",\"meaning\":\"Nghiệp vụ\"},{\"code\":\"4K084\",\"kanji\":\"曲\",\"HanViet\":\"KHÚC\",\"meaning\":\"Khúc nhạc\"},{\"code\":\"4K085\",\"kanji\":\"局\",\"HanViet\":\"CỤC\",\"meaning\":\"Bưu cục\"},{\"code\":\"4K086\",\"kanji\":\"極\",\"HanViet\":\"CỰC\",\"meaning\":\"Cực đoan\"},{\"code\":\"4K087\",\"kanji\":\"銀\",\"HanViet\":\"NGÂN\",\"meaning\":\"Bạc, Ngân hàng\"},{\"code\":\"4K088\",\"kanji\":\"苦\",\"HanViet\":\"KHỔ\",\"meaning\":\"Đắng, Khốn khổ\"},{\"code\":\"4K089\",\"kanji\":\"区\",\"HanViet\":\"KHU\",\"meaning\":\"Khu vực\"},{\"code\":\"4K090\",\"kanji\":\"具\",\"HanViet\":\"CỤ\",\"meaning\":\"Công cụ, Đạo cụ\"},{\"code\":\"4K091\",\"kanji\":\"君\",\"HanViet\":\"QUÂN\",\"meaning\":\"Quân chủ\"},{\"code\":\"4K092\",\"kanji\":\"訓\",\"HanViet\":\"HUẤN\",\"meaning\":\"Giáo huấn\"},{\"code\":\"4K093\",\"kanji\":\"軍\",\"HanViet\":\"QUÂN\",\"meaning\":\"Quân đội\"},{\"code\":\"4K094\",\"kanji\":\"郡\",\"HanViet\":\"QUẬN\",\"meaning\":\"Quận huyện\"},{\"code\":\"4K095\",\"kanji\":\"軽\",\"HanViet\":\"KHINH\",\"meaning\":\"Nhẹ\"},{\"code\":\"4K096\",\"kanji\":\"係\",\"HanViet\":\"HỆ\",\"meaning\":\"Quan hệ\"},{\"code\":\"4K097\",\"kanji\":\"型\",\"HanViet\":\"HÌNH\",\"meaning\":\"Địa hình\"},{\"code\":\"4K098\",\"kanji\":\"径\",\"HanViet\":\"KÍNH\",\"meaning\":\"Đường kính\"},{\"code\":\"4K099\",\"kanji\":\"景\",\"HanViet\":\"CẢNH\",\"meaning\":\"Quang cảnh\"},{\"code\":\"4K100\",\"kanji\":\"芸\",\"HanViet\":\"NGHỆ\",\"meaning\":\"Nghệ thuật\"},{\"code\":\"4K101\",\"kanji\":\"血\",\"HanViet\":\"HUYẾT\",\"meaning\":\"Máu\"},{\"code\":\"4K102\",\"kanji\":\"決\",\"HanViet\":\"QUYẾT\",\"meaning\":\"Quyết định\"},{\"code\":\"4K103\",\"kanji\":\"結\",\"HanViet\":\"KẾT\",\"meaning\":\"Kết hôn\"},{\"code\":\"4K104\",\"kanji\":\"欠\",\"HanViet\":\"KHIẾM\",\"meaning\":\"Thiếu\"},{\"code\":\"4K105\",\"kanji\":\"県\",\"HanViet\":\"HUYỆN\",\"meaning\":\"Huyện, Tỉnh\"},{\"code\":\"4K106\",\"kanji\":\"研\",\"HanViet\":\"NGHIÊN\",\"meaning\":\"Nghiên cứu\"},{\"code\":\"4K107\",\"kanji\":\"建\",\"HanViet\":\"KIẾN\",\"meaning\":\"Xây dựng\"},{\"code\":\"4K108\",\"kanji\":\"健\",\"HanViet\":\"KIỆN\",\"meaning\":\"Tráng kiện\"},{\"code\":\"4K109\",\"kanji\":\"験\",\"HanViet\":\"NGHIỆM\",\"meaning\":\"Thí nghiệm\"},{\"code\":\"4K110\",\"kanji\":\"湖\",\"HanViet\":\"HỒ\",\"meaning\":\"Cái hồ\"},{\"code\":\"4K111\",\"kanji\":\"固\",\"HanViet\":\"CỐ\",\"meaning\":\"Kiên cố\"},{\"code\":\"4K112\",\"kanji\":\"庫\",\"HanViet\":\"KHỐ\",\"meaning\":\"Kho, Chứa\"},{\"code\":\"4K113\",\"kanji\":\"幸\",\"HanViet\":\"HẠNH\",\"meaning\":\"Hạnh phúc\"},{\"code\":\"4K114\",\"kanji\":\"向\",\"HanViet\":\"HƯỚNG\",\"meaning\":\"Hướng về\"},{\"code\":\"4K115\",\"kanji\":\"港\",\"HanViet\":\"CẢNG\",\"meaning\":\"Hải cảng\"},{\"code\":\"4K116\",\"kanji\":\"康\",\"HanViet\":\"KHANG\",\"meaning\":\"Sức khoẻ\"},{\"code\":\"4K117\",\"kanji\":\"候\",\"HanViet\":\"HẬU\",\"meaning\":\"Khí hậu\"},{\"code\":\"4K118\",\"kanji\":\"功\",\"HanViet\":\"CÔNG\",\"meaning\":\"Thành công\"},{\"code\":\"4K119\",\"kanji\":\"好\",\"HanViet\":\"HẢO\",\"meaning\":\"Thích\"},{\"code\":\"4K120\",\"kanji\":\"航\",\"HanViet\":\"HÀNG\",\"meaning\":\"Hàng hải\"},{\"code\":\"4K121\",\"kanji\":\"号\",\"HanViet\":\"HIỆU\",\"meaning\":\"Ký hiệu\"},{\"code\":\"4K122\",\"kanji\":\"告\",\"HanViet\":\"CÁO\",\"meaning\":\"Quảng cáo\"},{\"code\":\"4K123\",\"kanji\":\"芽\",\"HanViet\":\"NHA\",\"meaning\":\"Mạch nha\"},{\"code\":\"4K124\",\"kanji\":\"根\",\"HanViet\":\"CĂN\",\"meaning\":\"Gốc rễ\"},{\"code\":\"4K125\",\"kanji\":\"差\",\"HanViet\":\"SAI\",\"meaning\":\"Sai khác\"},{\"code\":\"4K126\",\"kanji\":\"皿\",\"HanViet\":\"MÃNH\",\"meaning\":\"Cái đĩa\"},{\"code\":\"4K127\",\"kanji\":\"祭\",\"HanViet\":\"TẾ\",\"meaning\":\"Tế lễ\"},{\"code\":\"4K128\",\"kanji\":\"最\",\"HanViet\":\"TỐI\",\"meaning\":\"Tối cao\"},{\"code\":\"4K129\",\"kanji\":\"菜\",\"HanViet\":\"THÁI\",\"meaning\":\"Rau\"},{\"code\":\"4K130\",\"kanji\":\"材\",\"HanViet\":\"TÀI\",\"meaning\":\"Khí tài\"},{\"code\":\"4K131\",\"kanji\":\"昨\",\"HanViet\":\"TẠC\",\"meaning\":\"Hôm qua\"},{\"code\":\"4K132\",\"kanji\":\"殺\",\"HanViet\":\"SÁT\",\"meaning\":\"Sát nhân\"},{\"code\":\"4K133\",\"kanji\":\"刷\",\"HanViet\":\"LOÁT\",\"meaning\":\"In ấn\"},{\"code\":\"4K134\",\"kanji\":\"札\",\"HanViet\":\"TRÁT\",\"meaning\":\"Tiền giấy\"},{\"code\":\"4K135\",\"kanji\":\"察\",\"HanViet\":\"SÁT\",\"meaning\":\"Cảnh sát\"},{\"code\":\"4K136\",\"kanji\":\"参\",\"HanViet\":\"THAM\",\"meaning\":\"Tham gia\"},{\"code\":\"4K137\",\"kanji\":\"散\",\"HanViet\":\"TẢN\",\"meaning\":\"Tản bộ\"},{\"code\":\"4K138\",\"kanji\":\"産\",\"HanViet\":\"SẢN\",\"meaning\":\"Sản nghiệp\"},{\"code\":\"4K139\",\"kanji\":\"残\",\"HanViet\":\"Tàn\",\"meaning\":\"Còn lại\"},{\"code\":\"4K140\",\"kanji\":\"指\",\"HanViet\":\"CHỈ\",\"meaning\":\"Ngón tay\"},{\"code\":\"4K141\",\"kanji\":\"始\",\"HanViet\":\"THUỶ\",\"meaning\":\"Bắt đầu\"},{\"code\":\"4K142\",\"kanji\":\"歯\",\"HanViet\":\"XỈ\",\"meaning\":\"Răng\"},{\"code\":\"4K143\",\"kanji\":\"死\",\"HanViet\":\"TỬ\",\"meaning\":\"Chết\"},{\"code\":\"4K144\",\"kanji\":\"詩\",\"HanViet\":\"THI\",\"meaning\":\"Thi ca\"},{\"code\":\"4K145\",\"kanji\":\"仕\",\"HanViet\":\"SĨ\",\"meaning\":\"Công việc\"},{\"code\":\"4K146\",\"kanji\":\"使\",\"HanViet\":\"SỬ\",\"meaning\":\"Sử dụng\"},{\"code\":\"4K147\",\"kanji\":\"氏\",\"HanViet\":\"THỊ\",\"meaning\":\"Họ tên\"},{\"code\":\"4K148\",\"kanji\":\"史\",\"HanViet\":\"SỬ\",\"meaning\":\"Lịch sử\"},{\"code\":\"4K149\",\"kanji\":\"試\",\"HanViet\":\"THÍ\",\"meaning\":\"Thử nghiệm\"},{\"code\":\"4K150\",\"kanji\":\"士\",\"HanViet\":\"SĨ\",\"meaning\":\"Nhân sĩ\"},{\"code\":\"4K151\",\"kanji\":\"司\",\"HanViet\":\"TI\",\"meaning\":\"Quản lý\"},{\"code\":\"4K152\",\"kanji\":\"次\",\"HanViet\":\"THỨ\",\"meaning\":\"Tiếp theo\"},{\"code\":\"4K153\",\"kanji\":\"持\",\"HanViet\":\"TRÌ\",\"meaning\":\"Duy trì\"},{\"code\":\"4K154\",\"kanji\":\"事\",\"HanViet\":\"SỰ\",\"meaning\":\"Sự việc\"},{\"code\":\"4K155\",\"kanji\":\"治\",\"HanViet\":\"TRỊ\",\"meaning\":\"Trị liệu\"},{\"code\":\"4K156\",\"kanji\":\"児\",\"HanViet\":\"NHI\",\"meaning\":\"Trẻ con\"},{\"code\":\"4K157\",\"kanji\":\"辞\",\"HanViet\":\"TỪ\",\"meaning\":\"Từ điển\"},{\"code\":\"4K158\",\"kanji\":\"式\",\"HanViet\":\"THỨC\",\"meaning\":\"Hình thức\"},{\"code\":\"4K159\",\"kanji\":\"写\",\"HanViet\":\"TẢ\",\"meaning\":\"Sao lại\"},{\"code\":\"4K160\",\"kanji\":\"者\",\"HanViet\":\"GIẢ\",\"meaning\":\"Người\"},{\"code\":\"4K161\",\"kanji\":\"失\",\"HanViet\":\"THẤT\",\"meaning\":\"Thất bại\"},{\"code\":\"4K162\",\"kanji\":\"実\",\"HanViet\":\"THỰC\",\"meaning\":\"Thực tế\"},{\"code\":\"4K163\",\"kanji\":\"借\",\"HanViet\":\"TÁ\",\"meaning\":\"Mượn\"},{\"code\":\"4K164\",\"kanji\":\"酒\",\"HanViet\":\"TỬU\",\"meaning\":\"Rượu\"},{\"code\":\"4K165\",\"kanji\":\"守\",\"HanViet\":\"THỦ\",\"meaning\":\"Bảo vệ\"},{\"code\":\"4K166\",\"kanji\":\"主\",\"HanViet\":\"CHỦ\",\"meaning\":\"Ông chủ\"},{\"code\":\"4K167\",\"kanji\":\"取\",\"HanViet\":\"THỦ\",\"meaning\":\"Lấy\"},{\"code\":\"4K168\",\"kanji\":\"種\",\"HanViet\":\"CHỦNG\",\"meaning\":\"Chủng loại\"},{\"code\":\"4K169\",\"kanji\":\"受\",\"HanViet\":\"THỤ\",\"meaning\":\"Nhận\"},{\"code\":\"4K170\",\"kanji\":\"習\",\"HanViet\":\"TẬP\",\"meaning\":\"Luyện tập\"},{\"code\":\"4K171\",\"kanji\":\"拾\",\"HanViet\":\"THẬP\",\"meaning\":\"Thu thập\"},{\"code\":\"4K172\",\"kanji\":\"集\",\"HanViet\":\"TẬP\",\"meaning\":\"Tập trung\"},{\"code\":\"4K173\",\"kanji\":\"終\",\"HanViet\":\"CHUNG\",\"meaning\":\"Kết thúc\"},{\"code\":\"4K174\",\"kanji\":\"州\",\"HanViet\":\"CHÂU\",\"meaning\":\"Cửu châu\"},{\"code\":\"4K175\",\"kanji\":\"周\",\"HanViet\":\"CHU\",\"meaning\":\"Chu vi\"},{\"code\":\"4K176\",\"kanji\":\"重\",\"HanViet\":\"TRỌNG\",\"meaning\":\"Nặng\"},{\"code\":\"4K177\",\"kanji\":\"住\",\"HanViet\":\"TRÚ\",\"meaning\":\"Cư trú\"},{\"code\":\"4K178\",\"kanji\":\"宿\",\"HanViet\":\"TÚC\",\"meaning\":\"Nhà trọ\"},{\"code\":\"4K179\",\"kanji\":\"祝\",\"HanViet\":\"CHÚC\",\"meaning\":\"Chúc mừng\"},{\"code\":\"4K180\",\"kanji\":\"順\",\"HanViet\":\"THUẬN\",\"meaning\":\"Thuận lợi\"},{\"code\":\"4K181\",\"kanji\":\"初\",\"HanViet\":\"SƠ\",\"meaning\":\"Sơ lược\"},{\"code\":\"4K182\",\"kanji\":\"暑\",\"HanViet\":\"THỬ\",\"meaning\":\"Nóng\"},{\"code\":\"4K183\",\"kanji\":\"所\",\"HanViet\":\"SỞ\",\"meaning\":\"Nơi chốn\"},{\"code\":\"4K184\",\"kanji\":\"助\",\"HanViet\":\"TRỢ\",\"meaning\":\"Trợ giúp\"},{\"code\":\"4K185\",\"kanji\":\"消\",\"HanViet\":\"TIÊU\",\"meaning\":\"Tiêu diệt\"},{\"code\":\"4K186\",\"kanji\":\"昭\",\"HanViet\":\"CHIÊU\",\"meaning\":\"Sáng\"},{\"code\":\"4K187\",\"kanji\":\"章\",\"HanViet\":\"CHƯƠNG\",\"meaning\":\"Chương hồi\"},{\"code\":\"4K188\",\"kanji\":\"商\",\"HanViet\":\"THƯƠNG\",\"meaning\":\"Thương phẩm\"},{\"code\":\"4K189\",\"kanji\":\"勝\",\"HanViet\":\"THẮNG\",\"meaning\":\"Chiến thắng\"},{\"code\":\"4K190\",\"kanji\":\"唱\",\"HanViet\":\"XƯỚNG\",\"meaning\":\"Ca xướng\"},{\"code\":\"4K191\",\"kanji\":\"笑\",\"HanViet\":\"TIẾU\",\"meaning\":\"Cười, Tiếu lâm\"},{\"code\":\"4K192\",\"kanji\":\"焼\",\"HanViet\":\"THIÊU\",\"meaning\":\"Thiêu đốt\"},{\"code\":\"4K193\",\"kanji\":\"松\",\"HanViet\":\"TÙNG\",\"meaning\":\"Hình thức\"},{\"code\":\"4K194\",\"kanji\":\"賞\",\"HanViet\":\"THƯỞNG\",\"meaning\":\"Tán thưởng\"},{\"code\":\"4K195\",\"kanji\":\"像\",\"HanViet\":\"TƯỢNG\",\"meaning\":\"Con voi\"},{\"code\":\"4K196\",\"kanji\":\"照\",\"HanViet\":\"CHIẾU\",\"meaning\":\"Chiếu sáng\"},{\"code\":\"4K197\",\"kanji\":\"省\",\"HanViet\":\"TỈNH\",\"meaning\":\"Coi xét\"},{\"code\":\"4K198\",\"kanji\":\"乗\",\"HanViet\":\"THỪA\",\"meaning\":\"Lên xe\"},{\"code\":\"4K199\",\"kanji\":\"埴\",\"HanViet\":\"THỰC\",\"meaning\":\"Trồng cây\"},{\"code\":\"4K200\",\"kanji\":\"身\",\"HanViet\":\"THÂN\",\"meaning\":\"Bản thân\"},{\"code\":\"4K201\",\"kanji\":\"進\",\"HanViet\":\"TIẾN\",\"meaning\":\"Tiến lên\"},{\"code\":\"4K202\",\"kanji\":\"申\",\"HanViet\":\"THÂN\",\"meaning\":\"Xưng tên\"},{\"code\":\"4K203\",\"kanji\":\"深\",\"HanViet\":\"THÂM\",\"meaning\":\"Sâu\"},{\"code\":\"4K204\",\"kanji\":\"真\",\"HanViet\":\"CHÂN\",\"meaning\":\"Chân thật\"},{\"code\":\"4K205\",\"kanji\":\"神\",\"HanViet\":\"THẦN\",\"meaning\":\"Thần thánh\"},{\"code\":\"4K206\",\"kanji\":\"信\",\"HanViet\":\"TÍN\",\"meaning\":\"Tín dụng\"},{\"code\":\"4K207\",\"kanji\":\"臣\",\"HanViet\":\"THẦN\",\"meaning\":\"Đại thần\"},{\"code\":\"4K208\",\"kanji\":\"世\",\"HanViet\":\"THẾ\",\"meaning\":\"Thế giới\"},{\"code\":\"4K209\",\"kanji\":\"整\",\"HanViet\":\"CHỈNH \",\"meaning\":\"Chỉnh đốn\"},{\"code\":\"4K210\",\"kanji\":\"清\",\"HanViet\":\"THANH\",\"meaning\":\"Thanh khiết\"},{\"code\":\"4K211\",\"kanji\":\"静\",\"HanViet\":\"TĨNH\",\"meaning\":\"Yên tĩnh\"},{\"code\":\"4K212\",\"kanji\":\"成\",\"HanViet\":\"THÀNH\",\"meaning\":\"Thành công\"},{\"code\":\"4K213\",\"kanji\":\"全\",\"HanViet\":\"TOÀN\",\"meaning\":\"Hoàn toàn\"},{\"code\":\"4K214\",\"kanji\":\"蓆\",\"HanViet\":\"TỊCH\",\"meaning\":\"Chỗ ngồi\"},{\"code\":\"4K215\",\"kanji\":\"積\",\"HanViet\":\"TÍCH\",\"meaning\":\"Tích góp\"},{\"code\":\"4K216\",\"kanji\":\"昔\",\"HanViet\":\"TÍCH\",\"meaning\":\"Cổ tích\"},{\"code\":\"4K217\",\"kanji\":\"節\",\"HanViet\":\"TIẾT\",\"meaning\":\"Tiết kiệm\"},{\"code\":\"4K218\",\"kanji\":\"折\",\"HanViet\":\"CHIẾT\",\"meaning\":\"Bẻ gập\"},{\"code\":\"4K219\",\"kanji\":\"説\",\"HanViet\":\"THUYẾT\",\"meaning\":\"Thuyết minh\"},{\"code\":\"4K220\",\"kanji\":\"戦\",\"HanViet\":\"CHIẾN\",\"meaning\":\"Chiến tranh\"},{\"code\":\"4K221\",\"kanji\":\"選\",\"HanViet\":\"TUYỂN\",\"meaning\":\"Tuyển thủ\"},{\"code\":\"4K222\",\"kanji\":\"浅\",\"HanViet\":\"THIỂN\",\"meaning\":\"Cạn\"},{\"code\":\"4K223\",\"kanji\":\"卒\",\"HanViet\":\"TỐT\",\"meaning\":\"Tốt nghiệp\"},{\"code\":\"4K224\",\"kanji\":\"巣\",\"HanViet\":\"SÀO\",\"meaning\":\"Tổ chim\"},{\"code\":\"4K225\",\"kanji\":\"相\",\"HanViet\":\"TƯƠNG\",\"meaning\":\"Tương tự\"},{\"code\":\"4K226\",\"kanji\":\"送\",\"HanViet\":\"TỐNG\",\"meaning\":\"Đưa đi\"},{\"code\":\"4K227\",\"kanji\":\"想\",\"HanViet\":\"TƯỞNG\",\"meaning\":\"Tưởng tượng\"},{\"code\":\"4K228\",\"kanji\":\"争\",\"HanViet\":\"TRANH\",\"meaning\":\"Chiến tranh\"},{\"code\":\"4K229\",\"kanji\":\"倉\",\"HanViet\":\"THƯƠNG\",\"meaning\":\"Thương khố\"},{\"code\":\"4K230\",\"kanji\":\"息\",\"HanViet\":\"TỨC\",\"meaning\":\"Hơi thở\"},{\"code\":\"4K231\",\"kanji\":\"速\",\"HanViet\":\"TỐC\",\"meaning\":\"Tốc độ\"},{\"code\":\"4K232\",\"kanji\":\"束\",\"HanViet\":\"THÚC\",\"meaning\":\"Bó, Buộc\"},{\"code\":\"4K233\",\"kanji\":\"側\",\"HanViet\":\"TRẮC\",\"meaning\":\"Phía\"},{\"code\":\"4K234\",\"kanji\":\"続\",\"HanViet\":\"TỤC\",\"meaning\":\"Tiếp tục\"},{\"code\":\"4K235\",\"kanji\":\"族\",\"HanViet\":\"TỘC\",\"meaning\":\"Gia tộc\"},{\"code\":\"4K236\",\"kanji\":\"孫\",\"HanViet\":\"TÔN\",\"meaning\":\"Cháu\"},{\"code\":\"4K237\",\"kanji\":\"他\",\"HanViet\":\"THA \",\"meaning\":\"Người lạ\"},{\"code\":\"4K238\",\"kanji\":\"打\",\"HanViet\":\"ĐẢ\",\"meaning\":\"Đánh\"},{\"code\":\"4K239\",\"kanji\":\"代\",\"HanViet\":\"ĐẠI\",\"meaning\":\"Hiện đại\"},{\"code\":\"4K240\",\"kanji\":\"対\",\"HanViet\":\"ĐỐI\",\"meaning\":\"Đối tượng\"},{\"code\":\"4K241\",\"kanji\":\"待\",\"HanViet\":\"ĐÃI\",\"meaning\":\"Chiêu đãi\"},{\"code\":\"4K242\",\"kanji\":\"隊\",\"HanViet\":\"ĐỘI\",\"meaning\":\"Quân đội\"},{\"code\":\"4K243\",\"kanji\":\"帯\",\"HanViet\":\"ĐỚI\",\"meaning\":\"Cái đai\"},{\"code\":\"4K244\",\"kanji\":\"第\",\"HanViet\":\"ĐỆ\",\"meaning\":\"Đệ nhất\"},{\"code\":\"4K245\",\"kanji\":\"題\",\"HanViet\":\"ĐỀ\",\"meaning\":\"Vấn đề\"},{\"code\":\"4K246\",\"kanji\":\"談\",\"HanViet\":\"ĐÀM\",\"meaning\":\"Đàm thoại\"},{\"code\":\"4K247\",\"kanji\":\"短\",\"HanViet\":\"ĐOẢN\",\"meaning\":\"Ngắn\"},{\"code\":\"4K248\",\"kanji\":\"炭\",\"HanViet\":\"THAN \",\"meaning\":\"Than đá\"},{\"code\":\"4K249\",\"kanji\":\"単\",\"HanViet\":\"ĐƠN\",\"meaning\":\"Đơn giản\"},{\"code\":\"4K250\",\"kanji\":\"達\",\"HanViet\":\"ĐẠT\",\"meaning\":\"Truyền đạt\"},{\"code\":\"4K251\",\"kanji\":\"置\",\"HanViet\":\"TRÍ\",\"meaning\":\"Bố trí\"},{\"code\":\"4K252\",\"kanji\":\"着\",\"HanViet\":\"TRƯỚC\",\"meaning\":\"Đến nơi\"},{\"code\":\"4K253\",\"kanji\":\"注\",\"HanViet\":\"CHÚ\",\"meaning\":\"Chú ý\"},{\"code\":\"4K254\",\"kanji\":\"柱\",\"HanViet\":\"TRỤ\",\"meaning\":\"Cột trụ\"},{\"code\":\"4K255\",\"kanji\":\"仲\",\"HanViet\":\"TRỌNG\",\"meaning\":\"Trung gian\"},{\"code\":\"4K256\",\"kanji\":\"貯\",\"HanViet\":\"TRỮ\",\"meaning\":\"Tích trữ\"},{\"code\":\"4K257\",\"kanji\":\"調\",\"HanViet\":\"ĐIỀU\",\"meaning\":\"Điều hành\"},{\"code\":\"4K258\",\"kanji\":\"帳\",\"HanViet\":\"TRƯỚNG\",\"meaning\":\"Căng lên\"},{\"code\":\"4K259\",\"kanji\":\"兆\",\"HanViet\":\"TRIỆU\",\"meaning\":\"1 nghìn tỷ\"},{\"code\":\"4K260\",\"kanji\":\"腸\",\"HanViet\":\"TRƯỜNG\",\"meaning\":\"Ruột\"},{\"code\":\"4K261\",\"kanji\":\"丁\",\"HanViet\":\"ĐINH\",\"meaning\":\"Can thứ 4\"},{\"code\":\"4K262\",\"kanji\":\"定\",\"HanViet\":\"ĐỊNH\",\"meaning\":\"Cố định\"},{\"code\":\"4K263\",\"kanji\":\"庭\",\"HanViet\":\"ĐÌNH\",\"meaning\":\"Sân vườn\"},{\"code\":\"4K264\",\"kanji\":\"停\",\"HanViet\":\"ĐÌNH\",\"meaning\":\"Dừng lại\"},{\"code\":\"4K265\",\"kanji\":\"低\",\"HanViet\":\"ĐÊ\",\"meaning\":\"Thấp\"},{\"code\":\"4K266\",\"kanji\":\"底\",\"HanViet\":\"ĐỂ\",\"meaning\":\"Cái đáy\"},{\"code\":\"4K267\",\"kanji\":\"笛\",\"HanViet\":\"ĐỊCH\",\"meaning\":\"Cái sáo\"},{\"code\":\"4K268\",\"kanji\":\"的\",\"HanViet\":\"ĐÍCH\",\"meaning\":\"Mục đích\"},{\"code\":\"4K269\",\"kanji\":\"転\",\"HanViet\":\"CHUYỂN\",\"meaning\":\"Di chuyển\"},{\"code\":\"4K270\",\"kanji\":\"典\",\"HanViet\":\"ĐIỂN\",\"meaning\":\"Từ điển\"},{\"code\":\"4K271\",\"kanji\":\"伝\",\"HanViet\":\"TRUYỀN\",\"meaning\":\"Truyền tin\"},{\"code\":\"4K272\",\"kanji\":\"追\",\"HanViet\":\"TRUY\",\"meaning\":\"Truy đuổi\"},{\"code\":\"4K273\",\"kanji\":\"鉄\",\"HanViet\":\"THIẾT\",\"meaning\":\"Sắt\"},{\"code\":\"4K274\",\"kanji\":\"徒\",\"HanViet\":\"ĐỒ\",\"meaning\":\"Sinh đồ\"},{\"code\":\"4K275\",\"kanji\":\"都\",\"HanViet\":\"ĐÔ\",\"meaning\":\"Kinh đô\"},{\"code\":\"4K276\",\"kanji\":\"努\",\"HanViet\":\"NỖ\",\"meaning\":\"Nỗ lực\"},{\"code\":\"4K277\",\"kanji\":\"度\",\"HanViet\":\"ĐỘ\",\"meaning\":\"Nhiệt độ\"},{\"code\":\"4K278\",\"kanji\":\"島\",\"HanViet\":\"ĐẢO \",\"meaning\":\"Hòn đảo\"},{\"code\":\"4K279\",\"kanji\":\"等\",\"HanViet\":\"ĐẲNG\",\"meaning\":\"Bình đẳng\"},{\"code\":\"4K280\",\"kanji\":\"登\",\"HanViet\":\"ĐĂNG\",\"meaning\":\"Đăng ký\"},{\"code\":\"4K281\",\"kanji\":\"湯\",\"HanViet\":\"THANG\",\"meaning\":\"Nước nóng\"},{\"code\":\"4K282\",\"kanji\":\"投\",\"HanViet\":\"ĐẦU\",\"meaning\":\"Ném, Đầu tư\"},{\"code\":\"4K283\",\"kanji\":\"豆\",\"HanViet\":\"ĐẬU\",\"meaning\":\"Hạt đậu\"},{\"code\":\"4K284\",\"kanji\":\"灯\",\"HanViet\":\"ĐĂNG\",\"meaning\":\"Cái đèn\"},{\"code\":\"4K285\",\"kanji\":\"動\",\"HanViet\":\"ĐỘNG\",\"meaning\":\"Chuyển động\"},{\"code\":\"4K286\",\"kanji\":\"童\",\"HanViet\":\"ĐỒNG\",\"meaning\":\"Nhi đồng\"},{\"code\":\"4K287\",\"kanji\":\"働\",\"HanViet\":\"ĐỘNG\",\"meaning\":\"Lao động\"},{\"code\":\"4K288\",\"kanji\":\"堂\",\"HanViet\":\"ĐƯỜNG\",\"meaning\":\"Võ đường\"},{\"code\":\"4K289\",\"kanji\":\"特\",\"HanViet\":\"ĐẶC\",\"meaning\":\"Đặc biệt\"},{\"code\":\"4K290\",\"kanji\":\"得\",\"HanViet\":\"ĐẮC\",\"meaning\":\"Đắc ý\"},{\"code\":\"4K291\",\"kanji\":\"毒\",\"HanViet\":\"ĐỘC\",\"meaning\":\"Độc dược\"},{\"code\":\"4K292\",\"kanji\":\"農\",\"HanViet\":\"NÔNG\",\"meaning\":\"Nông nghiệp\"},{\"code\":\"4K293\",\"kanji\":\"熱\",\"HanViet\":\"NHIỆT\",\"meaning\":\"Nóng\"},{\"code\":\"4K294\",\"kanji\":\"然\",\"HanViet\":\"NHIÊN\",\"meaning\":\"Tự nhiên\"},{\"code\":\"4K295\",\"kanji\":\"念\",\"HanViet\":\"NIỆM\",\"meaning\":\"Kỉ niệm\"},{\"code\":\"4K296\",\"kanji\":\"波\",\"HanViet\":\"BA\",\"meaning\":\"Con sóng\"},{\"code\":\"4K297\",\"kanji\":\"配\",\"HanViet\":\"PHỐI\",\"meaning\":\"Phân phối\"},{\"code\":\"4K298\",\"kanji\":\"敗\",\"HanViet\":\"BẠI\",\"meaning\":\"Thất bại\"},{\"code\":\"4K299\",\"kanji\":\"倍\",\"HanViet\":\"BỘI\",\"meaning\":\"Bội số\"},{\"code\":\"4K300\",\"kanji\":\"梅\",\"HanViet\":\"MAI\",\"meaning\":\"Cây mai\"},{\"code\":\"4K301\",\"kanji\":\"箱\",\"HanViet\":\"TƯƠNG\",\"meaning\":\"Cái hộp\"},{\"code\":\"4K302\",\"kanji\":\"畑\",\"HanViet\":\"ĐIỀN\",\"meaning\":\"Ruộng\"},{\"code\":\"4K303\",\"kanji\":\"博\",\"HanViet\":\"BÁC\",\"meaning\":\"Bác học\"},{\"code\":\"4K304\",\"kanji\":\"発\",\"HanViet\":\"PHÁT\",\"meaning\":\"Phát triển\"},{\"code\":\"4K305\",\"kanji\":\"反\",\"HanViet\":\"PHẢN\",\"meaning\":\"Phản đối\"},{\"code\":\"4K306\",\"kanji\":\"板\",\"HanViet\":\"BẢN\",\"meaning\":\"Cái bảng\"},{\"code\":\"4K307\",\"kanji\":\"坂\",\"HanViet\":\"PHẢN\",\"meaning\":\"Cái dốc\"},{\"code\":\"4K308\",\"kanji\":\"飯\",\"HanViet\":\"PHẠN\",\"meaning\":\"Cơm\"},{\"code\":\"4K309\",\"kanji\":\"悲\",\"HanViet\":\"BI\",\"meaning\":\"Bi ai, Buồn\"},{\"code\":\"4K310\",\"kanji\":\"皮\",\"HanViet\":\"BÌ\",\"meaning\":\"Cái vỏ\"},{\"code\":\"4K311\",\"kanji\":\"飛\",\"HanViet\":\"PHI\",\"meaning\":\"Bay\"},{\"code\":\"4K312\",\"kanji\":\"費\",\"HanViet\":\"PHÍ\",\"meaning\":\"Tiêu phí\"},{\"code\":\"4K313\",\"kanji\":\"鼻\",\"HanViet\":\"TỴ\",\"meaning\":\"Cái mũi\"},{\"code\":\"4K314\",\"kanji\":\"美\",\"HanViet\":\"MỸ\",\"meaning\":\"Mỹ thuật\"},{\"code\":\"4K315\",\"kanji\":\"筆\",\"HanViet\":\"BÚT\",\"meaning\":\"Cái bút\"},{\"code\":\"4K316\",\"kanji\":\"必\",\"HanViet\":\"TẤT\",\"meaning\":\"Tất yếu\"},{\"code\":\"4K317\",\"kanji\":\"品\",\"HanViet\":\"PHẨM\",\"meaning\":\"Sản phẩm\"},{\"code\":\"4K318\",\"kanji\":\"部\",\"HanViet\":\"BỘ\",\"meaning\":\"Bộ trưởng\"},{\"code\":\"4K319\",\"kanji\":\"便\",\"HanViet\":\"TIỆN\",\"meaning\":\"Tiện lợi\"},{\"code\":\"4K320\",\"kanji\":\"氷\",\"HanViet\":\"BĂNG\",\"meaning\":\"Nước đá\"},{\"code\":\"4K321\",\"kanji\":\"表\",\"HanViet\":\"BIỂU\",\"meaning\":\"Biểu hiện\"},{\"code\":\"4K322\",\"kanji\":\"票\",\"HanViet\":\"PHIẾU\",\"meaning\":\"Ngân phiếu\"},{\"code\":\"4K323\",\"kanji\":\"標\",\"HanViet\":\"TIÊU\",\"meaning\":\"Tiêu chuẩn\"},{\"code\":\"4K324\",\"kanji\":\"病\",\"HanViet\":\"BỆNH\",\"meaning\":\"Bệnh tật\"},{\"code\":\"4K325\",\"kanji\":\"秒\",\"HanViet\":\"MIỂU\",\"meaning\":\"Giây\"},{\"code\":\"4K326\",\"kanji\":\"福\",\"HanViet\":\"PHÚC\",\"meaning\":\"Phúc lợi\"},{\"code\":\"4K327\",\"kanji\":\"服\",\"HanViet\":\"PHỤC\",\"meaning\":\"Trang phục\"},{\"code\":\"4K328\",\"kanji\":\"副\",\"HanViet\":\"PHÓ\",\"meaning\":\"Phụ, Thứ 2\"},{\"code\":\"4K329\",\"kanji\":\"負\",\"HanViet\":\"PHỤ\",\"meaning\":\"Thua\"},{\"code\":\"4K330\",\"kanji\":\"付\",\"HanViet\":\"PHÓ\",\"meaning\":\"Dính\"},{\"code\":\"4K331\",\"kanji\":\"府\",\"HanViet\":\"PHỦ\",\"meaning\":\"Phủ huyện\"},{\"code\":\"4K332\",\"kanji\":\"不\",\"HanViet\":\"BẤT\",\"meaning\":\"Không có\"},{\"code\":\"4K333\",\"kanji\":\"夫\",\"HanViet\":\"PHU\",\"meaning\":\"Chồng\"},{\"code\":\"4K334\",\"kanji\":\"無\",\"HanViet\":\"VÔ\",\"meaning\":\"Vô lý\"},{\"code\":\"4K335\",\"kanji\":\"物\",\"HanViet\":\"VẬT\",\"meaning\":\"Động vật\"},{\"code\":\"4K336\",\"kanji\":\"平\",\"HanViet\":\"BÌNH\",\"meaning\":\"Hoà bình\"},{\"code\":\"4K337\",\"kanji\":\"兵\",\"HanViet\":\"BINH\",\"meaning\":\"Binh lính\"},{\"code\":\"4K338\",\"kanji\":\"粉\",\"HanViet\":\"PHẤN\",\"meaning\":\"Phấn hoa\"},{\"code\":\"4K339\",\"kanji\":\"別\",\"HanViet\":\"BIỆT\",\"meaning\":\"Phân biệt\"},{\"code\":\"4K340\",\"kanji\":\"返\",\"HanViet\":\"PHẢN\",\"meaning\":\"Trả lại\"},{\"code\":\"4K341\",\"kanji\":\"辺\",\"HanViet\":\"BIÊN\",\"meaning\":\"Biên giới\"},{\"code\":\"4K342\",\"kanji\":\"変\",\"HanViet\":\"BIẾN\",\"meaning\":\"Biến hoá\"},{\"code\":\"4K343\",\"kanji\":\"勉\",\"HanViet\":\"MIỄN\",\"meaning\":\"Cố gắng\"},{\"code\":\"4K344\",\"kanji\":\"牧\",\"HanViet\":\"MỤC\",\"meaning\":\"Mục sư\"},{\"code\":\"4K345\",\"kanji\":\"放\",\"HanViet\":\"PHÓNG\",\"meaning\":\"Giải phóng\"},{\"code\":\"4K346\",\"kanji\":\"法\",\"HanViet\":\"PHÁP\",\"meaning\":\"Phương pháp\"},{\"code\":\"4K347\",\"kanji\":\"包\",\"HanViet\":\"BAO\",\"meaning\":\"Bao bọc\"},{\"code\":\"4K348\",\"kanji\":\"末\",\"HanViet\":\"MẠT\",\"meaning\":\"Cuối cùng\"},{\"code\":\"4K349\",\"kanji\":\"満\",\"HanViet\":\"MÃN\",\"meaning\":\"Mãn nguyện\"},{\"code\":\"4K350\",\"kanji\":\"未\",\"HanViet\":\"VỊ\",\"meaning\":\"Chưa đến\"},{\"code\":\"4K351\",\"kanji\":\"脈\",\"HanViet\":\"MẠCH\",\"meaning\":\"Mạch máu\"},{\"code\":\"4K352\",\"kanji\":\"民\",\"HanViet\":\"DÂN\",\"meaning\":\"Dân chúng\"},{\"code\":\"4K353\",\"kanji\":\"薬\",\"HanViet\":\"DƯỢC\",\"meaning\":\"Thuốc\"},{\"code\":\"4K354\",\"kanji\":\"役\",\"HanViet\":\"DỊCH\",\"meaning\":\"Dịch vụ\"},{\"code\":\"4K355\",\"kanji\":\"約\",\"HanViet\":\"ƯỚC\",\"meaning\":\"Ước vọng\"},{\"code\":\"4K356\",\"kanji\":\"浴\",\"HanViet\":\"DỤC\",\"meaning\":\"Tắm\"},{\"code\":\"4K357\",\"kanji\":\"油\",\"HanViet\":\"DU\",\"meaning\":\"Dầu\"},{\"code\":\"4K358\",\"kanji\":\"由\",\"HanViet\":\"DO\",\"meaning\":\"Tự do\"},{\"code\":\"4K359\",\"kanji\":\"遊\",\"HanViet\":\"DU\",\"meaning\":\"Chơi, Du hý\"},{\"code\":\"4K360\",\"kanji\":\"有\",\"HanViet\":\"HỮU\",\"meaning\":\"Có, Tồn tại\"},{\"code\":\"4K361\",\"kanji\":\"勇\",\"HanViet\":\"DŨNG\",\"meaning\":\"Dũng cảm\"},{\"code\":\"4K362\",\"kanji\":\"予\",\"HanViet\":\"DỰ\",\"meaning\":\"Dự báo\"},{\"code\":\"4K363\",\"kanji\":\"葉\",\"HanViet\":\"DIỆP\",\"meaning\":\"Cái lá\"},{\"code\":\"4K364\",\"kanji\":\"陽\",\"HanViet\":\"DƯƠNG\",\"meaning\":\"Mặt trời\"},{\"code\":\"4K365\",\"kanji\":\"羊\",\"HanViet\":\"DƯƠNG\",\"meaning\":\"Con cừu\"},{\"code\":\"4K366\",\"kanji\":\"要\",\"HanViet\":\"YẾU\",\"meaning\":\"Tất yếu\"},{\"code\":\"4K367\",\"kanji\":\"洋\",\"HanViet\":\"DƯƠNG\",\"meaning\":\"Đại dương\"},{\"code\":\"4K368\",\"kanji\":\"様\",\"HanViet\":\"DẠNG\",\"meaning\":\"Hình dạng\"},{\"code\":\"4K369\",\"kanji\":\"養\",\"HanViet\":\"DƯỠNG\",\"meaning\":\"Dinh dưỡng\"},{\"code\":\"4K370\",\"kanji\":\"落\",\"HanViet\":\"LẠC\",\"meaning\":\"Rơi xuống\"},{\"code\":\"4K371\",\"kanji\":\"旅\",\"HanViet\":\"LỮ\",\"meaning\":\"Lữ hành\"},{\"code\":\"4K372\",\"kanji\":\"両\",\"HanViet\":\"LƯỠNG\",\"meaning\":\"2 bên, Lưỡng tính\"},{\"code\":\"4K373\",\"kanji\":\"量\",\"HanViet\":\"LƯỢNG\",\"meaning\":\"Số lượng\"},{\"code\":\"4K374\",\"kanji\":\"良\",\"HanViet\":\"LƯƠNG\",\"meaning\":\"Tốt\"},{\"code\":\"4K375\",\"kanji\":\"漁\",\"HanViet\":\"NGƯ\",\"meaning\":\"Bắt cá\"},{\"code\":\"4K376\",\"kanji\":\"料\",\"HanViet\":\"LIỆU\",\"meaning\":\"Nguyên liệu\"},{\"code\":\"4K377\",\"kanji\":\"緑\",\"HanViet\":\"LỤC\",\"meaning\":\"Màu xanh lá cây\"},{\"code\":\"4K378\",\"kanji\":\"録\",\"HanViet\":\"LỤC\",\"meaning\":\"Kỷ lục\"},{\"code\":\"4K379\",\"kanji\":\"流\",\"HanViet\":\"LƯU\",\"meaning\":\"Dòng chảy hạ lưu\"},{\"code\":\"4K380\",\"kanji\":\"礼\",\"HanViet\":\"LỄ\",\"meaning\":\"Lễ nghi\"},{\"code\":\"4K381\",\"kanji\":\"令\",\"HanViet\":\"LỆNH\",\"meaning\":\"Mệnh lệnh\"},{\"code\":\"4K382\",\"kanji\":\"冷\",\"HanViet\":\"LÃNH\",\"meaning\":\"Lạnh\"},{\"code\":\"4K383\",\"kanji\":\"例\",\"HanViet\":\"LỆ\",\"meaning\":\"Ví dụ\"},{\"code\":\"4K384\",\"kanji\":\"列\",\"HanViet\":\"LIỆT\",\"meaning\":\"Hàng lối\"},{\"code\":\"4K385\",\"kanji\":\"練\",\"HanViet\":\"LUYỆN\",\"meaning\":\"Luyện tập\"},{\"code\":\"4K386\",\"kanji\":\"連\",\"HanViet\":\"LIÊN\",\"meaning\":\"Liên lạc\"},{\"code\":\"4K387\",\"kanji\":\"路\",\"HanViet\":\"LỘ\",\"meaning\":\"Quốc lộ\"},{\"code\":\"4K388\",\"kanji\":\"利\",\"HanViet\":\"LỢI\",\"meaning\":\"Tiện lợi\"},{\"code\":\"4K389\",\"kanji\":\"陸\",\"HanViet\":\"LỤC\",\"meaning\":\"Châu lục\"},{\"code\":\"4K390\",\"kanji\":\"歴\",\"HanViet\":\"LỊCH\",\"meaning\":\"Lý lịch\"},{\"code\":\"4K391\",\"kanji\":\"類\",\"HanViet\":\"LOẠI\",\"meaning\":\"Chủng loại\"},{\"code\":\"4K392\",\"kanji\":\"輪\",\"HanViet\":\"LUÂN\",\"meaning\":\"Bánh xe\"},{\"code\":\"4K393\",\"kanji\":\"老\",\"HanViet\":\"LÃO\",\"meaning\":\"Lão già\"},{\"code\":\"4K394\",\"kanji\":\"労\",\"HanViet\":\"LAO\",\"meaning\":\"Lao động\"},{\"code\":\"4K395\",\"kanji\":\"和\",\"HanViet\":\"HOÀ\",\"meaning\":\"Hoà bình\"}]");
 
 /***/ }),
 
@@ -22773,6 +22904,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DataContact_vue_vue_type_template_id_3e8632bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DataContact_vue_vue_type_template_id_3e8632bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/component/client/Footer.vue":
+/*!***********************************************!*\
+  !*** ./resources/component/client/Footer.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=5d714fe5&scoped=true& */ "./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true&");
+/* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/component/client/Footer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "5d714fe5",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/component/client/Footer.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/component/client/Footer.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./resources/component/client/Footer.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/client/Footer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true&":
+/*!******************************************************************************************!*\
+  !*** ./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=template&id=5d714fe5&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/component/client/Footer.vue?vue&type=template&id=5d714fe5&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_5d714fe5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -23169,8 +23369,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\learnApp\resources\js\client\app.js */"./resources/js/client/app.js");
-module.exports = __webpack_require__(/*! D:\learnApp\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\WebKanji\learnApp.git\trunk\resources\js\client\app.js */"./resources/js/client/app.js");
+module.exports = __webpack_require__(/*! D:\WebKanji\learnApp.git\trunk\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

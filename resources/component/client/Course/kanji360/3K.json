@@ -1,480 +1,568 @@
 [
   {
     "code": "3K001",
+    "lesson": 1,
+	"file_mp3": "ap_che",
     "kanji": "圧",
     "HanViet": "ÁP",
     "meaning": "Áp chế"
   },
   {
     "code": "3K002",
+	"lesson": 1,
+	"file_mp3": "di_chuyen",
     "kanji": "栘",
     "HanViet": "DI",
     "meaning": "Di chuyển"
   },
   {
     "code": "3K003",
+	"lesson": 1,
+	"file_mp3": "khac_thuong",
     "kanji": "異",
     "HanViet": "DỊ",
     "meaning": "Khác thường"
   },
   {
     "code": "3K004",
+	"lesson": 1,
+	"file_mp3": "di_chuc",
     "kanji": "遺",
     "HanViet": "DI",
     "meaning": "Di chúc"
   },
   {
     "code": "3K005",
+	"lesson": 1,
+	"file_mp3": "khu_vuc",
     "kanji": "域",
     "HanViet": "VỰC",
     "meaning": "Khu vực"
   },
   {
     "code": "3K006",
+	"lesson": 1,
+	"file_mp3": "vu_tru",
     "kanji": "宇",
     "HanViet": "VŨ",
     "meaning": "Vũ trụ"
   },
   {
     "code": "3K007",
+	"lesson": 1,
+	"file_mp3": "vinh_cuu",
     "kanji": "永",
     "HanViet": "VĨNH",
     "meaning": "Vĩnh cửu"
   },
   {
     "code": "3K008",
+	"lesson": 1,
+	"file_mp3": "ve_tinh",
     "kanji": "衛",
     "HanViet": "VỆ",
     "meaning": "Vệ tinh, phòng vệ"
   },
   {
     "code": "3K009",
+	"lesson": 1,
     "kanji": "営",
     "HanViet": "DOANH",
     "meaning": "Kinh doanh"
   },
   {
     "code": "3K010",
+	"lesson": 1,
     "kanji": "映",
     "HanViet": "ÁNH",
     "meaning": "Phản ánh"
   },
   {
     "code": "3K011",
+	"lesson": 1,
     "kanji": "益",
     "HanViet": "ÍCH",
     "meaning": "Lợi ích"
   },
   {
     "code": "3K012",
+	"lesson": 1,
     "kanji": "易",
     "HanViet": "DỊCH",
     "meaning": "Mậu dịch"
   },
   {
     "code": "3K013",
+	"lesson": 1,
     "kanji": "液",
     "HanViet": "DỊCH",
     "meaning": "Chất lỏng"
   },
   {
     "code": "3K014",
+	"lesson": 1,
     "kanji": "演",
     "HanViet": "DIỄN",
     "meaning": "Diễn xuất"
   },
   {
     "code": "3K015",
+	"lesson": 1,
     "kanji": "沿",
     "HanViet": "DUYÊN",
     "meaning": "Dọc theo"
   },
   {
     "code": "3K016",
+	"lesson": 1,
     "kanji": "延",
     "HanViet": "DUYÊN",
     "meaning": "Kéo dài"
   },
   {
     "code": "3K017",
+	"lesson": 1,
     "kanji": "桜",
     "HanViet": "ANH",
     "meaning": "Anh đào"
   },
   {
     "code": "3K018",
+	"lesson": 1,
     "kanji": "応",
     "HanViet": "ỨNG",
     "meaning": "Phản ứng"
   },
   {
     "code": "3K019",
+	"lesson": 1,
     "kanji": "往",
     "HanViet": "VÃNG",
     "meaning": "Đã qua, dĩ vãng"
   },
   {
     "code": "3K020",
+	"lesson": 1,
     "kanji": "恩",
     "HanViet": "ÂN",
     "meaning": "Ân nhân"
   },
   {
     "code": "3K021",
+	"lesson": 1,
     "kanji": "価",
     "HanViet": "GÍA",
     "meaning": "Giá cả"
   },
   {
     "code": "3K022",
+	"lesson": 1,
     "kanji": "過",
     "HanViet": "QUÁ",
     "meaning": "Vượt qua, quá khứ"
   },
   {
     "code": "3K023",
+	"lesson": 1,
     "kanji": "可",
     "HanViet": "KHẢ",
     "meaning": "Khả năng"
   },
   {
     "code": "3K024",
+	"lesson": 1,
     "kanji": "河",
     "HanViet": "HÀ",
     "meaning": "Sông"
   },
   {
     "code": "3K025",
+	"lesson": 1,
     "kanji": "仮",
     "HanViet": "GIẢ",
     "meaning": "Giả thuyết, giả định"
   },
   {
     "code": "3K026",
+	"lesson": 1,
     "kanji": "解",
     "HanViet": "GIẢI",
     "meaning": "Giải quyết, lý giải"
   },
   {
     "code": "3K027",
+	"lesson": 1,
     "kanji": "快",
     "HanViet": "KHOÁI",
     "meaning": "Khoái thích"
   },
   {
     "code": "3K028",
+	"lesson": 1,
     "kanji": "灰",
     "HanViet": "HÔI",
     "meaning": "Tro"
   },
   {
     "code": "3K029",
+	"lesson": 1,
     "kanji": "届",
     "HanViet": "GIỚI",
     "meaning": "Gửi đến"
   },
   {
     "code": "3K030",
+	"lesson": 1,
     "kanji": "賀",
     "HanViet": "HẠ",
     "meaning": "Chúc mừng"
   },
   {
     "code": "3K031",
+	"lesson": 1,
     "kanji": "我",
     "HanViet": "NGÃ",
     "meaning": "Bản ngã"
   },
   {
     "code": "3K032",
+	"lesson": 1,
     "kanji": "閣",
     "HanViet": "CÁC",
     "meaning": "Nội các"
   },
   {
     "code": "3K033",
+	"lesson": 1,
     "kanji": "革",
     "HanViet": "CÁCH",
     "meaning": "Cải cách"
   },
   {
     "code": "3K034",
+	"lesson": 1,
     "kanji": "拡",
     "HanViet": "KHUẾCH",
     "meaning": "Khuếch tán"
   },
   {
     "code": "3K035",
+	"lesson": 1,
     "kanji": "額",
     "HanViet": "NGẠCH",
     "meaning": "Cái trán, hạn ngạch"
   },
   {
     "code": "3K036",
+	"lesson": 1,
     "kanji": "割",
     "HanViet": "CÁT",
     "meaning": "Vỡ"
   },
   {
     "code": "3K037",
+	"lesson": 1,
     "kanji": "簡",
     "HanViet": "GIẢN",
     "meaning": "Đơn giản"
   },
   {
     "code": "3K038",
+	"lesson": 1,
     "kanji": "干",
     "HanViet": "CAN",
     "meaning": "Khô"
   },
   {
     "code": "3K039",
+	"lesson": 1,
     "kanji": "看",
     "HanViet": "KHÁN",
     "meaning": "Trông coi, giữ gìn"
   },
   {
     "code": "3K040",
+	"lesson": 1,
     "kanji": "慣",
     "HanViet": "QUÁN",
     "meaning": "Quen, tập quán"
   },
   {
     "code": "3K041",
+	"lesson": 2,
     "kanji": "幹",
     "HanViet": "CÁN",
     "meaning": "Cán bộ"
   },
   {
     "code": "3K042",
+	"lesson": 2,
     "kanji": "刊",
     "HanViet": "SAN",
     "meaning": "Tập san"
   },
   {
     "code": "3K043",
+	"lesson": 2,
     "kanji": "巻",
     "HanViet": "QUYỂN",
     "meaning": "Quyển sách"
   },
   {
     "code": "3K044",
+	"lesson": 2,
     "kanji": "眼",
     "HanViet": "NHÃN",
     "meaning": "Con mắt"
   },
   {
     "code": "3K045",
+	"lesson": 2,
     "kanji": "危",
     "HanViet": "NGUY",
     "meaning": "Nguy hiểm"
   },
   {
     "code": "3K046",
+	"lesson": 2,
     "kanji": "揮",
     "HanViet": "HUY",
     "meaning": "Chỉ huy"
   },
   {
     "code": "3K047",
+	"lesson": 2,
     "kanji": "机",
     "HanViet": "KỶ",
     "meaning": "Cái bàn"
   },
   {
     "code": "3K048",
+	"lesson": 2,
     "kanji": "貴",
     "HanViet": "QUÝ",
     "meaning": "Quý tộc"
   },
   {
     "code": "3K049",
+	"lesson": 2,
     "kanji": "規",
     "HanViet": "QUY",
     "meaning": "Quy tắc"
   },
   {
     "code": "3K050",
+	"lesson": 2,
     "kanji": "基",
     "HanViet": "CƠ",
     "meaning": "Cơ bản"
   },
   {
     "code": "3K051",
+	"lesson": 2,
     "kanji": "寄",
     "HanViet": "KÍ",
     "meaning": "Kí gửi, kí túc"
   },
   {
     "code": "3K052",
+	"lesson": 2,
     "kanji": "技",
     "HanViet": "KĨ",
     "meaning": "Kĩ thuật"
   },
   {
     "code": "3K053",
+	"lesson": 2,
     "kanji": "義",
     "HanViet": "NGHĨA",
     "meaning": "Chính nghĩa"
   },
   {
     "code": "3K054",
+	"lesson": 2,
     "kanji": "疑",
     "HanViet": "NGHI",
     "meaning": "Nghi vấn"
   },
   {
     "code": "3K055",
+	"lesson": 2,
     "kanji": "逆",
     "HanViet": "NGHỊCH",
     "meaning": "Phản nghịch"
   },
   {
     "code": "3K056",
+	"lesson": 2,
     "kanji": "旧",
     "HanViet": "CỰU",
     "meaning": "Kì cựu"
   },
   {
     "code": "3K057",
+	"lesson": 2,
     "kanji": "久",
     "HanViet": "CỬU",
     "meaning": "Vĩnh cửu"
   },
   {
     "code": "3K058",
+	"lesson": 2,
     "kanji": "吸",
     "HanViet": "HẤP",
     "meaning": "Hô hấp, hấp thụ"
   },
   {
     "code": "3K059",
+	"lesson": 2,
     "kanji": "許",
     "HanViet": "HỨA",
     "meaning": "Cho phép"
   },
   {
     "code": "3K060",
+	"lesson": 2,
     "kanji": "居",
     "HanViet": "CƯ",
     "meaning": "Cư trú, định cư"
   },
   {
     "code": "3K061",
+	"lesson": 2,
     "kanji": "境",
     "HanViet": "CẢNH",
     "meaning": "Hoàn cảnh"
   },
   {
     "code": "3K062",
+	"lesson": 2,
     "kanji": "郷",
     "HanViet": "HƯƠNG",
     "meaning": "Quê hương"
   },
   {
     "code": "3K063",
+	"lesson": 2,
     "kanji": "胸",
     "HanViet": "HUNG",
     "meaning": "Ngực"
   },
   {
     "code": "3K064",
+	"lesson": 2,
     "kanji": "供",
     "HanViet": "CUNG",
     "meaning": "Cung cấp"
   },
   {
     "code": "3K065",
+	"lesson": 2,
     "kanji": "筋",
     "HanViet": "CÂN",
     "meaning": "Bắp thịt"
   },
   {
     "code": "3K066",
+	"lesson": 2,
     "kanji": "勤",
     "HanViet": "CẦN",
     "meaning": "Cần cù"
   },
   {
     "code": "3K067",
+	"lesson": 2,
     "kanji": "禁",
     "HanViet": "CẤM",
     "meaning": "Nghiêm cấm"
   },
   {
     "code": "3K068",
+	"lesson": 2,
     "kanji": "句",
     "HanViet": "CÚ",
     "meaning": "Câu cú"
   },
   {
     "code": "3K069",
+	"lesson": 2,
     "kanji": "群",
     "HanViet": "QUẦN",
     "meaning": "Quần đảo, quần cư"
   },
   {
     "code": "3K070",
+	"lesson": 2,
     "kanji": "経",
     "HanViet": "KINH",
     "meaning": "Kinh tế, kinh độ"
   },
   {
     "code": "3K071",
+	"lesson": 2,
     "kanji": "系",
     "HanViet": "HỆ",
     "meaning": "Hệ thống"
   },
   {
     "code": "3K072",
+	"lesson": 2,
     "kanji": "警",
     "HanViet": "CẢNH",
     "meaning": "Cảnh sát"
   },
   {
     "code": "3K073",
+	"lesson": 2,
     "kanji": "敬",
     "HanViet": "KÍNH",
     "meaning": "Tôn kính"
   },
   {
     "code": "3K074",
+	"lesson": 2,
     "kanji": "劇",
     "HanViet": "KỊCH",
     "meaning": "Vở kịch"
   },
   {
     "code": "3K075",
+	"lesson": 2,
     "kanji": "激",
     "HanViet": "KÍCH",
     "meaning": "Cảm kích"
   },
   {
     "code": "3K076",
+	"lesson": 2,
     "kanji": "穴",
     "HanViet": "HUYỆT",
     "meaning": "Cái hố"
   },
   {
     "code": "3K077",
+	"lesson": 2,
     "kanji": "潔",
     "HanViet": "KHIẾT",
     "meaning": "Thanh khiết"
   },
   {
     "code": "3K078",
+	"lesson": 2,
     "kanji": "険",
     "HanViet": "HIỂM",
     "meaning": "Nguy hiểm"
   },
   {
     "code": "3K079",
+	"lesson": 2,
     "kanji": "検",
     "HanViet": "KIỂM",
     "meaning": "Kiểm tra"
   },
   {
     "code": "3K080",
+	"lesson": 2,
     "kanji": "券",
     "HanViet": "KHOÁN",
     "meaning": "Chứng khoán"

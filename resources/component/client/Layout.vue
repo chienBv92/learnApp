@@ -29,7 +29,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-<!--            @include('admin.layouts.footer')-->
+            <Footer></Footer>
             <!-- End of Footer -->
 
         </div>
@@ -40,6 +40,7 @@
 <script>
     import Menu from './Menu';
     import Header from './Header';
+    import Footer from "./Footer";
     import App from './App';
     import CourseMain from "./Course/CourseMain";
 
@@ -48,6 +49,7 @@
         components: {
             Menu: Menu,
             Header: Header,
+            Footer:Footer,
             App: App,
             CourseMain
         }

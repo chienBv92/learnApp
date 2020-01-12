@@ -56,8 +56,8 @@
         </div>
 
         <div id="kanjiAll">
-            <div class="kanjiAll" v-for="item in dataLesson" @click="">
-                <div class="dsp-kanji"> {{item.kanji}}</div>
+            <div class="kanjiAll" v-for="item in dataLesson" @click="showDetail(item)">
+                <div class="dsp-kanji" @click="playSound(item.file_mp3)"> {{item.kanji}}</div>
                 <div class="dsp-hanviet" v-if="!isOnlyKanji"> {{item.HanViet}} </div>
                 <div class="dsp-meaning" v-show="!isOnlyKanji"> {{item.meaning}} </div>
 
@@ -66,11 +66,11 @@
         </div>
 
 
-        <div v-for="item in data">
-            <p>{{item.HanViet}}</p>
-            <p>{{item.hiragara}}</p>
-            <p>{{item.meaning}}</p>
-        </div>
+<!--        <div v-for="item in data">-->
+<!--            <p>{{item.HanViet}}</p>-->
+<!--            <p>{{item.hiragara}}</p>-->
+<!--            <p>{{item.meaning}}</p>-->
+<!--        </div>-->
     </div>
     <div v-else>
         Loading....
@@ -98,7 +98,7 @@
                 dataLesson: [],
                 kanjiLevel:{},
                 lessonMax: 0,
-                lessonActive: this.$store.state.lessonLearning,
+                lessonActive: 1,
                 isOnlyKanji: this.$store.state.isOnlyKanji,
                 error: [],
                 status:''
@@ -173,11 +173,15 @@
                 switch (this.metaTitle){
                     case 'hantu-4k' :
                         this.data = data4k;
+                        this.lessonMax = 9;
                         break;
                     case 'hantu-3k' :
                         this.data = data3k;
+                        this.lessonMax =10;
                         break;
                 }
+                this.status = 'success';
+                this.getDataLesson();
 
             },
             selectLesson(id){
@@ -205,6 +209,22 @@
                 if(this.isRandom){
                     this.dataLesson = this.shuffle(this.dataLesson);
                 }
+            },
+            playSound (sound) {
+                if(sound) {
+                    var link_mp3 = "/media/" + sound + ".mp3";
+                    try {
+                            var audio = new Audio(link_mp3);
+                            audio.play();
+                    } catch (e) {
+                        console.log("sorry, file not found");
+                    }
+
+                }
+            },
+
+            showDetail(item){
+                console.log(item);
             },
             // Ham dao trat tu mang
             shuffle(a) {
