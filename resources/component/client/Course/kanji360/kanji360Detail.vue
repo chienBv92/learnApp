@@ -11,12 +11,12 @@
                                 <h2>{{kanjiLevel.Name}}</h2>
                                 <p> {{kanjiLevel.Description}}</p>
                                 <span class="course_progress">
-                {{lessonActive}} lessons - {{kanjiLevel.TotalLesson - lessonActive}} out
+                {{lessonActive}} lessons - {{lessonMax - lessonActive}} out
                 of  steps completed
                                 </span>
                                 <div class="progress">
                                     <div role="progressbar" aria-valuemin="0" :aria-valuemax="kanjiLevel.TotalLesson" :aria-valuenow="lessonActive" class="progress-bar"
-                                         :style="{width: (lessonActive / kanjiLevel.TotalLesson) * 100 + '%'}">
+                                         :style="{width: (lessonActive / lessonMax) * 100 + '%'}">
                                         <!---->
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                 switch (this.metaTitle){
                     case 'hantu-4k' :
                         this.data = data4k;
-                        this.lessonMax = 9;
+                        this.lessonMax = 11;
                         break;
                     case 'hantu-3k' :
                         this.data = data3k;
@@ -205,7 +205,7 @@
                 }
             },
             getDataLesson(){
-                this.dataLesson = this.data.filter((item) => item.lesson === this.lessonActive);
+                this.dataLesson = this.data.filter((item) => item.lesson == this.lessonActive);
                 if(this.isRandom){
                     this.dataLesson = this.shuffle(this.dataLesson);
                 }
